@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-08T05:01:27.487058",
+    "last_updated": "2026-03-08T05:56:33.801415",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.74"
@@ -37,20 +37,20 @@
     "signals": {
       "hrv": {
         "status": "green",
-        "value": 92.0,
-        "baseline_7d": 64.4,
-        "delta_pct": 42.9
+        "value": 69.0,
+        "baseline_7d": 58.9,
+        "delta_pct": 17.1
       },
       "rhr": {
         "status": "green",
-        "value": 42,
-        "baseline_7d": 46.7,
-        "delta_bpm": -4.7
+        "value": 47,
+        "baseline_7d": 48.4,
+        "delta_bpm": -1.4
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": 2
+        "status": "amber",
+        "hours": 8.1,
+        "quality": 3
       },
       "acwr": {
         "status": "amber",
@@ -62,7 +62,7 @@
       },
       "ri": {
         "status": "green",
-        "value": 1.59
+        "value": 1.21
       },
       "tsb": {
         "status": "green",
@@ -71,9 +71,9 @@
     },
     "signal_summary": {
       "green": 5,
-      "amber": 1,
+      "amber": 2,
       "red": 0,
-      "unavailable": 1
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -83,7 +83,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 5 green, 2 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -158,21 +158,21 @@
     },
     "current_metrics": {
       "weight_kg": 74.0,
-      "resting_hr": 42,
-      "hrv": 92.0,
-      "sleep_quality": 2,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 47,
+      "hrv": 69.0,
+      "sleep_quality": 3,
+      "sleep_hours": 8.1,
+      "sleep_formatted": "8h6m"
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.59,
-    "hrv_baseline_7d": 64.4,
-    "rhr_baseline_7d": 46.7,
-    "hrv_baseline_28d": 62.3,
-    "rhr_baseline_28d": 46.2,
-    "latest_hrv": 92.0,
-    "latest_rhr": 42,
+    "recovery_index": 1.21,
+    "hrv_baseline_7d": 58.9,
+    "rhr_baseline_7d": 48.4,
+    "hrv_baseline_28d": 60.3,
+    "rhr_baseline_28d": 47.4,
+    "latest_hrv": 69.0,
+    "latest_rhr": 47,
     "acwr": 0.75,
     "acwr_interpretation": "undertraining",
     "monotony": 0.59,
@@ -184,7 +184,7 @@
     "multi_sport_detected": false,
     "strain": 269.0,
     "stress_tolerance": 4.6,
-    "load_recovery_ratio": 2.9,
+    "load_recovery_ratio": 3.8,
     "tss_7d_total": 456.0,
     "tss_28d_total": 2448.0,
     "zone_distribution_7d": {
@@ -345,7 +345,7 @@
     "p_max": 970,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.53472,
-    "calculation_timestamp": "2026-03-08T05:01:27.486218",
+    "calculation_timestamp": "2026-03-08T05:56:33.800573",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -517,13 +517,13 @@
     {
       "date": "2026-03-02",
       "weight_kg": 73.4,
-      "resting_hr": 42,
-      "hrv_rmssd": 90.0,
+      "resting_hr": 45,
+      "hrv_rmssd": 76.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.25,
       "sleep_formatted": "7h15m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 79.0,
       "mental_energy": null,
       "fatigue": 2,
       "soreness": 1,
@@ -549,13 +549,13 @@
     {
       "date": "2026-03-04",
       "weight_kg": null,
-      "resting_hr": 48,
-      "hrv_rmssd": 45.0,
+      "resting_hr": 52,
+      "hrv_rmssd": 64.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.92,
       "sleep_formatted": "7h55m",
       "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_score": 84.0,
       "mental_energy": null,
       "fatigue": 2,
       "soreness": 2,
@@ -565,13 +565,13 @@
     {
       "date": "2026-03-05",
       "weight_kg": null,
-      "resting_hr": 44,
-      "hrv_rmssd": 71.0,
+      "resting_hr": 46,
+      "hrv_rmssd": 62.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.25,
       "sleep_formatted": "7h15m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 76.0,
       "mental_energy": null,
       "fatigue": 2,
       "soreness": 1,
@@ -581,13 +581,13 @@
     {
       "date": "2026-03-06",
       "weight_kg": 73.0,
-      "resting_hr": 48,
-      "hrv_rmssd": 43.0,
+      "resting_hr": 49,
+      "hrv_rmssd": 30.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.35,
       "sleep_formatted": "7h21m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 76.0,
       "mental_energy": null,
       "fatigue": 2,
       "soreness": 1,
@@ -597,13 +597,13 @@
     {
       "date": "2026-03-07",
       "weight_kg": 74.0,
-      "resting_hr": 58,
-      "hrv_rmssd": 27.0,
+      "resting_hr": 55,
+      "hrv_rmssd": 28.0,
       "hrv_sdnn": null,
-      "sleep_hours": 1.17,
-      "sleep_formatted": "1h10m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_hours": 7.17,
+      "sleep_formatted": "7h10m",
+      "sleep_quality": 3,
+      "sleep_score": 61.0,
       "mental_energy": null,
       "fatigue": 2,
       "soreness": 2,
@@ -613,13 +613,13 @@
     {
       "date": "2026-03-08",
       "weight_kg": null,
-      "resting_hr": 42,
-      "hrv_rmssd": 92.0,
+      "resting_hr": 47,
+      "hrv_rmssd": 69.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_hours": 8.1,
+      "sleep_formatted": "8h6m",
+      "sleep_quality": 3,
+      "sleep_score": 77.0,
       "mental_energy": null,
       "fatigue": 2,
       "soreness": 1,
@@ -878,8 +878,8 @@
     "total_training_formatted": "6h52m",
     "total_tss": 456,
     "activities_count": 3,
-    "avg_hrv": 64.4,
-    "avg_resting_hr": 46.7
+    "avg_hrv": 58.9,
+    "avg_resting_hr": 48.4
   },
   "race_calendar": {
     "next_race": null,
