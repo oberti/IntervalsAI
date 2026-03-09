@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-09T09:00:47.398648",
+    "last_updated": "2026-03-09T10:05:06.015791",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -298,7 +298,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.87,
+          "planned_tss_delta": 0.98,
           "hard_sessions_planned": 3,
           "race_proximity": null,
           "next_week_load": 0.27,
@@ -336,7 +336,7 @@
     "p_max": 977,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.548843,
-    "calculation_timestamp": "2026-03-09T09:00:47.397807",
+    "calculation_timestamp": "2026-03-09T10:05:06.014946",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -728,13 +728,13 @@
     {
       "id": 97374258,
       "date": "2026-03-15",
-      "name": "VO2Max 1 5x5'",
+      "name": "VO2Max",
       "type": "WORKOUT",
-      "planned_tss": 148,
-      "duration_hours": 2.67,
-      "duration_formatted": "2h40m",
-      "workout_summary": "1h | 5\u00d75m / 3m rec | 1h",
-      "description": "Riscaldamento \n- 60m Z1 power=1s \n\nLavoro 5x\n-  5m Z5 power=1s\n-  3m Z2 power=1s\n\nDefaticamento \n- 60m Z1 power=1s"
+      "planned_tss": 223,
+      "duration_hours": 3.65,
+      "duration_formatted": "3h39m",
+      "workout_summary": "1h30m | 13\u00d72m @306W / 1m rec | 1h30m",
+      "description": "Riscaldamento \n- 90m Z2 power=1s \n\nLavoro 13x\n-  2m 115%-120% power=1s\n-  1m 65% power=1s\n\nDefaticamento \n- 90m Z2 power=1s"
     },
     {
       "id": 97371001,
