@@ -15,10 +15,10 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-13T08:28:50.884030",
+    "last_updated": "2026-03-13T08:43:59.767401",
     "data_range_days": 7,
     "extended_range_days": 28,
-    "version": "3.80"
+    "version": "3.81"
   },
   "alerts": [],
   "readiness_decision": {
@@ -46,10 +46,6 @@
         "status": "green",
         "value": 1.13
       },
-      "feel": {
-        "status": "green",
-        "value": 3
-      },
       "ri": {
         "status": "green",
         "value": 0.87
@@ -60,7 +56,7 @@
       }
     },
     "signal_summary": {
-      "green": 6,
+      "green": 5,
       "amber": 1,
       "red": 0,
       "unavailable": 0
@@ -73,13 +69,13 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 1 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
     "available": true,
     "last_generated": "2026-03-09",
-    "age_days": 3,
+    "age_days": 4,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -337,7 +333,7 @@
     "p_max": 977,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.527096,
-    "calculation_timestamp": "2026-03-13T08:28:50.883172",
+    "calculation_timestamp": "2026-03-13T08:43:59.766580",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
