@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-12T23:47:03.939604",
+    "last_updated": "2026-03-13T01:08:50.328472",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.80"
@@ -26,44 +26,44 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "green",
-        "value": 56.0,
-        "baseline_7d": 53.9,
-        "delta_pct": 3.9
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 58.8,
+        "delta_pct": null
       },
       "rhr": {
-        "status": "green",
-        "value": 46,
-        "baseline_7d": 48.4,
-        "delta_bpm": -2.4
+        "status": "unavailable",
+        "value": null,
+        "baseline_7d": 48.2,
+        "delta_bpm": null
       },
       "sleep": {
-        "status": "amber",
-        "hours": 8.88,
-        "quality": 3
+        "status": "unavailable",
+        "hours": null,
+        "quality": null
       },
       "acwr": {
         "status": "green",
-        "value": 1.07
+        "value": 1.13
       },
       "feel": {
         "status": "green",
         "value": 3
       },
       "ri": {
-        "status": "green",
-        "value": 1.09
+        "status": "unavailable",
+        "value": null
       },
       "tsb": {
         "status": "green",
-        "value": 2.9
+        "value": 12.9
       }
     },
     "signal_summary": {
-      "green": 6,
-      "amber": 1,
+      "green": 3,
+      "amber": 0,
       "red": 0,
-      "unavailable": 0
+      "unavailable": 4
     },
     "phase_context": {
       "phase": "Build",
@@ -73,7 +73,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 1 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
     "alarm_refs": []
   },
   "history": {
@@ -99,18 +99,18 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 94.83,
-      "atl": 91.98,
-      "tsb": 2.85,
-      "ramp_rate": 1.05,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ctl": 92.6,
+      "atl": 79.74,
+      "tsb": 12.86,
+      "ramp_rate": 1.03,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 252.7,
       "w_prime": 20889,
       "w_prime_kj": 20.9,
       "p_max": 977,
-      "vo2max": 49.458336,
+      "vo2max": null,
       "sports": {
         "cycling": {
           "lthr": 175,
@@ -148,22 +148,22 @@
     },
     "current_metrics": {
       "weight_kg": 74.5,
-      "resting_hr": 46,
-      "hrv": 56.0,
-      "sleep_quality": 3,
-      "sleep_hours": 8.88,
-      "sleep_formatted": "8h53m"
+      "resting_hr": 45,
+      "hrv": null,
+      "sleep_quality": null,
+      "sleep_hours": null,
+      "sleep_formatted": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.09,
-    "hrv_baseline_7d": 53.9,
-    "rhr_baseline_7d": 48.4,
-    "hrv_baseline_28d": 58.8,
-    "rhr_baseline_28d": 47.8,
-    "latest_hrv": 56.0,
-    "latest_rhr": 46,
-    "acwr": 1.07,
+    "recovery_index": null,
+    "hrv_baseline_7d": 58.8,
+    "rhr_baseline_7d": 48.2,
+    "hrv_baseline_28d": 59.4,
+    "rhr_baseline_28d": 47.7,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 1.13,
     "acwr_interpretation": "optimal",
     "monotony": 0.86,
     "monotony_interpretation": "normal",
@@ -174,9 +174,9 @@
     "multi_sport_detected": false,
     "strain": 615.0,
     "stress_tolerance": 7.2,
-    "load_recovery_ratio": 6.6,
+    "load_recovery_ratio": null,
     "tss_7d_total": 715.0,
-    "tss_28d_total": 2663.0,
+    "tss_28d_total": 2522.0,
     "zone_distribution_7d": {
       "z1_hours": 3.22,
       "z2_hours": 2.55,
@@ -214,22 +214,22 @@
       "sport": "cycling"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 78590,
-      "z2_seconds": 32020,
-      "z3_seconds": 35101,
-      "z1_pct": 53.9,
-      "z2_pct": 22.0,
-      "z3_pct": 24.1,
+      "z1_seconds": 74070,
+      "z2_seconds": 30190,
+      "z3_seconds": 33378,
+      "z1_pct": 53.8,
+      "z2_pct": 21.9,
+      "z3_pct": 24.3,
       "polarization_index": 1.77,
       "classification": "Pyramidal"
     },
     "seiler_tid_28d_primary": {
-      "z1_seconds": 78590,
-      "z2_seconds": 32020,
-      "z3_seconds": 35101,
-      "z1_pct": 53.9,
-      "z2_pct": 22.0,
-      "z3_pct": 24.1,
+      "z1_seconds": 74070,
+      "z2_seconds": 30190,
+      "z3_seconds": 33378,
+      "z1_pct": 53.8,
+      "z2_pct": 21.9,
+      "z3_pct": 24.3,
       "polarization_index": 1.77,
       "classification": "Pyramidal",
       "sport": "cycling"
@@ -255,9 +255,9 @@
       },
       "hrrc": {
         "mean_hrrc_7d": 38.7,
-        "mean_hrrc_28d": 52.7,
+        "mean_hrrc_28d": 49.8,
         "qualifying_sessions_7d": 3,
-        "qualifying_sessions_28d": 11,
+        "qualifying_sessions_28d": 10,
         "trend": "declining",
         "note": "HRRc = heart rate recovery (largest 60s HR drop in bpm after exceeding threshold HR for >1 min). Higher = better parasympathetic recovery. Null when threshold not reached, recording stopped before cooldown, or no HR data. Trend: 7d mean vs 28d mean, >10% = meaningful (min 1 session/7d, 3 sessions/28d). Display only \u2014 not wired into readiness_decision signals."
       },
@@ -289,7 +289,7 @@
     },
     "phase_detection": {
       "phase": "Build",
-      "confidence": "high",
+      "confidence": "medium",
       "reason_codes": [],
       "basis": {
         "stream_1": {
@@ -299,11 +299,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.5,
-          "hard_sessions_planned": 2,
-          "race_proximity": null,
+          "planned_tss_delta": 1.72,
+          "hard_sessions_planned": 1,
+          "race_proximity": 90,
           "next_week_load": 0.27,
-          "plan_coverage_current_week": 0.8,
+          "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
@@ -336,13 +336,13 @@
     "w_prime_kj": 20.9,
     "p_max": 977,
     "power_model_source": "wellness.sportInfo",
-    "vo2max": 49.458336,
-    "calculation_timestamp": "2026-03-12T23:47:03.938789",
+    "vo2max": null,
+    "calculation_timestamp": "2026-03-13T01:08:50.327630",
     "data_quality": {
-      "hrv_data_points": 7,
-      "rhr_data_points": 7,
+      "hrv_data_points": 6,
+      "rhr_data_points": 6,
       "activities_7d": 4,
-      "activities_28d": 15,
+      "activities_28d": 14,
       "planned_workouts_7d": 4,
       "ftp_history_days": {
         "indoor": 0,
@@ -558,22 +558,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-03-06",
-      "weight_kg": 73.0,
-      "resting_hr": 49,
-      "hrv_rmssd": 30.0,
-      "hrv_sdnn": null,
-      "sleep_hours": 7.35,
-      "sleep_formatted": "7h21m",
-      "sleep_quality": 3,
-      "sleep_score": 76.0,
-      "mental_energy": null,
-      "fatigue": 2,
-      "soreness": 1,
-      "avg_sleeping_hr": 53.877804,
-      "vo2max": 49.632587
-    },
-    {
       "date": "2026-03-07",
       "weight_kg": 74.0,
       "resting_hr": 55,
@@ -656,32 +640,37 @@
     {
       "date": "2026-03-12",
       "weight_kg": 74.5,
-      "resting_hr": 46,
-      "hrv_rmssd": 56.0,
+      "resting_hr": 45,
+      "hrv_rmssd": 62.0,
       "hrv_sdnn": null,
-      "sleep_hours": 8.88,
-      "sleep_formatted": "8h53m",
+      "sleep_hours": 9.62,
+      "sleep_formatted": "9h37m",
       "sleep_quality": 3,
-      "sleep_score": 71.0,
+      "sleep_score": 66.0,
       "mental_energy": null,
       "fatigue": 2,
       "soreness": 2,
       "avg_sleeping_hr": 49.524544,
       "vo2max": 49.458336
+    },
+    {
+      "date": "2026-03-13",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
-    {
-      "id": 97369870,
-      "date": "2026-03-12",
-      "name": "3X10 Short HIIT",
-      "type": "WORKOUT",
-      "planned_tss": 83,
-      "duration_hours": 1.21,
-      "duration_formatted": "1h12m30s",
-      "workout_summary": "20m | 10\u00d730s @312W / 15s rec | 5m | 10\u00d730s @312W / 15s rec | 5m | 10\u00d730s @312W / 15s rec | 20m",
-      "description": "Ciclista intermedio\nSettimana 1-2 \n1 volta a settimana\n\nRiscaldamento \n- 20m Z2 power=1s\n\nLavoro 10x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 5m Z2 power=1s\n\nLavoro 10x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 5m Z2 power=1s\n\nLavoro 10x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 20m Z2 power=1s"
-    },
     {
       "id": 95044639,
       "date": "2026-03-13",
@@ -757,7 +746,7 @@
       "duration_hours": 0.0,
       "duration_formatted": "0s",
       "workout_summary": null,
-      "description_preview": "PULIZIA GENERALE\nCONTROLLO DISCHI\nCONTROLLO PASTIGLIE"
+      "description": "PULIZIA GENERALE\nCONTROLLO DISCHI\nCONTROLLO PASTIGLIE\nCONTROLLO CATENA\nCONTROLLO COPERTONI\nINGRASSAGGIO SERIE STERZO\nINGRASSAGGIO MOVIMENTO CENTRALE\nINGRASSAGGIO PEDALI\nPELLICOLA TRASPARENTE TELAIO E PEDALI"
     },
     {
       "id": 95044626,
@@ -995,9 +984,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 19,
-    "success": 10,
-    "patternA": 10,
+    "attempted": 18,
+    "success": 9,
+    "patternA": 9,
     "patternB": 0,
     "bail_no_workout_doc": 7,
     "bail_no_match": 9
@@ -1007,12 +996,30 @@
     "total_training_formatted": "10h46m",
     "total_tss": 715,
     "activities_count": 4,
-    "avg_hrv": 53.9,
-    "avg_resting_hr": 48.4
+    "avg_hrv": 58.8,
+    "avg_resting_hr": 48.2
   },
   "race_calendar": {
-    "next_race": null,
-    "all_races": [],
+    "next_race": {
+      "name": "LeCoach Dolomiti 2026 by LeCoach App",
+      "date": "2026-06-11",
+      "category": "RACE_A",
+      "type": "Ride",
+      "days_until": 90,
+      "moving_time_seconds": null,
+      "distance_meters": 140000.0
+    },
+    "all_races": [
+      {
+        "name": "LeCoach Dolomiti 2026 by LeCoach App",
+        "date": "2026-06-11",
+        "category": "RACE_A",
+        "type": "Ride",
+        "days_until": 90,
+        "moving_time_seconds": null,
+        "distance_meters": 140000.0
+      }
+    ],
     "taper_alert": {
       "active": false
     },
