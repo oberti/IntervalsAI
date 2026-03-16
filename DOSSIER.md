@@ -163,12 +163,12 @@ This document serves as a reference template for endurance athletes using the de
 
 | Zone | % of FTP | Power (W) | Notes |
 |------|----------|-----------|-------|
-| Z1 | 0–55% | 0-140 W | Active Recovery |
-| Z2 | 56–75% | 141-180 W| Endurance (Base) |
-| Z3 | 76–90% | 181-210 W | Tempo |
-| Z4 | 91–105% | 211-240 W | Threshold |
-| Z5 | 106–120% | 241-280 W | VO₂max |
-| Z6 | 121–150% | 281-390 W | Anaerobic |
+| Z1 | 0–55% | 0-143 W | Active Recovery |
+| Z2 | 56–75% | 144-195 W| Endurance (Base) |
+| Z3 | 76–90% | 196-234 W | Tempo |
+| Z4 | 91–105% | 235-273 W | Threshold |
+| Z5 | 106–120% | 274-312 W | VO₂max |
+| Z6 | 121–150% | 313-390 W | Anaerobic |
 | Z7 | 151%+ | 391+ W | Neuromuscular |
 | SS | 84–97% | 219-252 W | Sweetspot |
 
