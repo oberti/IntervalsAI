@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-19T08:06:57.573378",
+    "last_updated": "2026-03-19T09:00:08.887391",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.86"
@@ -399,7 +399,7 @@
           "race_proximity": 84,
           "next_week_load": 0.25,
           "plan_coverage_current_week": 0.2,
-          "plan_coverage_next_week": 0.2
+          "plan_coverage_next_week": 0.4
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -434,7 +434,7 @@
     "p_max": 972,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.593082,
-    "calculation_timestamp": "2026-03-19T08:06:57.571934",
+    "calculation_timestamp": "2026-03-19T09:00:08.885938",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -958,6 +958,18 @@
       "description": "Riscaldamento\n-  40m Z2 power=1s\n\nLavoro\n- 12m Z5-Z6 power=1s\n\nDefaticamento\n- 40m Z2 power=1s"
     },
     {
+      "id": 99422132,
+      "date": "2026-03-25",
+      "name": "MANUTENZIONE BICI",
+      "type": "NOTE",
+      "sport_type": null,
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": "INGRASSAGGIO PEDALI\nINGRASSAGGIO SERIE STERZO\nINGRASSAGGIO MOVIMENTO CENTRALE\nPELLICOLA SU PEDALI"
+    },
+    {
       "id": 96663952,
       "date": "2026-03-30",
       "name": "Weekly",
@@ -1253,7 +1265,7 @@
     "success": 10,
     "patternA": 10,
     "patternB": 0,
-    "bail_no_workout_doc": 2,
+    "bail_no_workout_doc": 3,
     "bail_no_match": 10
   },
   "weekly_summary": {
