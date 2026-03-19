@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-19T17:39:12.474214",
+  "generated_at": "2026-03-19T18:31:28.978193",
   "version": "3.86",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1041,6 +1041,72 @@
           "zone": 1,
           "training_load": 33.76,
           "decoupling": 18.63244
+        }
+      ]
+    },
+    {
+      "activity_id": "i133316162",
+      "date": "2026-03-19",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": [
+        "1x 40m24s 181w",
+        "1x 3m1s 344w",
+        "1x 30m1s 113w",
+        "1x 44m39s 136w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "2424s@181w61rpm",
+          "duration_secs": 2424,
+          "avg_power": 181,
+          "max_power": 705,
+          "avg_hr": 134,
+          "max_hr": 184,
+          "avg_cadence": 60.776237,
+          "zone": 2,
+          "training_load": 52.793346,
+          "decoupling": -3.2949169
+        },
+        {
+          "type": "WORK",
+          "label": "181s@344w84rpm",
+          "duration_secs": 181,
+          "avg_power": 344,
+          "max_power": 485,
+          "avg_hr": 178,
+          "max_hr": 184,
+          "avg_cadence": 83.66851,
+          "zone": 6,
+          "training_load": 8.547297,
+          "decoupling": 13.987552
+        },
+        {
+          "type": "WORK",
+          "label": "1801s@113w43rpm",
+          "duration_secs": 1801,
+          "avg_power": 113,
+          "max_power": 476,
+          "avg_hr": 122,
+          "max_hr": 184,
+          "avg_cadence": 43.458286,
+          "zone": 1,
+          "training_load": 23.019934,
+          "decoupling": -8.482867
+        },
+        {
+          "type": "WORK",
+          "label": "2679s@136w59rpm",
+          "duration_secs": 2679,
+          "avg_power": 136,
+          "max_power": 450,
+          "avg_hr": 126,
+          "max_hr": 162,
+          "avg_cadence": 58.581684,
+          "zone": 1,
+          "training_load": 32.405273,
+          "decoupling": -5.6645513
         }
       ]
     }
