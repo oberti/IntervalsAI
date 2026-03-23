@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-22T23:59:33.397509",
+  "generated_at": "2026-03-23T02:24:44.352068",
   "version": "3.86",
   "scan_hours": 72,
   "retention_days": 8,
@@ -305,44 +305,6 @@
           "zone": 1,
           "training_load": 10.050973,
           "decoupling": 10.429496
-        }
-      ]
-    },
-    {
-      "activity_id": "i131906725",
-      "date": "2026-03-14",
-      "type": "Ride",
-      "name": "Z2",
-      "interval_summary": [
-        "1x 56m28s 136w",
-        "1x 2h33m 141w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "3388s@136w55rpm",
-          "duration_secs": 3388,
-          "avg_power": 136,
-          "max_power": 401,
-          "avg_hr": 134,
-          "max_hr": 173,
-          "avg_cadence": 54.789646,
-          "zone": 1,
-          "training_load": 38.369823,
-          "decoupling": -5.6784306
-        },
-        {
-          "type": "WORK",
-          "label": "9235s@141w59rpm",
-          "duration_secs": 9235,
-          "avg_power": 141,
-          "max_power": 598,
-          "avg_hr": 132,
-          "max_hr": 184,
-          "avg_cadence": 59.398132,
-          "zone": 1,
-          "training_load": 112.60475,
-          "decoupling": -0.6015332
         }
       ]
     },
