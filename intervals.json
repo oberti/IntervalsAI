@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T17:42:30.231410",
+  "generated_at": "2026-03-26T18:39:37.359337",
   "version": "3.92",
   "scan_hours": 72,
   "retention_days": 8,
@@ -508,6 +508,62 @@
           "zone": 2,
           "training_load": 66.18286,
           "decoupling": -4.313878
+        }
+      ]
+    },
+    {
+      "activity_id": "i135004607",
+      "date": "2026-03-26",
+      "type": "Ride",
+      "name": "TEST CP12",
+      "interval_summary": [
+        "1x 43m20s 202w",
+        "1x 12m 300w",
+        "1x 38m19s 117w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 8
+        },
+        {
+          "type": "WORK",
+          "label": "2600s@202w66rpm",
+          "duration_secs": 2600,
+          "avg_power": 202,
+          "max_power": 485,
+          "avg_hr": 135,
+          "max_hr": 178,
+          "avg_cadence": 66.13476,
+          "zone": 3,
+          "training_load": 50.357002,
+          "decoupling": 10.346421
+        },
+        {
+          "type": "WORK",
+          "label": "720s@300w75rpm",
+          "duration_secs": 720,
+          "avg_power": 300,
+          "max_power": 364,
+          "avg_hr": 178,
+          "max_hr": 188,
+          "avg_cadence": 74.57402,
+          "zone": 5,
+          "training_load": 26.45,
+          "decoupling": 4.4859614
+        },
+        {
+          "type": "WORK",
+          "label": "2299s@117w42rpm",
+          "duration_secs": 2299,
+          "avg_power": 117,
+          "max_power": 649,
+          "avg_hr": 127,
+          "max_hr": 186,
+          "avg_cadence": 42.09476,
+          "zone": 1,
+          "training_load": 33.67349,
+          "decoupling": 1.8490005
         }
       ]
     }
