@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T12:00:02.959060",
+  "generated_at": "2026-03-27T13:11:47.878823",
   "version": "3.92",
   "scan_hours": 72,
   "retention_days": 8,
@@ -564,6 +564,54 @@
           "zone": 1,
           "training_load": 33.67349,
           "decoupling": 1.8490005
+        }
+      ]
+    },
+    {
+      "activity_id": "i135137526",
+      "date": "2026-03-27",
+      "type": "Ride",
+      "name": "S. Omobono",
+      "interval_summary": [
+        "1x 57s 286w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1429,
+          "avg_power": 176,
+          "max_power": 426,
+          "avg_hr": 150,
+          "max_hr": 177,
+          "avg_cadence": 71.81997,
+          "zone": 2,
+          "training_load": 20.43307,
+          "decoupling": 9.472002
+        },
+        {
+          "type": "WORK",
+          "label": "57s@286w62rpm",
+          "duration_secs": 57,
+          "avg_power": 286,
+          "max_power": 366,
+          "avg_hr": 164,
+          "max_hr": 182,
+          "avg_cadence": 62.035088,
+          "zone": 5,
+          "training_load": 1.6200826,
+          "decoupling": 23.652302
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 5002,
+          "avg_power": 156,
+          "max_power": 517,
+          "avg_hr": 140,
+          "max_hr": 183,
+          "avg_cadence": 68.030785,
+          "zone": 2,
+          "training_load": 59.276478,
+          "decoupling": -6.866564
         }
       ]
     }
