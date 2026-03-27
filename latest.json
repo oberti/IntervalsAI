@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-27T17:08:27.701787",
+    "last_updated": "2026-03-27T18:01:31.493911",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.92"
@@ -117,10 +117,10 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Deload",
-      "phase_week": 2,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "phase": "Build",
+      "phase_week": 1,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": {
@@ -135,7 +135,7 @@
         "cap_zone": null
       }
     },
-    "reason": "P2 signal count. 3 amber (hrv, sleep, ri) >= threshold 2.",
+    "reason": "P2 signal count. 3 amber (hrv, sleep, ri) >= threshold 3.",
     "alarm_refs": []
   },
   "history": {
@@ -232,7 +232,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1278,
+      "steps": 4796,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -560,10 +560,10 @@
       ]
     },
     "phase_detection": {
-      "phase": "Deload",
-      "confidence": "high",
+      "phase": "Build",
+      "confidence": "low",
       "reason_codes": [
-        "BUILD_HISTORY_REDUCED_LOAD_REBOUND_CONFIRMED"
+        "BUILD_RESUMING_AFTER_DELOAD_TENTATIVE"
       ],
       "basis": {
         "stream_1": {
@@ -573,24 +573,24 @@
           "weeks_available": 5
         },
         "stream_2": {
-          "planned_tss_delta": null,
+          "planned_tss_delta": 1.54,
           "hard_sessions_planned": 0,
           "race_proximity": 76,
           "next_week_load": 1.73,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 0.2,
           "plan_coverage_next_week": 1.4
         },
         "data_quality": "good",
         "stream_agreement": null
       },
       "previous_phase": "Deload",
-      "phase_duration_weeks": 2,
+      "phase_duration_weeks": 1,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Deload",
+    "phase_detected": "Build",
     "phase_triggers": [
-      "BUILD_HISTORY_REDUCED_LOAD_REBOUND_CONFIRMED"
+      "BUILD_RESUMING_AFTER_DELOAD_TENTATIVE"
     ],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
@@ -613,7 +613,7 @@
     "p_max": 969,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.52,
-    "calculation_timestamp": "2026-03-27T17:08:27.700367",
+    "calculation_timestamp": "2026-03-27T18:01:31.492481",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -657,8 +657,8 @@
       "efficiency_factor": 1.2587413,
       "hrrc": 69,
       "elevation_m": 291.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 4,
+      "rpe": 3,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 589,
@@ -1152,7 +1152,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1278,
+      "steps": 4796,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -1164,6 +1164,18 @@
     }
   ],
   "planned_workouts": [
+    {
+      "id": 100981389,
+      "date": "2026-03-28",
+      "name": "Z2 4h Watt",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 201,
+      "duration_hours": 4.33,
+      "duration_formatted": "4h20m",
+      "workout_summary": null,
+      "description": "Riscaldamento\n- 10m CZZ1CP power=1s \n\nLavoro\n- 4h CZZ2CP power=1s \n\nDefaticamento\n-  10m CZZ1CP power=1s"
+    },
     {
       "id": 96663952,
       "date": "2026-03-30",
@@ -1540,12 +1552,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 22,
+    "attempted": 23,
     "success": 12,
     "patternA": 12,
     "patternB": 0,
     "bail_no_workout_doc": 4,
-    "bail_no_match": 10
+    "bail_no_match": 11
   },
   "weekly_summary": {
     "total_training_hours": 12.32,
