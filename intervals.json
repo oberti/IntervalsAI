@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T16:21:04.994909",
+  "generated_at": "2026-03-28T16:56:33.953557",
   "version": "3.92",
   "scan_hours": 72,
   "retention_days": 8,
@@ -546,6 +546,54 @@
           "zone": 2,
           "training_load": 59.276478,
           "decoupling": -6.866564
+        }
+      ]
+    },
+    {
+      "activity_id": "i135451512",
+      "date": "2026-03-28",
+      "type": "Ride",
+      "name": "Z2 4h Watt",
+      "interval_summary": [
+        "1x 5m20s 220w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1895,
+          "avg_power": 169,
+          "max_power": 488,
+          "avg_hr": 127,
+          "max_hr": 174,
+          "avg_cadence": 66.62985,
+          "zone": 2,
+          "training_load": 27.463015,
+          "decoupling": 10.549576
+        },
+        {
+          "type": "WORK",
+          "label": "320s@220w83rpm",
+          "duration_secs": 320,
+          "avg_power": 220,
+          "max_power": 334,
+          "avg_hr": 144,
+          "max_hr": 156,
+          "avg_cadence": 83.36875,
+          "zone": 3,
+          "training_load": 6.306509,
+          "decoupling": -0.34090355
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 11799,
+          "avg_power": 147,
+          "max_power": 584,
+          "avg_hr": 127,
+          "max_hr": 183,
+          "avg_cadence": 62.50272,
+          "zone": 2,
+          "training_load": 137.78218,
+          "decoupling": -0.09060989
         }
       ]
     }
