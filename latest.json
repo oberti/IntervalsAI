@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-30T12:51:42.323867",
+    "last_updated": "2026-03-30T14:20:22.349635",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.92"
@@ -601,13 +601,13 @@
     "p_max": 967,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.438515,
-    "calculation_timestamp": "2026-03-30T12:51:42.322435",
+    "calculation_timestamp": "2026-03-30T14:20:22.348090",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 5,
       "activities_28d": 18,
-      "planned_workouts_7d": 5,
+      "planned_workouts_7d": 4,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1177,18 +1177,6 @@
       "description": "Build phase: threshold, vo2 max, race preparation"
     },
     {
-      "id": 99422132,
-      "date": "2026-03-30",
-      "name": "MANUTENZIONE BICI",
-      "type": "NOTE",
-      "sport_type": null,
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
-      "description": "INGRASSAGGIO PEDALI"
-    },
-    {
       "id": 96659639,
       "date": "2026-03-31",
       "name": "6x3m 115% FTP 65RPM by LeCoach App",
@@ -1199,6 +1187,18 @@
       "duration_formatted": "2h",
       "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 6\u00d73m @299W / 3m rec | 1h11m @169W",
       "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n6x\n-3m 115% FTP 65RPM\n-3m 50% FTP\n\n-71m 65% FTP"
+    },
+    {
+      "id": 99422132,
+      "date": "2026-04-01",
+      "name": "MANUTENZIONE BICI",
+      "type": "NOTE",
+      "sport_type": null,
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": "INGRASSAGGIO PEDALI"
     },
     {
       "id": 96659648,
