@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-31T05:58:57.014787",
+    "last_updated": "2026-03-31T07:01:00.096672",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.92"
@@ -168,7 +168,7 @@
           "max_hr": 191,
           "threshold_pace": null,
           "pace_units": null,
-          "ftp": 260,
+          "ftp": 270,
           "ftp_indoor": null
         },
         "run": {
@@ -443,11 +443,11 @@
               "actual_hr": 183,
               "pct_lthr": 104.6,
               "source": "observed_outdoor",
-              "coggan_watts": 276,
-              "coggan_wpkg": 3.7,
-              "cp_model_watts": 330,
-              "cp_model_wpkg": 4.43,
-              "model_divergence_pct": -3.9
+              "coggan_watts": 286,
+              "coggan_wpkg": 3.84,
+              "cp_model_watts": 340,
+              "cp_model_wpkg": 4.56,
+              "model_divergence_pct": -6.8
             },
             "600s": {
               "actual_watts": 300,
@@ -455,11 +455,11 @@
               "actual_hr": 180,
               "pct_lthr": 102.9,
               "source": "observed_outdoor",
-              "coggan_watts": 252,
-              "coggan_wpkg": 3.38,
-              "cp_model_watts": 295,
-              "cp_model_wpkg": 3.96,
-              "model_divergence_pct": 1.7
+              "coggan_watts": 262,
+              "coggan_wpkg": 3.52,
+              "cp_model_watts": 305,
+              "cp_model_wpkg": 4.09,
+              "model_divergence_pct": -1.6
             },
             "1200s": {
               "actual_watts": 270,
@@ -467,11 +467,11 @@
               "actual_hr": 166,
               "pct_lthr": 94.9,
               "source": "observed_outdoor",
-              "coggan_watts": 242,
-              "coggan_wpkg": 3.25,
-              "cp_model_watts": 277,
-              "cp_model_wpkg": 3.72,
-              "model_divergence_pct": -2.5
+              "coggan_watts": 251,
+              "coggan_wpkg": 3.37,
+              "cp_model_watts": 287,
+              "cp_model_wpkg": 3.85,
+              "model_divergence_pct": -5.9
             },
             "1800s": {
               "actual_watts": 264,
@@ -479,11 +479,11 @@
               "actual_hr": 165,
               "pct_lthr": 94.3,
               "source": "observed_outdoor",
-              "coggan_watts": 234,
-              "coggan_wpkg": 3.14,
-              "cp_model_watts": 272,
-              "cp_model_wpkg": 3.65,
-              "model_divergence_pct": -2.9
+              "coggan_watts": 243,
+              "coggan_wpkg": 3.26,
+              "cp_model_watts": 282,
+              "cp_model_wpkg": 3.79,
+              "model_divergence_pct": -6.4
             },
             "3600s": {
               "actual_watts": 233,
@@ -491,11 +491,11 @@
               "actual_hr": 162,
               "pct_lthr": 92.6,
               "source": "observed_outdoor",
-              "coggan_watts": 224,
-              "coggan_wpkg": 3.01,
-              "cp_model_watts": 266,
-              "cp_model_wpkg": 3.57,
-              "model_divergence_pct": -12.4
+              "coggan_watts": 232,
+              "coggan_wpkg": 3.11,
+              "cp_model_watts": 276,
+              "cp_model_wpkg": 3.7,
+              "model_divergence_pct": -15.6
             },
             "5400s": {
               "actual_watts": 210,
@@ -503,11 +503,11 @@
               "actual_hr": 161,
               "pct_lthr": 92.0,
               "source": "observed_outdoor",
-              "coggan_watts": 213,
-              "coggan_wpkg": 2.86,
-              "cp_model_watts": 264,
-              "cp_model_wpkg": 3.54,
-              "model_divergence_pct": -20.5
+              "coggan_watts": 221,
+              "coggan_wpkg": 2.97,
+              "cp_model_watts": 274,
+              "cp_model_wpkg": 3.68,
+              "model_divergence_pct": -23.4
             },
             "7200s": {
               "actual_watts": 203,
@@ -515,17 +515,17 @@
               "actual_hr": 160,
               "pct_lthr": 91.4,
               "source": "observed_outdoor",
-              "coggan_watts": 203,
-              "coggan_wpkg": 2.72,
-              "cp_model_watts": 263,
-              "cp_model_wpkg": 3.53,
-              "model_divergence_pct": -22.8
+              "coggan_watts": 211,
+              "coggan_wpkg": 2.83,
+              "cp_model_watts": 273,
+              "cp_model_wpkg": 3.66,
+              "model_divergence_pct": -25.6
             }
           },
           "coverage_ratio": 1.0,
-          "ftp_used": 260,
+          "ftp_used": 270,
           "w_prime_used": 20938,
-          "ftp_staleness_days": 11,
+          "ftp_staleness_days": 0,
           "model_trust_note": "CP/W' model (P=CP+W'/t) is primary for durations \u226420min where W' contribution is meaningful. Coggan duration factors (Allen & Coggan, 3rd ed.) are the established reference for \u226560min. 30min is the crossover zone where both apply. model_divergence_pct = (actual - CP_model) / CP_model \u00d7 100. Positive divergence at short durations may indicate strong anaerobic capacity or stale W' value. Indoor MMP is typically 3-5% lower than outdoor (cooling, motivation) \u2014 source flag indicates which environment produced each anchor."
         }
       }
@@ -561,10 +561,10 @@
           "weeks_available": 5
         },
         "stream_2": {
-          "planned_tss_delta": 2.94,
+          "planned_tss_delta": 2.92,
           "hard_sessions_planned": 2,
           "race_proximity": 72,
-          "next_week_load": 2.56,
+          "next_week_load": 2.55,
           "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 1.0
         },
@@ -589,7 +589,7 @@
       "seasonal_expected": null
     },
     "benchmark_outdoor": {
-      "current_ftp": 260,
+      "current_ftp": 270,
       "ftp_8_weeks_ago": null,
       "benchmark_index": null,
       "benchmark_percentage": null,
@@ -601,7 +601,7 @@
     "p_max": 966,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.433605,
-    "calculation_timestamp": "2026-03-31T05:58:57.013418",
+    "calculation_timestamp": "2026-03-31T07:01:00.095362",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -610,7 +610,7 @@
       "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
-        "outdoor": 0
+        "outdoor": 11
       }
     }
   },
@@ -788,10 +788,10 @@
       "avg_speed": 22.1,
       "max_speed": 48.5,
       "avg_pace": null,
-      "avg_temp": 9.809322,
+      "avg_temp": 9.894296,
       "weather": null,
       "humidity": null,
-      "wind_speed": 6.4787784,
+      "wind_speed": 6.476785,
       "work_kj": 989.9,
       "calories": 1096,
       "carbs_used": 283,
@@ -1106,10 +1106,10 @@
       "name": "6x3m 115% FTP 65RPM by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 124,
+      "planned_tss": 123,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 6\u00d73m @299W / 3m rec | 1h11m @169W",
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 6\u00d73m @310W / 3m rec | 1h11m @175W",
       "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n6x\n-3m 115% FTP 65RPM\n-3m 50% FTP\n\n-71m 65% FTP"
     },
     {
@@ -1127,13 +1127,13 @@
     {
       "id": 96659648,
       "date": "2026-04-02",
-      "name": "4x10m 100% FTP 65RPM by LeCoach App",
+      "name": "3x10m 100% FTP 65RPM by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 111,
+      "planned_tss": 110,
       "duration_hours": 1.75,
       "duration_formatted": "1h45m",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 3\u00d710m @260W / 5m rec | 47m @169W",
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 3\u00d710m @270W / 5m rec | 47m @175W",
       "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n3x\n-10m 100% FTP 65RPM\n-5m 55% FTP\n\n-47m 65% FTP"
     },
     {
@@ -1142,7 +1142,7 @@
       "name": "Endurance Long Ride by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 188,
+      "planned_tss": 187,
       "duration_hours": 4.5,
       "duration_formatted": "4h30m",
       "workout_summary": null,
@@ -1181,7 +1181,7 @@
       "planned_tss": 122,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 3\u00d710m @260W / 5m rec | 1h2m @169W",
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 3\u00d710m @270W / 5m rec | 1h2m @175W",
       "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n3x\n-10m 100% FTP 105RPM\n-5m 55% FTP\n\n-62m 65% FTP"
     },
     {
@@ -1193,7 +1193,7 @@
       "planned_tss": 121,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 5\u00d74m @286W / 4m rec | 1h7m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 5\u00d74m @297W / 4m rec | 1h7m @175W"
     },
     {
       "id": 96659681,
@@ -1201,7 +1201,7 @@
       "name": "Endurance Long Ride by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 188,
+      "planned_tss": 187,
       "duration_hours": 4.5,
       "duration_formatted": "4h30m",
       "workout_summary": null,
@@ -1240,7 +1240,7 @@
       "planned_tss": 128,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 4\u00d75m @299W / 5m rec | 1h7m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 4\u00d75m @310W / 5m rec | 1h7m @175W"
     },
     {
       "id": 96659664,
@@ -1248,10 +1248,10 @@
       "name": "3x15m 95% FTP 65RPM by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 124,
+      "planned_tss": 123,
       "duration_hours": 1.92,
       "duration_formatted": "1h55m",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 42m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 42m @175W"
     },
     {
       "id": 96659666,
@@ -1259,7 +1259,7 @@
       "name": "Endurance Long Ride by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 188,
+      "planned_tss": 187,
       "duration_hours": 4.5,
       "duration_formatted": "4h30m",
       "workout_summary": null,
@@ -1310,7 +1310,7 @@
       "planned_tss": 62,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 3\u00d73m @299W / 3m rec | 29m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 3\u00d73m @310W / 3m rec | 29m @175W"
     },
     {
       "id": 96659653,
@@ -1321,7 +1321,7 @@
       "planned_tss": 57,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 2\u00d710m @234W / 5m rec | 17m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 2\u00d710m @243W / 5m rec | 17m @175W"
     },
     {
       "id": 96659668,
@@ -1329,7 +1329,7 @@
       "name": "Deload Long Ride by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 167,
+      "planned_tss": 166,
       "duration_hours": 4.0,
       "duration_formatted": "4h",
       "workout_summary": null,
@@ -1341,7 +1341,7 @@
       "name": "Deload Endurance by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 83,
+      "planned_tss": 82,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
       "workout_summary": null,
@@ -1368,7 +1368,7 @@
       "planned_tss": 116,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 10\u00d71m @338W / 2m rec | 1h17m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 10\u00d71m @351W / 2m rec | 1h17m @175W"
     },
     {
       "id": 96659669,
@@ -1379,7 +1379,7 @@
       "planned_tss": 122,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 4\u00d710m @247W / 5m rec | 47m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 4\u00d710m @256W / 5m rec | 47m @175W"
     },
     {
       "id": 96659670,
@@ -1387,7 +1387,7 @@
       "name": "Endurance Long Ride by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 209,
+      "planned_tss": 208,
       "duration_hours": 5.0,
       "duration_formatted": "5h",
       "workout_summary": null,
@@ -1438,7 +1438,7 @@
       "planned_tss": 122,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 3\u00d710m @260W / 5m rec | 1h2m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 3\u00d710m @270W / 5m rec | 1h2m @175W"
     },
     {
       "id": 96659654,
@@ -1449,7 +1449,7 @@
       "planned_tss": 124,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 8\u00d72m @312W / 3m rec | 1h7m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 8\u00d72m @324W / 3m rec | 1h7m @175W"
     },
     {
       "id": 96659662,
@@ -1457,7 +1457,7 @@
       "name": "Endurance Long Ride by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 209,
+      "planned_tss": 208,
       "duration_hours": 5.0,
       "duration_formatted": "5h",
       "workout_summary": null,
@@ -1496,7 +1496,7 @@
       "planned_tss": 118,
       "duration_hours": 1.97,
       "duration_formatted": "1h58m",
-      "workout_summary": "5m @150W | 3\u00d730s @260W / 30s rec | 5m @156W | 8\u00d730s @390W / 30s rec | 5m @156W | 8\u00d730s @390W / 30s rec | 1h24m @169W"
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 8\u00d730s @405W / 30s rec | 5m @162W | 8\u00d730s @405W / 30s rec | 1h24m @175W"
     }
   ],
   "workout_summary_stats": {
