@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-02T13:17:46.815177",
+    "last_updated": "2026-04-02T14:39:43.506847",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.95"
@@ -117,20 +117,20 @@
       "unavailable": 1
     },
     "phase_context": {
-      "phase": null,
-      "phase_week": 0,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "phase": "Build",
+      "phase_week": 4,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 5 green, 0 amber (threshold 2), 0 red.",
+    "reason": "P3 green light. 5 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
     "available": true,
-    "last_generated": "2026-03-17",
-    "age_days": 16,
+    "last_generated": "2026-04-02",
+    "age_days": 0,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -548,14 +548,12 @@
       ]
     },
     "phase_detection": {
-      "phase": null,
-      "confidence": "low",
-      "reason_codes": [
-        "BUILD_BASE_AMBIGUOUS"
-      ],
+      "phase": "Build",
+      "confidence": "medium",
+      "reason_codes": [],
       "basis": {
         "stream_1": {
-          "ctl_slope": -2.17,
+          "ctl_slope": -1.62,
           "acwr_trend": "stable",
           "hard_day_pattern": 3.5,
           "weeks_available": 4
@@ -571,15 +569,13 @@
         "data_quality": "good",
         "stream_agreement": null
       },
-      "previous_phase": null,
-      "phase_duration_weeks": 0,
+      "previous_phase": "Build",
+      "phase_duration_weeks": 4,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": null,
-    "phase_triggers": [
-      "BUILD_BASE_AMBIGUOUS"
-    ],
+    "phase_detected": "Build",
+    "phase_triggers": [],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -601,7 +597,7 @@
     "p_max": 967,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.41007,
-    "calculation_timestamp": "2026-04-02T13:17:45.458729",
+    "calculation_timestamp": "2026-04-02T14:39:43.505341",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
