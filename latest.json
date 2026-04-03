@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-03T13:10:39.247012",
+    "last_updated": "2026-04-03T14:07:43.583254",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.95"
@@ -150,7 +150,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-04-02",
-    "age_days": 0,
+    "age_days": 1,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -582,7 +582,7 @@
           "planned_tss_delta": 1.29,
           "hard_sessions_planned": 0,
           "race_proximity": 69,
-          "next_week_load": 1.02,
+          "next_week_load": 1.1,
           "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 1.0
         },
@@ -617,7 +617,7 @@
     "p_max": 966,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.395496,
-    "calculation_timestamp": "2026-04-03T13:10:39.245586",
+    "calculation_timestamp": "2026-04-03T14:07:43.581825",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1902,12 +1902,12 @@
       "name": "3x10m 100% FTP 105RPM by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 122,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
-      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 3\u00d710m @270W / 5m rec | 1h2m @175W",
+      "planned_tss": 145,
+      "duration_hours": 2.58,
+      "duration_formatted": "2h35m",
+      "workout_summary": "40m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 3\u00d710m @270W / 5m rec | 1h2m @175W",
       "has_terrain": false,
-      "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n3x\n-10m 100% FTP 105RPM\n-5m 55% FTP\n\n-62m 65% FTP"
+      "description": "-40m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n3x\n-10m 100% FTP 105RPM\n-5m 55% FTP\n\n-62m 65% FTP"
     },
     {
       "id": 96659642,
@@ -1915,12 +1915,12 @@
       "name": "5x4m 110% FTP 65RPM by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 121,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
-      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 5\u00d74m @297W / 4m rec | 1h7m @175W",
+      "planned_tss": 143,
+      "duration_hours": 2.58,
+      "duration_formatted": "2h35m",
+      "workout_summary": "40m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 5\u00d74m @297W / 4m rec | 1h7m @175W",
       "has_terrain": false,
-      "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n5x\n-4m 110% FTP 65RPM\n-4m 50% FTP\n\n-67m 65% FTP"
+      "description": "-40m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n5x\n-4m 110% FTP 65RPM\n-4m 50% FTP\n\n-67m 65% FTP"
     },
     {
       "id": 96659681,
