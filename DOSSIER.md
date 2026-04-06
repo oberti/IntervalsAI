@@ -163,16 +163,16 @@ This document serves as a reference template for endurance athletes using the de
 
 | Zone | % of FTP | Power (W) | Notes |
 |------|----------|-----------|-------|
-| Z1 | 0–55% | 0-143 W | Active Recovery |
-| Z2 | 56–75% | 144-195 W| Endurance (Base) |
-| Z3 | 76–90% | 196-234 W | Tempo |
-| Z4 | 91–105% | 235-273 W | Threshold |
-| Z5 | 106–120% | 274-312 W | VO₂max |
-| Z6 | 121–150% | 313-390 W | Anaerobic |
-| Z7 | 151%+ | 391+ W | Neuromuscular |
-| SS | 84–97% | 219-252 W | Sweetspot |
+| Z1 | 0–55% | 0-149 W | Active Recovery |
+| Z2 | 56–75% | 150-189 W| Endurance (Base) |
+| Z3 | 76–90% | 190-243 W | Tempo |
+| Z4 | 91–105% | 244-283 W | Threshold |
+| Z5 | 106–120% | 284-324 W | VO₂max |
+| Z6 | 121–150% | 325-405 W | Anaerobic |
+| Z7 | 151%+ | 406+ W | Neuromuscular |
+| SS | 84–97% | 227-262 W | Sweetspot |
 
-**Current FTP:** 260 W (Indoor: 260 W)  
+**Current FTP:** 270 W (Indoor: 270 W)  
 **Max HR:** 190 bpm 
 **Threshold HR:** 175 bpm
 
@@ -180,8 +180,8 @@ This document serves as a reference template for endurance athletes using the de
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| FTP (Outdoor) | 260 W | |
-| FTP (Indoor) | 260 W | Adjusted for indoor conditions |
+| FTP (Outdoor) | 270 W | |
+| FTP (Indoor) | 270 W | Adjusted for indoor conditions |
 | LT2 Power (MLSS) | [W] | ≈[%] of FTP |
 | LT2 HR | [bpm] | |
 | LT1 (AeT) | [W] | HR ≈[bpm] |
