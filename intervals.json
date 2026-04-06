@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T08:47:38.359435",
+  "generated_at": "2026-04-06T09:59:51.905122",
   "version": "3.95",
   "script_hash": "97bf788ee1c8",
   "scan_hours": 72,
@@ -818,6 +818,48 @@
           "zone": 1,
           "training_load": 42.7629,
           "decoupling": -1.1292287
+        }
+      ]
+    },
+    {
+      "activity_id": "i137553747",
+      "date": "2026-04-06",
+      "type": "Ride",
+      "name": "Z2 2h Watt",
+      "interval_summary": [
+        "1x 70s 106w",
+        "1x 2h42m 146w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 9
+        },
+        {
+          "type": "WORK",
+          "label": "70s@106w48rpm",
+          "duration_secs": 70,
+          "avg_power": 106,
+          "max_power": 230,
+          "avg_hr": 109,
+          "max_hr": 127,
+          "avg_cadence": 47.657143,
+          "zone": 1,
+          "training_load": 0.30537647,
+          "decoupling": -94.080956
+        },
+        {
+          "type": "WORK",
+          "label": "9756s@146w74rpm",
+          "duration_secs": 9756,
+          "avg_power": 146,
+          "max_power": 550,
+          "avg_hr": 129,
+          "max_hr": 177,
+          "avg_cadence": 74.22609,
+          "zone": 1,
+          "training_load": 101.530975,
+          "decoupling": -3.4360015
         }
       ]
     }
