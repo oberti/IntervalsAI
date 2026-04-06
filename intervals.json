@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-05T23:49:52.319659",
+  "generated_at": "2026-04-06T02:47:45.977342",
   "version": "3.95",
   "script_hash": "97bf788ee1c8",
   "scan_hours": 72,
@@ -222,54 +222,6 @@
           "zone": 1,
           "training_load": 63.681274,
           "decoupling": 5.467709
-        }
-      ]
-    },
-    {
-      "activity_id": "i135451512",
-      "date": "2026-03-28",
-      "type": "Ride",
-      "name": "Bernigolo - Piazza Brembana",
-      "interval_summary": [
-        "1x 5m20s 220w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1895,
-          "avg_power": 169,
-          "max_power": 488,
-          "avg_hr": 127,
-          "max_hr": 174,
-          "avg_cadence": 66.62985,
-          "zone": 2,
-          "training_load": 27.463015,
-          "decoupling": 10.549576
-        },
-        {
-          "type": "WORK",
-          "label": "320s@220w83rpm",
-          "duration_secs": 320,
-          "avg_power": 220,
-          "max_power": 334,
-          "avg_hr": 144,
-          "max_hr": 156,
-          "avg_cadence": 83.36875,
-          "zone": 3,
-          "training_load": 6.306509,
-          "decoupling": -0.34090355
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 11799,
-          "avg_power": 147,
-          "max_power": 584,
-          "avg_hr": 127,
-          "max_hr": 183,
-          "avg_cadence": 62.50272,
-          "zone": 2,
-          "training_load": 137.78218,
-          "decoupling": -0.09060989
         }
       ]
     },
