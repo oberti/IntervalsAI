@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-07T05:00:55.216877",
+    "last_updated": "2026-04-07T06:47:20.116590",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.95"
@@ -592,7 +592,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.49,
+          "planned_tss_delta": 1.46,
           "hard_sessions_planned": 2,
           "race_proximity": 65,
           "next_week_load": 1.2,
@@ -632,7 +632,7 @@
     "p_max": 964,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.28744,
-    "calculation_timestamp": "2026-04-07T05:00:55.215406",
+    "calculation_timestamp": "2026-04-07T06:47:20.115109",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -780,8 +780,8 @@
       "efficiency_factor": 1.3082707,
       "hrrc": 77,
       "elevation_m": 670.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 3,
+      "rpe": 4,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2676,
@@ -1862,15 +1862,15 @@
     {
       "id": 96659641,
       "date": "2026-04-07",
-      "name": "3x10m 100% FTP 105RPM by LeCoach App",
+      "name": "3x10m 93% FTP 105RPM by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 145,
+      "planned_tss": 132,
       "duration_hours": 2.58,
       "duration_formatted": "2h35m",
-      "workout_summary": "40m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 3\u00d710m @270W / 5m rec | 1h2m @175W",
+      "workout_summary": "40m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 3\u00d710m @251W / 5m rec | 1h2m @175W",
       "has_terrain": false,
-      "description": "-40m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n3x\n-10m 100% FTP 105RPM\n-5m 55% FTP\n\n-62m 65% FTP"
+      "description": "-40m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n3x\n-10m 93% FTP 105RPM\n-5m 55% FTP\n\n-62m 65% FTP"
     },
     {
       "id": 96659642,
