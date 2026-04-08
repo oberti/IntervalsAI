@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-08T12:44:46.674211",
+    "last_updated": "2026-04-08T14:22:11.027446",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.95"
@@ -130,7 +130,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-04-02",
-    "age_days": 5,
+    "age_days": 6,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -604,7 +604,7 @@
     "p_max": 964,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.273132,
-    "calculation_timestamp": "2026-04-08T12:44:46.672700",
+    "calculation_timestamp": "2026-04-08T14:22:11.025972",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1889,12 +1889,12 @@
       "name": "5x4m 110% FTP 65RPM by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 143,
-      "duration_hours": 2.58,
-      "duration_formatted": "2h35m",
-      "workout_summary": "40m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 5\u00d74m @297W / 4m rec | 1h7m @175W",
+      "planned_tss": 142,
+      "duration_hours": 2.47,
+      "duration_formatted": "2h28m",
+      "workout_summary": "40m @175W | 3\u00d730s @270W / 30s rec | 5m @162W | 5\u00d74m @297W / 4m rec | 1h @175W",
       "has_terrain": false,
-      "description": "-40m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n5x\n-4m 110% FTP 65RPM\n-4m 50% FTP\n\n-67m 65% FTP"
+      "description": "-40m 65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n5x\n-4m 110% FTP 65RPM\n-4m 50% FTP\n\n-60m 65% FTP"
     },
     {
       "id": 96659681,
