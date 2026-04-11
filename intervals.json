@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T11:33:37.403750",
+  "generated_at": "2026-04-11T12:00:54.576906",
   "version": "3.95",
   "script_hash": "97bf788ee1c8",
   "scan_hours": 72,
@@ -1563,6 +1563,62 @@
           "zone": 1,
           "training_load": 0.0035116598,
           "decoupling": "-Infinity"
+        }
+      ]
+    },
+    {
+      "activity_id": "i138890808",
+      "date": "2026-04-11",
+      "type": "Ride",
+      "name": "Endurance Long Ride by LeCoach App",
+      "interval_summary": [
+        "1x 48m6s 161w",
+        "1x 24m48s 181w",
+        "1x 4h15m 162w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 8
+        },
+        {
+          "type": "WORK",
+          "label": "2886s@161w70rpm",
+          "duration_secs": 2886,
+          "avg_power": 161,
+          "max_power": 585,
+          "avg_hr": 131,
+          "max_hr": 174,
+          "avg_cadence": 70.43665,
+          "zone": 2,
+          "training_load": 34.82376,
+          "decoupling": 1.6790761
+        },
+        {
+          "type": "WORK",
+          "label": "1488s@181w77rpm",
+          "duration_secs": 1488,
+          "avg_power": 181,
+          "max_power": 410,
+          "avg_hr": 131,
+          "max_hr": 153,
+          "avg_cadence": 76.68377,
+          "zone": 2,
+          "training_load": 18.771797,
+          "decoupling": -2.6456456
+        },
+        {
+          "type": "WORK",
+          "label": "15332s@162w70rpm",
+          "duration_secs": 15332,
+          "avg_power": 162,
+          "max_power": 845,
+          "avg_hr": 137,
+          "max_hr": 181,
+          "avg_cadence": 69.655914,
+          "zone": 2,
+          "training_load": 193.32538,
+          "decoupling": 6.634678
         }
       ]
     }
