@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-13T04:30:17.102838",
+    "last_updated": "2026-04-13T07:03:30.399637",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.95"
@@ -93,9 +93,9 @@
         "delta_bpm": -4.3
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": 2
+        "status": "amber",
+        "hours": 6.73,
+        "quality": 3
       },
       "acwr": {
         "status": "green",
@@ -107,14 +107,14 @@
       },
       "tsb": {
         "status": "green",
-        "value": -16.9
+        "value": -7.3
       }
     },
     "signal_summary": {
       "green": 5,
-      "amber": 0,
+      "amber": 1,
       "red": 0,
-      "unavailable": 1
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -124,7 +124,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 5 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -150,10 +150,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 100.24,
-      "atl": 117.17,
-      "tsb": -16.93,
-      "ramp_rate": 5.8,
+      "ctl": 97.85,
+      "atl": 105.17,
+      "tsb": -7.32,
+      "ramp_rate": 3.41,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -201,10 +201,10 @@
       "weight_kg": 73.1,
       "resting_hr": 41,
       "hrv": 68.0,
-      "sleep_quality": 2,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_hours": 6.73,
+      "sleep_formatted": "6h44m",
+      "sleep_score": 72.0,
       "fatigue": 2,
       "soreness": 3,
       "stress": null,
@@ -221,7 +221,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 245,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -554,17 +554,17 @@
       "reason_codes": [],
       "basis": {
         "stream_1": {
-          "ctl_slope": 1.0,
+          "ctl_slope": 0.2,
           "acwr_trend": "rising",
           "hard_day_pattern": 3,
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.11,
+          "planned_tss_delta": 1.07,
           "hard_sessions_planned": 2,
           "race_proximity": 59,
           "next_week_load": 0.75,
-          "plan_coverage_current_week": 1.0,
+          "plan_coverage_current_week": 1.2,
           "plan_coverage_next_week": 1.2
         },
         "data_quality": "good",
@@ -598,13 +598,13 @@
     "p_max": 964,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.302986,
-    "calculation_timestamp": "2026-04-13T04:30:17.101167",
+    "calculation_timestamp": "2026-04-13T07:03:30.398126",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 4,
       "activities_28d": 18,
-      "planned_workouts_7d": 5,
+      "planned_workouts_7d": 6,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 24
@@ -629,10 +629,10 @@
       "avg_speed": 25.7,
       "max_speed": 52.9,
       "avg_pace": null,
-      "avg_temp": 13.85444,
+      "avg_temp": 13.535099,
       "weather": null,
       "humidity": null,
-      "wind_speed": 1.2794759,
+      "wind_speed": 1.2596811,
       "work_kj": 2181.4,
       "calories": 2421,
       "carbs_used": 429,
@@ -642,8 +642,8 @@
       "efficiency_factor": 1.6074075,
       "hrrc": 28,
       "elevation_m": 856.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 3,
+      "rpe": 4,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2710,
@@ -694,8 +694,8 @@
       "efficiency_factor": 1.375,
       "hrrc": 38,
       "elevation_m": 570.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 2,
+      "rpe": 4,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2043,
@@ -1558,8 +1558,8 @@
       "hrv_sdnn": 40.0,
       "sleep_hours": 7.15,
       "sleep_formatted": "7h9m",
-      "sleep_quality": 3,
-      "sleep_score": 3.0,
+      "sleep_quality": 2,
+      "sleep_score": 87.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.28744,
@@ -1598,7 +1598,7 @@
       "sleep_hours": 6.35,
       "sleep_formatted": "6h21m",
       "sleep_quality": 3,
-      "sleep_score": 5.0,
+      "sleep_score": 60.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.273132,
@@ -1637,7 +1637,7 @@
       "sleep_hours": 10.05,
       "sleep_formatted": "10h3m",
       "sleep_quality": 2,
-      "sleep_score": 7.0,
+      "sleep_score": 80.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.198013,
@@ -1676,7 +1676,7 @@
       "sleep_hours": 7.82,
       "sleep_formatted": "7h49m",
       "sleep_quality": 3,
-      "sleep_score": 5.0,
+      "sleep_score": 79.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.194534,
@@ -1715,7 +1715,7 @@
       "sleep_hours": 9.22,
       "sleep_formatted": "9h13m",
       "sleep_quality": 3,
-      "sleep_score": 5.0,
+      "sleep_score": 75.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.22938,
@@ -1754,7 +1754,7 @@
       "sleep_hours": 8.27,
       "sleep_formatted": "8h16m",
       "sleep_quality": 3,
-      "sleep_score": 5.0,
+      "sleep_score": 79.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.243294,
@@ -1786,14 +1786,14 @@
     },
     {
       "date": "2026-04-13",
-      "weight_kg": null,
+      "weight_kg": 73.1,
       "resting_hr": 41,
       "hrv_rmssd": 68.0,
       "hrv_sdnn": 47.0,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_hours": 6.73,
+      "sleep_formatted": "6h44m",
+      "sleep_quality": 3,
+      "sleep_score": 72.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.302986,
@@ -1813,7 +1813,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 245,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -1839,17 +1839,30 @@
       "description": ""
     },
     {
+      "id": 104027047,
+      "date": "2026-04-13",
+      "name": "RAIN",
+      "type": "NOTE",
+      "sport_type": null,
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": ""
+    },
+    {
       "id": 96659638,
       "date": "2026-04-14",
-      "name": "4x5m 115% FTP 65RPM by LeCoach App",
+      "name": "5x3m 115% FTP 65RPM by LeCoach App",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 128,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
-      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 4\u00d75m @310W / 5m rec | 1h7m @175W",
+      "planned_tss": 110,
+      "duration_hours": 1.83,
+      "duration_formatted": "1h50m",
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 5\u00d73m @310W / 3m rec | 1h7m @175W",
       "has_terrain": false,
-      "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n4x\n-5m 115% FTP 65RPM\n-5m 50% FTP\n\n-67m 65% FTP"
+      "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n5x\n-3m 115% FTP 65RPM\n-3m 50% FTP\n\n-67m 65% FTP"
     },
     {
       "id": 96659664,
@@ -1860,9 +1873,9 @@
       "planned_tss": 123,
       "duration_hours": 1.92,
       "duration_formatted": "1h55m",
-      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 42m @175W",
+      "workout_summary": "5m @155W | 3\u00d730s @270W / 30s rec | 5m @162W | 3\u00d715m @256W / 5m rec | 42m @175W",
       "has_terrain": false,
-      "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n3x\n-10m 95% FTP 65RPM\n-5m 95% FTP 65RPM\n-5m 55% FTP\n\n-42m 65% FTP"
+      "description": "-5m ramp 50-65% FTP\n\n3x\n-30s 100% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n3x\n-15m 95% FTP 65RPM\n-5m 55% FTP\n\n-42m 65% FTP"
     },
     {
       "id": 96659666,
