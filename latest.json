@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-15T00:00:36.489078",
+    "last_updated": "2026-04-15T03:42:14.859814",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.101"
@@ -108,7 +108,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 4.1
+        "value": 14.3
       }
     },
     "signal_summary": {
@@ -151,17 +151,17 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 95.83,
-      "atl": 91.73,
-      "tsb": 4.1,
-      "ramp_rate": 0.55,
+      "ctl": 93.3,
+      "atl": 79.03,
+      "tsb": 14.27,
+      "ramp_rate": -1.98,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
-      "eftp": 258.4,
-      "w_prime": 20896,
+      "eftp": 257.9,
+      "w_prime": 20854,
       "w_prime_kj": 20.9,
-      "p_max": 964,
+      "p_max": 962,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -526,7 +526,7 @@
           },
           "coverage_ratio": 1.0,
           "ftp_used": 270,
-          "w_prime_used": 20896,
+          "w_prime_used": 20854,
           "ftp_staleness_days": 0,
           "model_trust_note": "CP/W' model (P=CP+W'/t) is primary for durations \u226420min where W' contribution is meaningful. Coggan duration factors (Allen & Coggan, 3rd ed.) are the established reference for \u226560min. 30min is the crossover zone where both apply. model_divergence_pct = (actual - CP_model) / CP_model \u00d7 100. Positive divergence at short durations may indicate strong anaerobic capacity or stale W' value. Indoor MMP is typically 3-5% lower than outdoor (cooling, motivation) \u2014 source flag indicates which environment produced each anchor."
         }
@@ -558,7 +558,7 @@
       ],
       "basis": {
         "stream_1": {
-          "ctl_slope": -0.35,
+          "ctl_slope": -0.98,
           "acwr_trend": "stable",
           "hard_day_pattern": 3,
           "weeks_available": 4
@@ -598,13 +598,13 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 258.4,
-    "w_prime": 20896,
+    "eftp": 257.9,
+    "w_prime": 20854,
     "w_prime_kj": 20.9,
-    "p_max": 964,
+    "p_max": 962,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-15T00:00:36.487865",
+    "calculation_timestamp": "2026-04-15T03:42:14.858511",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
