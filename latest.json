@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-17T06:05:27.837081",
+    "last_updated": "2026-04-17T08:04:21.899226",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.101"
@@ -600,7 +600,7 @@
     "p_max": 961,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.12073,
-    "calculation_timestamp": "2026-04-17T06:05:27.835816",
+    "calculation_timestamp": "2026-04-17T08:04:21.898032",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -618,7 +618,7 @@
       "id": "i140433844",
       "date": "2026-04-16T17:22:03",
       "type": "Ride",
-      "name": "3x10m 93% FTP 65RPM by LeCoach App",
+      "name": "Berbenno da laxolo",
       "duration_hours": 2.27,
       "distance_km": 54.75,
       "tss": 120,
@@ -644,8 +644,8 @@
       "efficiency_factor": 1.4736842,
       "hrrc": 55,
       "elevation_m": 626.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 3,
+      "rpe": 4,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2032,
