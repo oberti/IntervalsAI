@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-17T08:04:21.899226",
+    "last_updated": "2026-04-17T09:48:51.261902",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.101"
@@ -600,7 +600,7 @@
     "p_max": 961,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.12073,
-    "calculation_timestamp": "2026-04-17T08:04:21.898032",
+    "calculation_timestamp": "2026-04-17T09:48:51.260669",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -618,7 +618,7 @@
       "id": "i140433844",
       "date": "2026-04-16T17:22:03",
       "type": "Ride",
-      "name": "Berbenno da laxolo",
+      "name": "Berbenno da Laxolo",
       "duration_hours": 2.27,
       "distance_km": 54.75,
       "tss": 120,
