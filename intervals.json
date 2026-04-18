@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T11:50:05.954060",
+  "generated_at": "2026-04-18T13:08:25.275821",
   "version": "3.101",
   "script_hash": "1733e822a89e",
   "scan_hours": 72,
@@ -1347,6 +1347,62 @@
           "zone": 1,
           "training_load": 42.813606,
           "decoupling": 1.4997109
+        }
+      ]
+    },
+    {
+      "activity_id": "i140862006",
+      "date": "2026-04-18",
+      "type": "Ride",
+      "name": "Colma di Sormano da Nesso",
+      "interval_summary": [
+        "1x 2h23m 181w",
+        "1x 1h13m 204w",
+        "1x 2h5m 136w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 17
+        },
+        {
+          "type": "WORK",
+          "label": "8597s@181w70rpm",
+          "duration_secs": 8597,
+          "avg_power": 181,
+          "max_power": 695,
+          "avg_hr": 140,
+          "max_hr": 189,
+          "avg_cadence": 69.843765,
+          "zone": 2,
+          "training_load": 139.93817,
+          "decoupling": -2.02599
+        },
+        {
+          "type": "WORK",
+          "label": "4407s@204w67rpm",
+          "duration_secs": 4407,
+          "avg_power": 204,
+          "max_power": 806,
+          "avg_hr": 150,
+          "max_hr": 179,
+          "avg_cadence": 66.89927,
+          "zone": 3,
+          "training_load": 75.632286,
+          "decoupling": 11.872994
+        },
+        {
+          "type": "WORK",
+          "label": "7549s@136w56rpm",
+          "duration_secs": 7549,
+          "avg_power": 136,
+          "max_power": 685,
+          "avg_hr": 136,
+          "max_hr": 181,
+          "avg_cadence": 55.819363,
+          "zone": 1,
+          "training_load": 88.61334,
+          "decoupling": 9.679062
         }
       ]
     }
