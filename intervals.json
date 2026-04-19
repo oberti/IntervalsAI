@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T12:04:00.663136",
+  "generated_at": "2026-04-19T13:34:55.557465",
   "version": "3.101",
   "script_hash": "1733e822a89e",
   "scan_hours": 72,
@@ -1403,6 +1403,48 @@
           "zone": 1,
           "training_load": 88.61334,
           "decoupling": 9.679062
+        }
+      ]
+    },
+    {
+      "activity_id": "i141141541",
+      "date": "2026-04-19",
+      "type": "Ride",
+      "name": "Mordor...... Zogno - Camangh\u00e9",
+      "interval_summary": [
+        "1x 56m55s 183w",
+        "1x 42m55s 177w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 11
+        },
+        {
+          "type": "WORK",
+          "label": "3415s@183w70rpm",
+          "duration_secs": 3415,
+          "avg_power": 183,
+          "max_power": 682,
+          "avg_hr": 137,
+          "max_hr": 178,
+          "avg_cadence": 69.79278,
+          "zone": 2,
+          "training_load": 58.055237,
+          "decoupling": -0.6360203
+        },
+        {
+          "type": "WORK",
+          "label": "2575s@177w63rpm",
+          "duration_secs": 2575,
+          "avg_power": 177,
+          "max_power": 616,
+          "avg_hr": 138,
+          "max_hr": 177,
+          "avg_cadence": 63.017315,
+          "zone": 2,
+          "training_load": 42.292873,
+          "decoupling": -0.40189326
         }
       ]
     }
