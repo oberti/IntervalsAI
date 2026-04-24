@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-24T06:09:47.402297",
+    "last_updated": "2026-04-24T08:23:38.420939",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.104"
@@ -633,7 +633,7 @@
     "p_max": 957,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.282875,
-    "calculation_timestamp": "2026-04-24T06:09:47.401023",
+    "calculation_timestamp": "2026-04-24T08:23:38.419678",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -651,7 +651,7 @@
       "id": "i142370163",
       "date": "2026-04-23T17:20:11",
       "type": "Ride",
-      "name": "2x10m 90% FTP 105RPM by LeCoach App",
+      "name": "Berbenno",
       "duration_hours": 2.11,
       "distance_km": 54.21,
       "tss": 124,
@@ -666,11 +666,11 @@
       "max_speed": 58.4,
       "max_speed_unit": "KPH",
       "avg_pace": null,
-      "avg_temp": 19.377733,
+      "avg_temp": 19.380142,
       "avg_temp_unit": "C",
       "weather": null,
       "humidity": null,
-      "wind_speed": 2.5958211,
+      "wind_speed": 2.6336691,
       "wind_speed_unit": "KMH",
       "work_kj": 1330.1,
       "calories": 1492,
@@ -681,8 +681,8 @@
       "efficiency_factor": 1.4892086,
       "hrrc": 55,
       "elevation_m": 688.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 3,
+      "rpe": 4,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 1262,
