@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T10:07:22.170671",
+  "generated_at": "2026-04-26T11:05:01.957482",
   "version": "3.104",
   "script_hash": "74e1c7fc0294",
   "scan_hours": 72,
@@ -654,6 +654,76 @@
           "zone": 1,
           "training_load": 90.94036,
           "decoupling": -1.5966729
+        }
+      ]
+    },
+    {
+      "activity_id": "i143047988",
+      "date": "2026-04-26",
+      "type": "Ride",
+      "name": "Pedalata mattutina",
+      "interval_summary": [
+        "1x 1h14m 169w",
+        "1x 48m1s 214w",
+        "1x 11m46s 191w",
+        "1x 1h30m 120w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 7
+        },
+        {
+          "type": "WORK",
+          "label": "4496s@169w67rpm",
+          "duration_secs": 4496,
+          "avg_power": 169,
+          "max_power": 576,
+          "avg_hr": 127,
+          "max_hr": 165,
+          "avg_cadence": 66.53554,
+          "zone": 2,
+          "training_load": 60.23174,
+          "decoupling": -3.245355
+        },
+        {
+          "type": "WORK",
+          "label": "2881s@214w66rpm",
+          "duration_secs": 2881,
+          "avg_power": 214,
+          "max_power": 432,
+          "avg_hr": 139,
+          "max_hr": 171,
+          "avg_cadence": 66.45917,
+          "zone": 3,
+          "training_load": 54.71868,
+          "decoupling": 2.9031773
+        },
+        {
+          "type": "WORK",
+          "label": "706s@191w73rpm",
+          "duration_secs": 706,
+          "avg_power": 191,
+          "max_power": 392,
+          "avg_hr": 141,
+          "max_hr": 164,
+          "avg_cadence": 73.22199,
+          "zone": 2,
+          "training_load": 7.245816,
+          "decoupling": -4.8447165
+        },
+        {
+          "type": "WORK",
+          "label": "5418s@120w53rpm",
+          "duration_secs": 5418,
+          "avg_power": 120,
+          "max_power": 587,
+          "avg_hr": 121,
+          "max_hr": 175,
+          "avg_cadence": 53.103146,
+          "zone": 1,
+          "training_load": 51.11171,
+          "decoupling": 5.050633
         }
       ]
     }
