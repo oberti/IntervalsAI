@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T09:12:54.698527",
+  "generated_at": "2026-05-01T10:45:14.351860",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -1426,6 +1426,54 @@
           "zone": 1,
           "training_load": 38.206703,
           "decoupling": -0.65243727
+        }
+      ]
+    },
+    {
+      "activity_id": "i144510194",
+      "date": "2026-05-01",
+      "type": "Ride",
+      "name": "San Giovanni Bianco - Citt\u00e0 alta",
+      "interval_summary": [
+        "1x 3m55s 209w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2105,
+          "avg_power": 173,
+          "max_power": 379,
+          "avg_hr": 134,
+          "max_hr": 170,
+          "avg_cadence": 66.83029,
+          "zone": 2,
+          "training_load": 27.203684,
+          "decoupling": 4.7286344
+        },
+        {
+          "type": "WORK",
+          "label": "235s@209w86rpm",
+          "duration_secs": 235,
+          "avg_power": 209,
+          "max_power": 363,
+          "avg_hr": 143,
+          "max_hr": 155,
+          "avg_cadence": 85.510635,
+          "zone": 3,
+          "training_load": 3.9489026,
+          "decoupling": 4.191991
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 9680,
+          "avg_power": 142,
+          "max_power": 597,
+          "avg_hr": 125,
+          "max_hr": 173,
+          "avg_cadence": 60.851078,
+          "zone": 1,
+          "training_load": 95.63865,
+          "decoupling": 0.17882858
         }
       ]
     }
