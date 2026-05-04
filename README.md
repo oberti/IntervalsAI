@@ -23,8 +23,8 @@ Built on the [Section 11 Protocol](https://github.com/CrankAddict/section-11).
 
 | File | Description | Link |
 |------|-------------|------|
-| `latest.json` | Current 7-day snapshot + derived metrics | [View](https://raw.githubusercontent.com/oberti/intervalsAI/main/latest.json) |
-| `history.json` | Longitudinal data (daily/weekly/monthly) | [View](https://raw.githubusercontent.com/oberti/intervalsAI/main/history.json) |
+| `latest.json` | Current 7-day snapshot + derived metrics | [View](https://raw.githubusercontent.com/oberti/IntervalsAI/main/latest.json) |
+| `history.json` | Longitudinal data (daily/weekly/monthly) | [View](https://raw.githubusercontent.com/oberti/IntervalsAI/main/history.json) |
 
 ## Auto-Sync
 
@@ -34,8 +34,8 @@ Data syncs every 15 minutes via GitHub Actions. The pipeline pulls activities, w
 
 ```
 Analyze my training using these data files:
-- Current: https://raw.githubusercontent.com/oberti/intervalsAI/main/latest.json
-- History: https://raw.githubusercontent.com/oberti/intervalsAI/main/history.json
+- Current: https://raw.githubusercontent.com/oberti/IntervalsAI/main/latest.json
+- History: https://raw.githubusercontent.com/oberti/IntervalsAI/main/history.json
 ```
 
 For best results, pair with the [Section 11 instruction set](https://github.com/CrankAddict/section-11).
