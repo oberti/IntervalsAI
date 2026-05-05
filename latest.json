@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-05T12:13:12.568444",
+    "last_updated": "2026-05-05T16:11:27.420202",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -142,7 +142,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-04-27",
-    "age_days": 7,
+    "age_days": 8,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -581,7 +581,7 @@
           "current_week_hard_days_total": 3,
           "race_proximity": 37,
           "next_week_load": 0.84,
-          "plan_coverage_current_week": 0.75,
+          "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
@@ -615,13 +615,13 @@
     "p_max": 956,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.607044,
-    "calculation_timestamp": "2026-05-05T12:13:12.567222",
+    "calculation_timestamp": "2026-05-05T16:11:27.418943",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 4,
       "activities_28d": 15,
-      "planned_workouts_7d": 6,
+      "planned_workouts_7d": 7,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 8
@@ -2925,6 +2925,19 @@
       "workout_summary": "1h | 11\u00d730s @320W / 15s rec | 3m | 11\u00d730s @320W / 15s rec | 3m | 11\u00d730s @320W / 15s rec | 1h",
       "has_terrain": false,
       "description": "Riscaldamento \n- 60m Z2 power=1s\n\nLavoro 11x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 3m Z2 power=1s\n\nLavoro 11x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 3m Z2 power=1s\n\nLavoro 11x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 60m Z2 power=1s"
+    },
+    {
+      "id": 108399882,
+      "date": "2026-05-05",
+      "name": "RAIN",
+      "type": "NOTE",
+      "sport_type": null,
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": ""
     },
     {
       "id": 105862483,
