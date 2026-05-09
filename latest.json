@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-09T13:53:18.215578",
+    "last_updated": "2026-05-09T14:54:19.509023",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -105,7 +105,7 @@
       },
       "sleep": {
         "status": "green",
-        "hours": 7.72,
+        "hours": 10.23,
         "quality": 3
       },
       "acwr": {
@@ -142,7 +142,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-04-27",
-    "age_days": 11,
+    "age_days": 12,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -214,9 +214,9 @@
       "resting_hr": 47,
       "hrv": null,
       "sleep_quality": 3,
-      "sleep_hours": 7.72,
-      "sleep_formatted": "7h43m",
-      "sleep_score": 78.0,
+      "sleep_hours": 10.23,
+      "sleep_formatted": "10h14m",
+      "sleep_score": 66.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -233,7 +233,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 8,
+      "steps": 178,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -613,7 +613,7 @@
     "p_max": 954,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-09T13:53:18.214417",
+    "calculation_timestamp": "2026-05-09T14:54:19.507803",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -2924,10 +2924,10 @@
       "resting_hr": null,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
-      "sleep_hours": 7.72,
-      "sleep_formatted": "7h43m",
+      "sleep_hours": 10.23,
+      "sleep_formatted": "10h14m",
       "sleep_quality": 3,
-      "sleep_score": 78.0,
+      "sleep_score": 66.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -2947,7 +2947,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 8,
+      "steps": 178,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
