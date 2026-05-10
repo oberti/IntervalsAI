@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T23:05:40.656988",
+  "generated_at": "2026-05-10T00:05:15.086184",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -72,62 +72,6 @@
           "zone": 1,
           "training_load": 51.11171,
           "decoupling": 5.050633
-        }
-      ]
-    },
-    {
-      "activity_id": "i142796604",
-      "date": "2026-04-25",
-      "type": "Ride",
-      "name": "Bernigolo - Valtorta - Cassiglio",
-      "interval_summary": [
-        "1x 2h11m 186w",
-        "1x 36m49s 208w",
-        "1x 2h9m 139w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 10
-        },
-        {
-          "type": "WORK",
-          "label": "7861s@186w69rpm",
-          "duration_secs": 7861,
-          "avg_power": 186,
-          "max_power": 801,
-          "avg_hr": 138,
-          "max_hr": 180,
-          "avg_cadence": 68.58362,
-          "zone": 2,
-          "training_load": 122.25492,
-          "decoupling": 1.7762251
-        },
-        {
-          "type": "WORK",
-          "label": "2209s@208w69rpm",
-          "duration_secs": 2209,
-          "avg_power": 208,
-          "max_power": 514,
-          "avg_hr": 152,
-          "max_hr": 177,
-          "avg_cadence": 69.12232,
-          "zone": 3,
-          "training_load": 39.060078,
-          "decoupling": 3.9078925
-        },
-        {
-          "type": "WORK",
-          "label": "7787s@139w57rpm",
-          "duration_secs": 7787,
-          "avg_power": 139,
-          "max_power": 758,
-          "avg_hr": 135,
-          "max_hr": 188,
-          "avg_cadence": 57.208477,
-          "zone": 1,
-          "training_load": 90.94036,
-          "decoupling": -1.5966729
         }
       ]
     },
