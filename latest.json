@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-13T08:24:47.941480",
+    "last_updated": "2026-05-13T11:08:08.475109",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -104,8 +104,8 @@
         "delta_bpm": -2.2
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
+        "status": "green",
+        "hours": 8.3,
         "quality": 2
       },
       "acwr": {
@@ -123,10 +123,10 @@
       }
     },
     "signal_summary": {
-      "green": 5,
+      "green": 6,
       "amber": 0,
       "red": 0,
-      "unavailable": 1
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -136,7 +136,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 5 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -214,9 +214,9 @@
       "resting_hr": 44,
       "hrv": 78.0,
       "sleep_quality": 2,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_score": 6.0,
+      "sleep_hours": 8.3,
+      "sleep_formatted": "8h18m",
+      "sleep_score": 84.0,
       "fatigue": 2,
       "soreness": 1,
       "stress": null,
@@ -233,7 +233,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 653,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -615,7 +615,7 @@
     "p_max": 950,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.370903,
-    "calculation_timestamp": "2026-05-13T08:24:47.940288",
+    "calculation_timestamp": "2026-05-13T11:08:08.474256",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -633,7 +633,7 @@
       "id": "i147657537",
       "date": "2026-05-12T17:24:11",
       "type": "Ride",
-      "name": "3X12 Short HIIT 7 Watt",
+      "name": "Valsecca",
       "duration_hours": 2.58,
       "distance_km": 57.79,
       "tss": 146,
@@ -663,9 +663,9 @@
       "efficiency_factor": 1.5461539,
       "hrrc": null,
       "elevation_m": 911.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 4,
+      "effort_response": "neutral",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2092,
@@ -3045,10 +3045,10 @@
       "resting_hr": 44,
       "hrv_rmssd": 78.0,
       "hrv_sdnn": 63.0,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "sleep_hours": 8.3,
+      "sleep_formatted": "8h18m",
       "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_score": 84.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.370903,
@@ -3068,7 +3068,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 653,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
