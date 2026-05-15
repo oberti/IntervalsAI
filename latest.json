@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-15T05:40:20.976787",
+    "last_updated": "2026-05-15T08:30:25.608091",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -546,15 +546,15 @@
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": 0.67,
+    "consistency_index": 1.0,
     "consistency_details": {
       "planned_days": 3,
       "completed_days": 4,
-      "matched_days": 2,
+      "matched_days": 3,
       "planned_dates": [
         "2026-05-09",
         "2026-05-12",
-        "2026-05-14"
+        "2026-05-13"
       ],
       "completed_dates": [
         "2026-05-09",
@@ -581,7 +581,7 @@
           "current_week_hard_days_total": 3,
           "race_proximity": 27,
           "next_week_load": 0.66,
-          "plan_coverage_current_week": 0.25,
+          "plan_coverage_current_week": 0.5,
           "plan_coverage_next_week": 1.25
         },
         "data_quality": "good",
@@ -615,13 +615,13 @@
     "p_max": 949,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.39759,
-    "calculation_timestamp": "2026-05-15T05:40:20.975557",
+    "calculation_timestamp": "2026-05-15T08:30:25.606889",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
       "activities_7d": 4,
       "activities_28d": 16,
-      "planned_workouts_7d": 5,
+      "planned_workouts_7d": 6,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 18
@@ -633,7 +633,7 @@
       "id": "i147936211",
       "date": "2026-05-13T16:26:05",
       "type": "Ride",
-      "name": "Gerosa - Blello - Berbenno",
+      "name": "6x4m 110% VO2MAX",
       "duration_hours": 2.63,
       "distance_km": 63.85,
       "tss": 136,
@@ -2852,8 +2852,8 @@
       "hrv_sdnn": 39.0,
       "sleep_hours": 8.93,
       "sleep_formatted": "8h56m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 75.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.50399,
@@ -2891,8 +2891,8 @@
       "hrv_sdnn": 57.0,
       "sleep_hours": 8.18,
       "sleep_formatted": "8h11m",
-      "sleep_quality": 3,
-      "sleep_score": 4.0,
+      "sleep_quality": 1,
+      "sleep_score": 95.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.476463,
@@ -2930,8 +2930,8 @@
       "hrv_sdnn": 32.0,
       "sleep_hours": 8.32,
       "sleep_formatted": "8h19m",
-      "sleep_quality": 3,
-      "sleep_score": 5.0,
+      "sleep_quality": 2,
+      "sleep_score": 80.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.407017,
@@ -2970,7 +2970,7 @@
       "sleep_hours": 8.3,
       "sleep_formatted": "8h18m",
       "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_score": 84.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.370903,
@@ -3009,7 +3009,7 @@
       "sleep_hours": 6.95,
       "sleep_formatted": "6h57m",
       "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_score": 83.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 49.389935,
@@ -3092,6 +3092,19 @@
       "workout_summary": "10m | 4h | 2\u00d720m @240W / 10m rec | 10m",
       "has_terrain": false,
       "description": "Riscaldamento\n- 10m CZZ1CP power=1s \n\nLavoro\n- 4h CZZ2CP power=1s \n\n2x\n- 20m 90% FTP\n- 10m Z2\n\nDefaticamento\n-  10m CZZ1CP power=1s"
+    },
+    {
+      "id": 110232240,
+      "date": "2026-05-16",
+      "name": "RAIN",
+      "type": "NOTE",
+      "sport_type": null,
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": ""
     },
     {
       "id": 96663960,
