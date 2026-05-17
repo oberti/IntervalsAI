@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T09:07:35.591448",
+  "generated_at": "2026-05-17T10:39:40.959116",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -2642,6 +2642,27 @@
           "avg_cadence": 59.961143,
           "zone": 1,
           "training_load": 126.61467
+        }
+      ]
+    },
+    {
+      "activity_id": "i149003144",
+      "date": "2026-05-17",
+      "type": "Ride",
+      "name": "Bernigolo - Piazza",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 14213,
+          "avg_power": 3,
+          "max_power": 298,
+          "avg_hr": 129,
+          "max_hr": 181,
+          "avg_cadence": 76.235954,
+          "zone": 1,
+          "training_load": 19.535799,
+          "decoupling": 100.0
         }
       ]
     }
