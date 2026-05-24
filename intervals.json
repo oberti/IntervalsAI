@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T09:32:17.617789",
+  "generated_at": "2026-05-24T11:02:48.152873",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -2240,6 +2240,48 @@
           "zone": 1,
           "training_load": 66.81732,
           "decoupling": 11.16557
+        }
+      ]
+    },
+    {
+      "activity_id": "i151030041",
+      "date": "2026-05-24",
+      "type": "Ride",
+      "name": "Ganda - Selvino - Citt\u00e0 alta",
+      "interval_summary": [
+        "1x 1h13m 186w",
+        "1x 2h46m 145w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 9
+        },
+        {
+          "type": "WORK",
+          "label": "4392s@186w72rpm",
+          "duration_secs": 4392,
+          "avg_power": 186,
+          "max_power": 701,
+          "avg_hr": 149,
+          "max_hr": 183,
+          "avg_cadence": 71.77382,
+          "zone": 2,
+          "training_load": 69.97696,
+          "decoupling": 2.2480812
+        },
+        {
+          "type": "WORK",
+          "label": "9999s@145w59rpm",
+          "duration_secs": 9999,
+          "avg_power": 145,
+          "max_power": 662,
+          "avg_hr": 145,
+          "max_hr": 184,
+          "avg_cadence": 59.185184,
+          "zone": 1,
+          "training_load": 119.38528,
+          "decoupling": 17.333475
         }
       ]
     }
