@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-25T06:10:51.547130",
+    "last_updated": "2026-05-25T10:49:41.190442",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -227,7 +227,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 72.2,
+      "weight_kg": 71.8,
       "resting_hr": 47,
       "hrv": 40.0,
       "sleep_quality": 2,
@@ -465,92 +465,92 @@
           "start": "2026-04-14",
           "end": "2026-05-25"
         },
-        "weight_kg": 72.2,
+        "weight_kg": 71.8,
         "weight_source": "wellness_recent",
         "cycling": {
           "anchors": {
             "300s": {
               "actual_watts": 288,
-              "actual_wpkg": 3.99,
+              "actual_wpkg": 4.01,
               "actual_hr": 181,
               "pct_lthr": 103.4,
               "source": "observed_outdoor",
               "coggan_watts": 283,
-              "coggan_wpkg": 3.92,
+              "coggan_wpkg": 3.94,
               "cp_model_watts": 336,
-              "cp_model_wpkg": 4.65,
+              "cp_model_wpkg": 4.68,
               "model_divergence_pct": -14.3
             },
             "600s": {
               "actual_watts": 281,
-              "actual_wpkg": 3.89,
+              "actual_wpkg": 3.91,
               "actual_hr": 177,
               "pct_lthr": 101.1,
               "source": "observed_outdoor",
               "coggan_watts": 259,
-              "coggan_wpkg": 3.59,
+              "coggan_wpkg": 3.61,
               "cp_model_watts": 302,
-              "cp_model_wpkg": 4.18,
+              "cp_model_wpkg": 4.21,
               "model_divergence_pct": -7.0
             },
             "1200s": {
               "actual_watts": 274,
-              "actual_wpkg": 3.8,
+              "actual_wpkg": 3.82,
               "actual_hr": 174,
               "pct_lthr": 99.4,
               "source": "observed_outdoor",
               "coggan_watts": 248,
-              "coggan_wpkg": 3.43,
+              "coggan_wpkg": 3.45,
               "cp_model_watts": 284,
-              "cp_model_wpkg": 3.93,
+              "cp_model_wpkg": 3.96,
               "model_divergence_pct": -3.5
             },
             "1800s": {
               "actual_watts": 269,
-              "actual_wpkg": 3.73,
+              "actual_wpkg": 3.75,
               "actual_hr": 171,
               "pct_lthr": 97.7,
               "source": "observed_outdoor",
               "coggan_watts": 240,
-              "coggan_wpkg": 3.32,
+              "coggan_wpkg": 3.34,
               "cp_model_watts": 279,
-              "cp_model_wpkg": 3.86,
+              "cp_model_wpkg": 3.89,
               "model_divergence_pct": -3.6
             },
             "3600s": {
               "actual_watts": 234,
-              "actual_wpkg": 3.24,
+              "actual_wpkg": 3.26,
               "actual_hr": 161,
               "pct_lthr": 92.0,
               "source": "observed_outdoor",
               "coggan_watts": 230,
-              "coggan_wpkg": 3.19,
+              "coggan_wpkg": 3.2,
               "cp_model_watts": 273,
-              "cp_model_wpkg": 3.78,
+              "cp_model_wpkg": 3.8,
               "model_divergence_pct": -14.3
             },
             "5400s": {
               "actual_watts": 202,
-              "actual_wpkg": 2.8,
+              "actual_wpkg": 2.81,
               "actual_hr": 156,
               "pct_lthr": 89.1,
               "source": "observed_outdoor",
               "coggan_watts": 219,
-              "coggan_wpkg": 3.03,
+              "coggan_wpkg": 3.05,
               "cp_model_watts": 271,
-              "cp_model_wpkg": 3.75,
+              "cp_model_wpkg": 3.77,
               "model_divergence_pct": -25.5
             },
             "7200s": {
               "actual_watts": 193,
-              "actual_wpkg": 2.67,
+              "actual_wpkg": 2.69,
               "actual_hr": 154,
               "pct_lthr": 88.0,
               "source": "observed_outdoor",
               "coggan_watts": 208,
-              "coggan_wpkg": 2.88,
+              "coggan_wpkg": 2.9,
               "cp_model_watts": 270,
-              "cp_model_wpkg": 3.74,
+              "cp_model_wpkg": 3.76,
               "model_divergence_pct": -28.5
             }
           },
@@ -582,7 +582,7 @@
     },
     "phase_detection": {
       "phase": "Build",
-      "confidence": "high",
+      "confidence": "medium",
       "reason_codes": [],
       "basis": {
         "stream_1": {
@@ -592,13 +592,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.99,
-          "hard_sessions_planned": 3,
+          "planned_tss_delta": null,
+          "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 3,
+          "current_week_hard_days_total": 0,
           "race_proximity": 17,
           "next_week_load": 0.93,
-          "plan_coverage_current_week": 1.25,
+          "plan_coverage_current_week": 0.5,
           "plan_coverage_next_week": 1.0
         },
         "data_quality": "good",
@@ -632,7 +632,7 @@
     "p_max": 941,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.86503,
-    "calculation_timestamp": "2026-05-25T06:10:51.545871",
+    "calculation_timestamp": "2026-05-25T10:49:41.189178",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -680,9 +680,9 @@
       "efficiency_factor": 1.2993197,
       "hrrc": 61,
       "elevation_m": 1136.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 4,
+      "rpe": 5,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 1576,
@@ -799,7 +799,7 @@
       "id": "i150789882",
       "date": "2026-05-23T08:00:44",
       "type": "Ride",
-      "name": "Z2 4h Watt",
+      "name": "Passo di Zambla - Citt\u00e0 alta",
       "duration_hours": 4.62,
       "distance_km": 103.14,
       "tss": 198,
@@ -3029,7 +3029,7 @@
       "motivation": 3,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 99.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -3068,7 +3068,7 @@
       "motivation": 2,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 99.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -3107,7 +3107,7 @@
       "motivation": 2,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 99.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -3128,7 +3128,7 @@
     },
     {
       "date": "2026-05-25",
-      "weight_kg": null,
+      "weight_kg": 71.8,
       "resting_hr": 47,
       "hrv_rmssd": 40.0,
       "hrv_sdnn": 73.0,
@@ -3192,45 +3192,6 @@
       "workout_summary": null,
       "has_terrain": false,
       "description": "Focus on easier efforts, reduced volume, and allowing your body to adapt to training stress"
-    },
-    {
-      "id": 105862743,
-      "date": "2026-05-26",
-      "name": "2X8 Short HIIT 7 Watt",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 115,
-      "duration_hours": 2.25,
-      "duration_formatted": "2h15m",
-      "workout_summary": "1h | 8\u00d730s @320W / 15s rec | 3m | 8\u00d730s @320W / 15s rec | 1h",
-      "has_terrain": false,
-      "description": "Riscaldamento \n- 60m Z2 power=1s\n\nLavoro 8x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 3m Z2 power=1s\n\nLavoro 8x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 60m Z2 power=1s"
-    },
-    {
-      "id": 105862758,
-      "date": "2026-05-28",
-      "name": "3x4m 110% VO2MAX",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 124,
-      "duration_hours": 2.53,
-      "duration_formatted": "2h32m",
-      "workout_summary": "1h @153W | 3\u00d730s @293W / 30s rec | 5m @160W | 3\u00d74m @293W / 4m rec | 1h @173W",
-      "has_terrain": false,
-      "description": "-60m 50-65% FTP\n\n3x\n-30s 110% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n3x\n-4m 110% FTP 65RPM\n-4m 50% FTP\n\n-60m 65% FTP"
-    },
-    {
-      "id": 105864648,
-      "date": "2026-05-30",
-      "name": "Z2 5h Watt +3x20m",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 314,
-      "duration_hours": 5.83,
-      "duration_formatted": "5h50m",
-      "workout_summary": "10m | 4h | 3\u00d720m @240W / 10m rec | 10m",
-      "has_terrain": false,
-      "description": "Riscaldamento\n- 10m CZZ1CP power=1s \n\nLavoro\n- 4h CZZ2CP power=1s \n\n3x\n- 20m 90% FTP\n- 10m Z2\n\nDefaticamento\n-  10m CZZ1CP power=1s"
     },
     {
       "id": 96663962,
@@ -3310,9 +3271,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 6,
-    "success": 5,
-    "patternA": 5,
+    "attempted": 3,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 1,
     "bail_no_match": 1
