@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T16:04:11.645003",
+  "generated_at": "2026-05-28T18:43:15.440262",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -1167,6 +1167,27 @@
           "zone": 1,
           "training_load": 75.83085,
           "decoupling": -12.844298
+        }
+      ]
+    },
+    {
+      "activity_id": "i152328312",
+      "date": "2026-05-28",
+      "type": "Ride",
+      "name": "Per un pelo di quella cosa l\u00ec......",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 8049,
+          "avg_power": 133,
+          "max_power": 538,
+          "avg_hr": 122,
+          "max_hr": 165,
+          "avg_cadence": 62.214138,
+          "zone": 1,
+          "training_load": 78.354,
+          "decoupling": -7.38721
         }
       ]
     }
