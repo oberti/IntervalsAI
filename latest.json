@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-01T04:20:40.289413",
+    "last_updated": "2026-06-01T09:41:32.725488",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -565,9 +565,9 @@
     },
     "phase_detection": {
       "phase": "Taper",
-      "confidence": "medium",
+      "confidence": "high",
       "reason_codes": [
-        "RACE_IMMINENT"
+        "RACE_IMMINENT_VOLUME_REDUCING"
       ],
       "basis": {
         "stream_1": {
@@ -577,14 +577,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.85,
+          "planned_tss_delta": 0.72,
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 2,
           "race_proximity": 10,
           "next_week_load": null,
           "plan_coverage_current_week": 1.0,
-          "plan_coverage_next_week": 0.5
+          "plan_coverage_next_week": 0.75
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -596,7 +596,7 @@
     },
     "phase_detected": "Taper",
     "phase_triggers": [
-      "RACE_IMMINENT"
+      "RACE_IMMINENT_VOLUME_REDUCING"
     ],
     "seasonal_context": "Build / Early Race Season",
     "benchmark_indoor": {
@@ -619,13 +619,13 @@
     "p_max": 936,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.887592,
-    "calculation_timestamp": "2026-06-01T04:20:40.288214",
+    "calculation_timestamp": "2026-06-01T09:41:32.724201",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 4,
       "activities_28d": 15,
-      "planned_workouts_7d": 1,
+      "planned_workouts_7d": 2,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 35
@@ -637,7 +637,7 @@
       "id": "i152883560",
       "date": "2026-05-31T07:40:19",
       "type": "Ride",
-      "name": "Pedalata mattutina",
+      "name": "Parco di Monza",
       "duration_hours": 2.96,
       "distance_km": 81.0,
       "tss": 120,
@@ -667,8 +667,8 @@
       "efficiency_factor": 1.3934426,
       "hrrc": 39,
       "elevation_m": 325.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 3,
+      "rpe": 4,
       "effort_response": null,
       "zone_distribution": {
         "hr_zones": {
@@ -768,9 +768,9 @@
       "efficiency_factor": 1.3428571,
       "hrrc": 61,
       "elevation_m": 2033.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 5,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 4016,
@@ -2613,7 +2613,7 @@
       "sleep_hours": 8.55,
       "sleep_formatted": "8h33m",
       "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_score": 81.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.85716,
@@ -2651,8 +2651,8 @@
       "hrv_sdnn": 54.0,
       "sleep_hours": 6.3,
       "sleep_formatted": "6h18m",
-      "sleep_quality": 2,
-      "sleep_score": 7.0,
+      "sleep_quality": 3,
+      "sleep_score": 73.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.837315,
@@ -2690,8 +2690,8 @@
       "hrv_sdnn": 93.0,
       "sleep_hours": 6.7,
       "sleep_formatted": "6h42m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 66.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.898228,
@@ -2729,8 +2729,8 @@
       "hrv_sdnn": 34.0,
       "sleep_hours": 7.0,
       "sleep_formatted": "7h",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 72.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.835045,
@@ -2768,8 +2768,8 @@
       "hrv_sdnn": 50.0,
       "sleep_hours": 7.67,
       "sleep_formatted": "7h40m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 75.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.88027,
@@ -2808,7 +2808,7 @@
       "sleep_hours": 8.52,
       "sleep_formatted": "8h31m",
       "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_score": 81.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.901386,
@@ -2895,28 +2895,28 @@
     {
       "id": 105862830,
       "date": "2026-06-02",
-      "name": "3X13 Short HIIT 7 Watt",
+      "name": "2X8 Short HIIT 7 Watt",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 154,
-      "duration_hours": 2.59,
-      "duration_formatted": "2h35m15s",
-      "workout_summary": "1h | 13\u00d730s @320W / 15s rec | 3m | 13\u00d730s @320W / 15s rec | 3m | 13\u00d730s @320W / 15s rec | 1h",
+      "planned_tss": 115,
+      "duration_hours": 2.25,
+      "duration_formatted": "2h15m",
+      "workout_summary": "1h | 8\u00d730s @320W / 15s rec | 3m | 8\u00d730s @320W / 15s rec | 1h",
       "has_terrain": false,
-      "description": "Riscaldamento \n- 60m Z2 power=1s\n\nLavoro 13x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 3m Z2 power=1s\n\nLavoro 13x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 3m Z2 power=1s\n\nLavoro 13x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 60m Z2 power=1s"
+      "description": "Riscaldamento \n- 60m Z2 power=1s\n\nLavoro 8x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 3m Z2 power=1s\n\nLavoro 8x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 60m Z2 power=1s"
     },
     {
       "id": 105862842,
       "date": "2026-06-04",
-      "name": "5x5m 110% VO2MAX",
+      "name": "4x3m 110% VO2MAX",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 166,
-      "duration_hours": 2.97,
-      "duration_formatted": "2h58m",
-      "workout_summary": "1h @153W | 3\u00d730s @293W / 30s rec | 5m @160W | 5\u00d75m @293W / 5m rec | 1h @173W",
+      "planned_tss": 124,
+      "duration_hours": 2.53,
+      "duration_formatted": "2h32m",
+      "workout_summary": "1h @153W | 3\u00d730s @293W / 30s rec | 5m @160W | 4\u00d73m @293W / 3m rec | 1h @173W",
       "has_terrain": false,
-      "description": "-60m 50-65% FTP\n\n3x\n-30s 110% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n5x\n-5m 110% FTP 65RPM\n-5m 50% FTP\n\n-60m 65% FTP"
+      "description": "-60m 50-65% FTP\n\n3x\n-30s 110% FTP\n-30s 55% FTP\n\n-5m 60% FTP\n\n4x\n-3m 110% FTP 65RPM\n-3m 50% FTP\n\n-60m 65% FTP"
     },
     {
       "id": 105864678,
@@ -2937,6 +2937,19 @@
       "name": "Weekly",
       "type": "TARGET",
       "sport_type": "Ride",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": ""
+    },
+    {
+      "id": 113477863,
+      "date": "2026-06-08",
+      "name": "DOLOMITI 2026",
+      "type": "HOLIDAY",
+      "sport_type": null,
       "planned_tss": null,
       "duration_hours": 0.0,
       "duration_formatted": "0s",
