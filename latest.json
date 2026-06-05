@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-05T10:32:54.269970",
+    "last_updated": "2026-06-05T13:42:54.825734",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -101,7 +101,7 @@
       "value": 6,
       "severity": "info",
       "threshold": "RACE_B within 7 days",
-      "context": "Race week D-6 of 'Canazei - Valparola - Campolongo - Pordoi'. Today: Recovery, 0-26 TSS. Z1-Z2 only",
+      "context": "Race week D-6 of 'Canazei - Pordoi - Falzarego - Valparola - Campolongo - Pordoi'. Today: Recovery, 0-26 TSS. Z1-Z2 only",
       "persistence_days": null,
       "tier": 1
     }
@@ -583,7 +583,7 @@
     },
     "phase_detection": {
       "phase": "Build",
-      "confidence": "medium",
+      "confidence": "high",
       "reason_codes": [],
       "basis": {
         "stream_1": {
@@ -593,13 +593,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.89,
+          "planned_tss_delta": 1.4,
           "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 2,
           "current_week_hard_days_total": 2,
           "race_proximity": 4,
-          "next_week_load": null,
-          "plan_coverage_current_week": 0.5,
+          "next_week_load": 1.96,
+          "plan_coverage_current_week": 0.75,
           "plan_coverage_next_week": 1.5
         },
         "data_quality": "good",
@@ -633,7 +633,7 @@
     "p_max": 923,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.764317,
-    "calculation_timestamp": "2026-06-05T10:32:54.268812",
+    "calculation_timestamp": "2026-06-05T13:42:54.823835",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 5,
@@ -3038,6 +3038,19 @@
       "description": "Riscaldamento\n- 10m CZZ1CP power=1s \n\nLavoro\n- 5h CZZ2CP power=1s \n\nDefaticamento\n-  10m CZZ1CP power=1s"
     },
     {
+      "id": 114330114,
+      "date": "2026-06-07",
+      "name": "Z2 3h Watt",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 135,
+      "duration_hours": 3.33,
+      "duration_formatted": "3h20m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": "Riscaldamento\n- 10m Z1 power=1s\n\nLavoro\n- 3h Z2 power=1s\n\nDefaticamento\n- 10m freeride Z1 power=1s"
+    },
+    {
       "id": 96663963,
       "date": "2026-06-08",
       "name": "Weekly",
@@ -3069,7 +3082,7 @@
       "name": "Sella Ronda Orario",
       "type": "RACE_C",
       "sport_type": "Ride",
-      "planned_tss": null,
+      "planned_tss": 250,
       "duration_hours": 3.5,
       "duration_formatted": "3h30m",
       "workout_summary": null,
@@ -3077,16 +3090,16 @@
       "description": ""
     },
     {
-      "id": 96659680,
+      "id": 114329976,
       "date": "2026-06-11",
-      "name": "Canazei - Valparola - Campolongo - Pordoi",
+      "name": "Canazei - Pordoi - Falzarego - Valparola - Campolongo - Pordoi",
       "type": "RACE_B",
       "sport_type": "Ride",
-      "planned_tss": null,
-      "duration_hours": 6.5,
-      "duration_formatted": "6h30m",
+      "planned_tss": 300,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
       "workout_summary": null,
-      "has_terrain": false,
+      "has_terrain": true,
       "description": ""
     },
     {
@@ -3095,7 +3108,7 @@
       "name": "Fedaia - Giau - Valparola - Campolongo - Pordoi",
       "type": "RACE_A",
       "sport_type": "Ride",
-      "planned_tss": null,
+      "planned_tss": 400,
       "duration_hours": 6.5,
       "duration_formatted": "6h30m",
       "workout_summary": null,
@@ -3108,7 +3121,7 @@
       "name": "Sella Ronda Antiorario",
       "type": "RACE_C",
       "sport_type": "Ride",
-      "planned_tss": null,
+      "planned_tss": 250,
       "duration_hours": 3.5,
       "duration_formatted": "3h30m",
       "workout_summary": null,
@@ -3121,7 +3134,7 @@
       "name": "Costalunga - Pampeago",
       "type": "RACE_B",
       "sport_type": "Ride",
-      "planned_tss": null,
+      "planned_tss": 300,
       "duration_hours": 6.5,
       "duration_formatted": "6h30m",
       "workout_summary": null,
@@ -3134,7 +3147,7 @@
       "name": "San Pellegrino - Valles - Rolle",
       "type": "RACE_A",
       "sport_type": "Ride",
-      "planned_tss": null,
+      "planned_tss": 300,
       "duration_hours": 6.0,
       "duration_formatted": "6h",
       "workout_summary": null,
@@ -3147,7 +3160,7 @@
       "name": "Sella Ronda Orario",
       "type": "RACE_C",
       "sport_type": "Ride",
-      "planned_tss": null,
+      "planned_tss": 250,
       "duration_hours": 3.5,
       "duration_formatted": "3h30m",
       "workout_summary": null,
@@ -3156,12 +3169,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 1,
+    "attempted": 2,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 1
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 13.52,
@@ -3194,14 +3207,14 @@
         "has_terrain": true
       },
       {
-        "name": "Canazei - Valparola - Campolongo - Pordoi",
+        "name": "Canazei - Pordoi - Falzarego - Valparola - Campolongo - Pordoi",
         "date": "2026-06-11",
         "category": "RACE_B",
         "type": "Ride",
         "days_until": 6,
-        "moving_time_seconds": 23400,
-        "distance_meters": 103000.0,
-        "has_terrain": false
+        "moving_time_seconds": null,
+        "distance_meters": null,
+        "has_terrain": true
       },
       {
         "name": "Fedaia - Giau - Valparola - Campolongo - Pordoi",
@@ -3263,12 +3276,12 @@
     },
     "race_week": {
       "active": true,
-      "event_name": "Canazei - Valparola - Campolongo - Pordoi",
+      "event_name": "Canazei - Pordoi - Falzarego - Valparola - Campolongo - Pordoi",
       "event_date": "2026-06-11",
       "event_category": "RACE_B",
       "event_type": "Ride",
-      "event_duration_class": "long_endurance",
-      "event_moving_time_seconds": 23400,
+      "event_duration_class": "medium",
+      "event_moving_time_seconds": null,
       "days_until_event": 6,
       "current_day": "D-6",
       "ctl_baseline": 88.2,
@@ -3285,7 +3298,7 @@
       "projected_race_day_tsb": 46.1,
       "tsb_target_range": {
         "min": 5,
-        "max": 20
+        "max": 15
       },
       "today": {
         "label": "Recovery",
@@ -3297,16 +3310,16 @@
         "purpose": "Active recovery."
       },
       "carb_loading": {
-        "applicable": true,
+        "applicable": false,
         "active": false,
         "starts": "D-4",
         "start_date": "2026-06-07",
-        "note": "10-12 g\u00b7kg\u207b\u00b9/day. No depletion phase needed."
+        "note": null
       },
       "opener": {
         "day": "D-2",
         "date": "2026-06-09",
-        "intensity": "lighter"
+        "intensity": "standard"
       },
       "go_no_go": {
         "tsb_status": "green",
