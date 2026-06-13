@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-13T14:38:03.343855",
+    "last_updated": "2026-06-13T16:05:15.467134",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -132,9 +132,9 @@
         "delta_bpm": 0.3
       },
       "sleep": {
-        "status": "red",
-        "hours": 2.67,
-        "quality": 4
+        "status": "green",
+        "hours": 8.9,
+        "quality": 2
       },
       "acwr": {
         "status": "red",
@@ -147,9 +147,9 @@
       }
     },
     "signal_summary": {
-      "green": 3,
+      "green": 4,
       "amber": 0,
-      "red": 2,
+      "red": 1,
       "unavailable": 0
     },
     "phase_context": {
@@ -237,10 +237,10 @@
       "weight_kg": 72.9,
       "resting_hr": 43,
       "hrv": 103.0,
-      "sleep_quality": 4,
-      "sleep_hours": 2.67,
-      "sleep_formatted": "2h40m",
-      "sleep_score": 49.0,
+      "sleep_quality": 2,
+      "sleep_hours": 8.9,
+      "sleep_formatted": "8h54m",
+      "sleep_score": 80.0,
       "fatigue": 1,
       "soreness": 2,
       "stress": null,
@@ -257,7 +257,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 114,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -642,7 +642,7 @@
     "p_max": 921,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.928875,
-    "calculation_timestamp": "2026-06-13T14:38:03.342660",
+    "calculation_timestamp": "2026-06-13T16:05:15.466015",
     "data_quality": {
       "hrv_data_points": 3,
       "rhr_data_points": 3,
@@ -3404,10 +3404,10 @@
       "resting_hr": 43,
       "hrv_rmssd": 103.0,
       "hrv_sdnn": 79.0,
-      "sleep_hours": 2.67,
-      "sleep_formatted": "2h40m",
-      "sleep_quality": 4,
-      "sleep_score": 49.0,
+      "sleep_hours": 8.9,
+      "sleep_formatted": "8h54m",
+      "sleep_quality": 2,
+      "sleep_score": 80.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.928875,
@@ -3427,7 +3427,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 114,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3455,14 +3455,14 @@
     {
       "id": 113578201,
       "date": "2026-06-14",
-      "name": "Sella Ronda Antiorario",
+      "name": "Passo Rolle",
       "type": "RACE_C",
       "sport_type": "Ride",
       "planned_tss": 250,
-      "duration_hours": 3.5,
-      "duration_formatted": "3h30m",
+      "duration_hours": 4.5,
+      "duration_formatted": "4h30m",
       "workout_summary": null,
-      "has_terrain": true,
+      "has_terrain": false,
       "description": ""
     },
     {
@@ -3481,7 +3481,7 @@
     {
       "id": 113578613,
       "date": "2026-06-18",
-      "name": "San Pellegrino - Valles - Rolle",
+      "name": "San Pellegrino - Valles",
       "type": "RACE_A",
       "sport_type": "Ride",
       "planned_tss": 300,
@@ -3544,14 +3544,14 @@
         "has_terrain": true
       },
       {
-        "name": "Sella Ronda Antiorario",
+        "name": "Passo Rolle",
         "date": "2026-06-14",
         "category": "RACE_C",
         "type": "Ride",
         "days_until": 1,
-        "moving_time_seconds": 12600,
+        "moving_time_seconds": 16200,
         "distance_meters": 60000.0,
-        "has_terrain": true
+        "has_terrain": false
       },
       {
         "name": "Costalunga - Pampeago",
@@ -3564,7 +3564,7 @@
         "has_terrain": true
       },
       {
-        "name": "San Pellegrino - Valles - Rolle",
+        "name": "San Pellegrino - Valles",
         "date": "2026-06-18",
         "category": "RACE_A",
         "type": "Ride",
