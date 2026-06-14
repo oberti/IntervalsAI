@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T23:33:15.333886",
+  "generated_at": "2026-06-14T02:01:04.170992",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -76,60 +76,6 @@
           "zone": 1,
           "training_load": 66.77822,
           "decoupling": 0.20808685
-        }
-      ]
-    },
-    {
-      "activity_id": "i152883487",
-      "date": "2026-05-30",
-      "type": "Ride",
-      "name": "Passo San Marco",
-      "interval_summary": [
-        "1x 2h4m 156w",
-        "1x 1h58m 211w",
-        "1x 3h11m 103w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 5
-        },
-        {
-          "type": "WORK",
-          "label": "7440s@156w66rpm",
-          "duration_secs": 7440,
-          "avg_power": 156,
-          "max_power": 641,
-          "avg_hr": 128,
-          "max_hr": 176,
-          "avg_cadence": 65.77602,
-          "zone": 2,
-          "training_load": 88.9535,
-          "decoupling": 0.26094285
-        },
-        {
-          "type": "WORK",
-          "label": "7093s@211w64rpm",
-          "duration_secs": 7093,
-          "avg_power": 211,
-          "max_power": 475,
-          "avg_hr": 159,
-          "max_hr": 181,
-          "avg_cadence": 64.14052,
-          "zone": 3,
-          "training_load": 122.217636
-        },
-        {
-          "type": "WORK",
-          "label": "11482s@103w49rpm",
-          "duration_secs": 11482,
-          "avg_power": 103,
-          "max_power": 536,
-          "avg_hr": 134,
-          "max_hr": 179,
-          "avg_cadence": 49.48231,
-          "zone": 1,
-          "training_load": 69.92035
         }
       ]
     },
