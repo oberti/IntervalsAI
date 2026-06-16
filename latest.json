@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-16T12:33:21.301329",
+    "last_updated": "2026-06-16T17:50:01.044191",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -123,9 +123,9 @@
         "delta_bpm": null
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 8.18,
+        "quality": 3
       },
       "acwr": {
         "status": "green",
@@ -142,10 +142,10 @@
       }
     },
     "signal_summary": {
-      "green": 1,
+      "green": 2,
       "amber": 1,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Taper",
@@ -247,10 +247,10 @@
       "weight_kg": 72.9,
       "resting_hr": 47,
       "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_score": null,
+      "sleep_quality": 3,
+      "sleep_hours": 8.18,
+      "sleep_formatted": "8h11m",
+      "sleep_score": 71.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -267,7 +267,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 90,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -643,7 +643,7 @@
     "p_max": 921,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-16T12:33:21.300101",
+    "calculation_timestamp": "2026-06-16T17:50:01.042993",
     "data_quality": {
       "hrv_data_points": 4,
       "rhr_data_points": 4,
@@ -661,7 +661,7 @@
       "id": "i157696935",
       "date": "2026-06-16T07:28:41",
       "type": "Ride",
-      "name": "Costalunga - Pampeago",
+      "name": "Pordoi - Malga Ciapela - Fedaia",
       "duration_hours": 3.89,
       "distance_km": 67.71,
       "tss": 195,
@@ -691,9 +691,9 @@
       "efficiency_factor": 1.4651163,
       "hrrc": null,
       "elevation_m": 1846.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 5,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 3933,
@@ -3459,7 +3459,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 13577,
+      "steps": 14138,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3475,10 +3475,10 @@
       "resting_hr": null,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 8.18,
+      "sleep_formatted": "8h11m",
+      "sleep_quality": 3,
+      "sleep_score": 71.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -3498,7 +3498,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 90,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
