@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-17T19:36:04.598654",
+    "last_updated": "2026-06-17T21:45:06.766105",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -601,13 +601,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.33,
-          "hard_sessions_planned": 4,
+          "planned_tss_delta": 1.09,
+          "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 1,
-          "current_week_hard_days_total": 5,
+          "current_week_hard_days_total": 3,
           "race_proximity": 1,
           "next_week_load": null,
-          "plan_coverage_current_week": 1.0,
+          "plan_coverage_current_week": 0.5,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -643,7 +643,7 @@
     "p_max": 921,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.249336,
-    "calculation_timestamp": "2026-06-17T19:36:04.597415",
+    "calculation_timestamp": "2026-06-17T21:45:06.764873",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 5,
@@ -3576,38 +3576,12 @@
       "workout_summary": null,
       "has_terrain": true,
       "description": ""
-    },
-    {
-      "id": 116721370,
-      "date": "2026-06-20",
-      "name": "Over Under 3x2 HR",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 61,
-      "duration_hours": 1.13,
-      "duration_formatted": "1h8m",
-      "workout_summary": "20m | 2\u00d72m @171bpm / 1m rec | 5m | 2\u00d72m @171bpm / 1m rec | 5m | 2\u00d72m @171bpm / 1m rec | 20m",
-      "has_terrain": false,
-      "description": "Riscaldamento\n- 20m Z2 HR\n\nLavoro 2x\n- 2m 98% LTHR\n- 1m 102% LTHR\n\nRecupero\n- 5m Z2 HR\n\nLavoro 2x\n- 2m 98% LTHR\n- 1m 102% LTHR\n\nRecupero\n- 5m Z2 HR\n\nLavoro 2x\n- 2m 98% LTHR\n- 1m 102% LTHR\n\nRecupero\n- 20m Z2 HR"
-    },
-    {
-      "id": 116721486,
-      "date": "2026-06-21",
-      "name": "On-Off 30s Z5 Watt",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 60,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": "20m | 20\u00d730s / 30s rec | 20m",
-      "has_terrain": false,
-      "description": "Riscaldamento\n- 20m Z2 power=1s \n\nLavoro 20x\n- 30s Z5 power=1s \n- 30s Z2 power=1s \n\nDefaticamento\n- 20m Z2 power=1s"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 2,
-    "success": 2,
-    "patternA": 2,
+    "attempted": 0,
+    "success": 0,
+    "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 0
