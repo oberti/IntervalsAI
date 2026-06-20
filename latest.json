@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-20T12:18:52.149622",
+    "last_updated": "2026-06-20T14:41:09.424484",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -104,9 +104,9 @@
         "delta_bpm": null
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 9.0,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
@@ -123,10 +123,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 3,
       "amber": 0,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Build",
@@ -136,7 +136,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -219,10 +219,10 @@
       "weight_kg": 72.9,
       "resting_hr": 54,
       "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_score": null,
+      "sleep_quality": 2,
+      "sleep_hours": 9.0,
+      "sleep_formatted": "9h",
+      "sleep_score": 81.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -239,7 +239,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 2140,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -579,7 +579,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.28,
+          "planned_tss_delta": 1.07,
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 3,
           "current_week_hard_days_total": 5,
@@ -619,7 +619,7 @@
     "p_max": 921,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-20T12:18:52.148481",
+    "calculation_timestamp": "2026-06-20T14:41:09.423379",
     "data_quality": {
       "hrv_data_points": 4,
       "rhr_data_points": 4,
@@ -3550,10 +3550,10 @@
       "resting_hr": null,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
-      "sleep_hours": 8.93,
-      "sleep_formatted": "8h56m",
+      "sleep_hours": 8.95,
+      "sleep_formatted": "8h57m",
       "sleep_quality": 3,
-      "sleep_score": 73.0,
+      "sleep_score": 75.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -3573,7 +3573,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 200,
+      "steps": 2001,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3589,10 +3589,10 @@
       "resting_hr": null,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 9.0,
+      "sleep_formatted": "9h",
+      "sleep_quality": 2,
+      "sleep_score": 81.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -3612,7 +3612,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 2140,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -3651,17 +3651,17 @@
       "description": ""
     },
     {
-      "id": 117021077,
+      "id": 117398538,
       "date": "2026-06-21",
-      "name": "3X10 Short HIIT 120%",
+      "name": "Fartlek HR 10x2'-3'",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 111,
-      "duration_hours": 1.81,
-      "duration_formatted": "1h48m30s",
-      "workout_summary": "40m | 10\u00d730s @320W / 15s rec | 3m | 10\u00d730s @320W / 15s rec | 3m | 10\u00d730s @320W / 15s rec | 40m",
+      "planned_tss": 70,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": "10m | 10\u00d72m / 3m rec | 10m",
       "has_terrain": false,
-      "description": "Ciclista intermedio\nSettimana 1-2 \n1 volta a settimana\n\nRiscaldamento \n- 40m Z2 power=1s\n\nLavoro 10x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 3m Z2 power=1s\n\nLavoro 10x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 3m Z2 power=1s\n\nLavoro 10x\n- 30s 120% power=1s\n- 15s Z2 power=1s\n\nDefaticamento\n- 40m Z2 power=1s"
+      "description": "Riscaldamento \n- 10m Z1 HR\n\nLavoro 10x\n-  2m Z4 HR\n-  3m Z3 HR\n\nDefaticamento\n- 10m Z1 HR"
     }
   ],
   "workout_summary_stats": {
