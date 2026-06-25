@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T19:24:42.185387",
+  "generated_at": "2026-06-25T21:12:09.778859",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -1636,6 +1636,27 @@
           "zone": 1,
           "training_load": 69.75198,
           "decoupling": -2.2996159
+        }
+      ]
+    },
+    {
+      "activity_id": "i160346492",
+      "date": "2026-06-25",
+      "type": "Ride",
+      "name": "San Pellegrino",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 10180,
+          "avg_power": 119,
+          "max_power": 444,
+          "avg_hr": 107,
+          "max_hr": 157,
+          "avg_cadence": 60.722008,
+          "zone": 1,
+          "training_load": 68.613556,
+          "decoupling": -8.395979
         }
       ]
     }
