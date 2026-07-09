@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T16:16:07.742198",
+  "generated_at": "2026-07-09T18:17:34.724628",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -510,6 +510,23 @@
           "zone": 1,
           "training_load": 32.56811,
           "decoupling": -1.1616764
+        }
+      ]
+    },
+    {
+      "activity_id": "i164253450",
+      "date": "2026-07-09",
+      "type": "Ride",
+      "name": "Sera Ride - Cadence",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 8802,
+          "avg_hr": 119,
+          "max_hr": 162,
+          "zone": 1,
+          "decoupling": "NaN"
         }
       ]
     }
