@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T08:38:40.751500",
+  "generated_at": "2026-07-12T10:14:39.095217",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -491,6 +491,25 @@
           "duration_secs": 19941,
           "avg_hr": 139,
           "max_hr": 182,
+          "zone": 2
+        }
+      ]
+    },
+    {
+      "activity_id": "i164954200",
+      "date": "2026-07-12",
+      "type": "Ride",
+      "name": "Selvino - Citt\u00e0 alta",
+      "interval_summary": [
+        "1x 3h58m 130bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "14305s@130bpm",
+          "duration_secs": 14305,
+          "avg_hr": 130,
+          "max_hr": 184,
           "zone": 2
         }
       ]
