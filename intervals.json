@@ -1,62 +1,10 @@
 {
-  "generated_at": "2026-07-11T23:57:27.251393",
+  "generated_at": "2026-07-12T03:42:52.785586",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i160715334",
-      "date": "2026-06-27",
-      "type": "Ride",
-      "name": "Valtorta",
-      "interval_summary": [
-        "1x 2h8m 175w",
-        "1x 41m40s 206w",
-        "1x 2h17m 118w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "7720s@175w70rpm",
-          "duration_secs": 7720,
-          "avg_power": 175,
-          "max_power": 649,
-          "avg_hr": 133,
-          "max_hr": 181,
-          "avg_cadence": 70.030655,
-          "zone": 2,
-          "training_load": 102.50508,
-          "decoupling": -18.403513
-        },
-        {
-          "type": "WORK",
-          "label": "2500s@206w70rpm",
-          "duration_secs": 2500,
-          "avg_power": 206,
-          "max_power": 398,
-          "avg_hr": 147,
-          "max_hr": 177,
-          "avg_cadence": 69.86,
-          "zone": 3,
-          "training_load": 42.395195,
-          "decoupling": 4.3424053
-        },
-        {
-          "type": "WORK",
-          "label": "8237s@118w58rpm",
-          "duration_secs": 8237,
-          "avg_power": 118,
-          "max_power": 494,
-          "avg_hr": 126,
-          "max_hr": 174,
-          "avg_cadence": 57.776302,
-          "zone": 1,
-          "training_load": 70.08027,
-          "decoupling": 7.0495157
-        }
-      ]
-    },
     {
       "activity_id": "i160918940",
       "date": "2026-06-28",
