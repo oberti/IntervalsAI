@@ -1,59 +1,10 @@
 {
-  "generated_at": "2026-07-12T23:57:15.589921",
+  "generated_at": "2026-07-13T03:44:54.723202",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i160918940",
-      "date": "2026-06-28",
-      "type": "Ride",
-      "name": "Selvino lato pensionati ma fresco",
-      "interval_summary": [
-        "1x 55m47s 174w",
-        "1x 2h58m 139w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "3347s@174w72rpm",
-          "duration_secs": 3347,
-          "avg_power": 174,
-          "max_power": 719,
-          "avg_hr": 137,
-          "max_hr": 184,
-          "avg_cadence": 71.531296,
-          "zone": 2,
-          "training_load": 52.516182,
-          "decoupling": -2.3842394
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 785,
-          "avg_power": 200,
-          "max_power": 531,
-          "avg_hr": 144,
-          "max_hr": 164,
-          "avg_cadence": 77.17926,
-          "zone": 2,
-          "training_load": 11.053161,
-          "decoupling": 3.667677
-        },
-        {
-          "type": "WORK",
-          "label": "10681s@139w56rpm",
-          "duration_secs": 10681,
-          "avg_power": 139,
-          "max_power": 564,
-          "avg_hr": 131,
-          "max_hr": 179,
-          "avg_cadence": 56.12057,
-          "zone": 1,
-          "training_load": 113.95015
-        }
-      ]
-    },
     {
       "activity_id": "i161604810",
       "date": "2026-06-30",
