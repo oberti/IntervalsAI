@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T17:24:10.813110",
+  "generated_at": "2026-07-16T18:41:15.463172",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -390,6 +390,54 @@
           "zone": 1,
           "training_load": 8.153293,
           "decoupling": -5.763762
+        }
+      ]
+    },
+    {
+      "activity_id": "i166376824",
+      "date": "2026-07-16",
+      "type": "Ride",
+      "name": "Bici da corsa",
+      "interval_summary": [
+        "1x 2m11s 251w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 6569,
+          "avg_power": 116,
+          "max_power": 721,
+          "avg_hr": 110,
+          "max_hr": 160,
+          "avg_cadence": 58.878067,
+          "zone": 1,
+          "training_load": 49.423542,
+          "decoupling": 3.2468686
+        },
+        {
+          "type": "WORK",
+          "label": "131s@251w70rpm",
+          "duration_secs": 131,
+          "avg_power": 251,
+          "max_power": 370,
+          "avg_hr": 145,
+          "max_hr": 152,
+          "avg_cadence": 69.63359,
+          "zone": 4,
+          "training_load": 3.0639272,
+          "decoupling": 8.7995405
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1935,
+          "avg_power": 125,
+          "max_power": 368,
+          "avg_hr": 116,
+          "max_hr": 151,
+          "avg_cadence": 60.16077,
+          "zone": 1,
+          "training_load": 17.141954,
+          "decoupling": 11.871206
         }
       ]
     }
