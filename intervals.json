@@ -1,90 +1,10 @@
 {
-  "generated_at": "2026-07-16T23:13:45.879394",
+  "generated_at": "2026-07-17T00:14:18.585629",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i162173620",
-      "date": "2026-07-02",
-      "type": "Ride",
-      "name": "Valcava da Torre",
-      "interval_summary": [
-        "1x 46m11s 170w",
-        "1x 18m21s 196w",
-        "1x 49m24s 191w",
-        "1x 8m22s 180w",
-        "1x 1h1m 84w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "2771s@170w66rpm",
-          "duration_secs": 2771,
-          "avg_power": 170,
-          "max_power": 527,
-          "avg_hr": 136,
-          "max_hr": 171,
-          "avg_cadence": 65.558365,
-          "zone": 2,
-          "training_load": 37.61541,
-          "decoupling": -1.4123999
-        },
-        {
-          "type": "WORK",
-          "label": "1101s@196w67rpm",
-          "duration_secs": 1101,
-          "avg_power": 196,
-          "max_power": 376,
-          "avg_hr": 149,
-          "max_hr": 172,
-          "avg_cadence": 66.719345,
-          "zone": 2,
-          "training_load": 18.205254,
-          "decoupling": 3.4165049
-        },
-        {
-          "type": "WORK",
-          "label": "2964s@191w57rpm",
-          "duration_secs": 2964,
-          "avg_power": 191,
-          "max_power": 333,
-          "avg_hr": 150,
-          "max_hr": 167,
-          "avg_cadence": 57.162617,
-          "zone": 2,
-          "training_load": 43.915962,
-          "decoupling": -0.14992994
-        },
-        {
-          "type": "WORK",
-          "label": "502s@180w59rpm",
-          "duration_secs": 502,
-          "avg_power": 180,
-          "max_power": 271,
-          "avg_hr": 144,
-          "max_hr": 163,
-          "avg_cadence": 58.896416,
-          "zone": 2,
-          "training_load": 6.5505967,
-          "decoupling": -6.909686
-        },
-        {
-          "type": "WORK",
-          "label": "3700s@84w38rpm",
-          "duration_secs": 3700,
-          "avg_power": 84,
-          "max_power": 385,
-          "avg_hr": 108,
-          "max_hr": 173,
-          "avg_cadence": 37.64892,
-          "zone": 1,
-          "training_load": 26.408285,
-          "decoupling": -0.015638947
-        }
-      ]
-    },
     {
       "activity_id": "i162629303",
       "date": "2026-07-04",
