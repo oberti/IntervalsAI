@@ -1,90 +1,10 @@
 {
-  "generated_at": "2026-07-18T23:55:58.737799",
+  "generated_at": "2026-07-19T03:20:14.960208",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i162629303",
-      "date": "2026-07-04",
-      "type": "Ride",
-      "name": "Passo San Marco da Morbegno",
-      "interval_summary": [
-        "1x 2h29m 168w",
-        "1x 11m32s 173w",
-        "1x 50m31s 144w",
-        "1x 2h31m 194w",
-        "1x 2h38m 85w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "8950s@168w69rpm",
-          "duration_secs": 8950,
-          "avg_power": 168,
-          "max_power": 529,
-          "avg_hr": 126,
-          "max_hr": 168,
-          "avg_cadence": 69.151985,
-          "zone": 2,
-          "training_load": 117.19484,
-          "decoupling": -9.20014
-        },
-        {
-          "type": "WORK",
-          "label": "692s@173w68rpm",
-          "duration_secs": 692,
-          "avg_power": 173,
-          "max_power": 597,
-          "avg_hr": 135,
-          "max_hr": 157,
-          "avg_cadence": 67.960556,
-          "zone": 2,
-          "training_load": 5.72105,
-          "decoupling": 10.212062
-        },
-        {
-          "type": "WORK",
-          "label": "3031s@144w66rpm",
-          "duration_secs": 3031,
-          "avg_power": 144,
-          "max_power": 367,
-          "avg_hr": 123,
-          "max_hr": 157,
-          "avg_cadence": 65.54217,
-          "zone": 1,
-          "training_load": 25.337317,
-          "decoupling": 6.718393
-        },
-        {
-          "type": "WORK",
-          "label": "9087s@194w66rpm",
-          "duration_secs": 9087,
-          "avg_power": 194,
-          "max_power": 453,
-          "avg_hr": 148,
-          "max_hr": 178,
-          "avg_cadence": 65.945114,
-          "zone": 2,
-          "training_load": 141.1251,
-          "decoupling": 8.926534
-        },
-        {
-          "type": "WORK",
-          "label": "9484s@85w45rpm",
-          "duration_secs": 9484,
-          "avg_power": 85,
-          "max_power": 384,
-          "avg_hr": 122,
-          "max_hr": 168,
-          "avg_cadence": 45.40875,
-          "zone": 1,
-          "training_load": 51.54015,
-          "decoupling": 3.5857189
-        }
-      ]
-    },
     {
       "activity_id": "i162864085",
       "date": "2026-07-05",
