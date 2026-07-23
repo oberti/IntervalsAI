@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T17:45:54.022885",
+  "generated_at": "2026-07-23T19:21:18.989142",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -865,6 +865,27 @@
           "zone": 1,
           "training_load": 43.0412,
           "decoupling": 7.8332105
+        }
+      ]
+    },
+    {
+      "activity_id": "i168537158",
+      "date": "2026-07-23",
+      "type": "Ride",
+      "name": "Bici da corsa",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 8394,
+          "avg_power": 128,
+          "max_power": 625,
+          "avg_hr": 113,
+          "max_hr": 161,
+          "avg_cadence": 54.867985,
+          "zone": 1,
+          "training_load": 79.28867,
+          "decoupling": -3.1262426
         }
       ]
     }
