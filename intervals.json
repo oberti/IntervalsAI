@@ -1,29 +1,10 @@
 {
-  "generated_at": "2026-07-25T23:43:57.737665",
+  "generated_at": "2026-07-26T01:16:49.805606",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i164700969",
-      "date": "2026-07-11",
-      "type": "Ride",
-      "name": "Giro del Lago d'Iseo",
-      "interval_summary": [
-        "1x 5h32m 139bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "19941s@139bpm",
-          "duration_secs": 19941,
-          "avg_hr": 139,
-          "max_hr": 182,
-          "zone": 2
-        }
-      ]
-    },
     {
       "activity_id": "i164954200",
       "date": "2026-07-12",
