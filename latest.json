@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-27T04:22:15.101733",
+    "last_updated": "2026-07-27T08:01:42.262898",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.108"
@@ -100,8 +100,8 @@
       "rhr": {
         "status": "green",
         "value": 44,
-        "baseline_7d": 47.6,
-        "delta_bpm": -3.6
+        "baseline_7d": 46.9,
+        "delta_bpm": -2.9
       },
       "sleep": {
         "status": "unavailable",
@@ -114,8 +114,8 @@
       },
       "ri": {
         "status": "green",
-        "value": 1.33,
-        "value_yesterday": 1.43
+        "value": 1.31,
+        "value_yesterday": 1.45
       },
       "tsb": {
         "status": "green",
@@ -129,14 +129,14 @@
       "unavailable": 1
     },
     "phase_context": {
-      "phase": "Build",
+      "phase": "Deload",
       "phase_week": 1,
-      "amber_threshold": 3,
-      "modifier_applied": "build_loosened"
+      "amber_threshold": 2,
+      "modifier_applied": "default"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 5 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 5 green, 0 amber (threshold 2), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -245,12 +245,12 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.33,
-    "recovery_index_yesterday": 1.43,
+    "recovery_index": 1.31,
+    "recovery_index_yesterday": 1.45,
     "hrv_baseline_7d": 61.0,
-    "rhr_baseline_7d": 47.6,
+    "rhr_baseline_7d": 46.9,
     "hrv_baseline_28d": 79.2,
-    "rhr_baseline_28d": 44.8,
+    "rhr_baseline_28d": 46.4,
     "latest_hrv": 75.0,
     "latest_rhr": 44,
     "acwr": 0.88,
@@ -554,10 +554,10 @@
       "note": "No planned workouts in period"
     },
     "phase_detection": {
-      "phase": "Build",
+      "phase": "Deload",
       "confidence": "medium",
       "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
+        "PLAN_GAP_NEXT_WEEK"
       ],
       "basis": {
         "stream_1": {
@@ -573,7 +573,7 @@
           "current_week_hard_days_total": 0,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 0.25,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -584,9 +584,9 @@
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Build",
+    "phase_detected": "Deload",
     "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
+      "PLAN_GAP_NEXT_WEEK"
     ],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
@@ -609,7 +609,7 @@
     "p_max": 901,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.779995,
-    "calculation_timestamp": "2026-07-27T04:22:15.100874",
+    "calculation_timestamp": "2026-07-27T08:01:42.261703",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -627,7 +627,7 @@
       "id": "i169307008",
       "date": "2026-07-26T07:52:03",
       "type": "Ride",
-      "name": "Bici da corsa",
+      "name": "Gerosa - Blello - Berbenno - Valsecca",
       "duration_hours": 3.69,
       "distance_km": 82.11,
       "tss": 205,
@@ -657,9 +657,9 @@
       "efficiency_factor": 1.5307692,
       "hrrc": 24,
       "elevation_m": 1359.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 4,
+      "effort_response": "neutral",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 3699,
@@ -790,7 +790,7 @@
       "id": "i169035258",
       "date": "2026-07-25T07:01:05",
       "type": "Ride",
-      "name": "Bici da corsa",
+      "name": "Bernigolo - Piazza Brembana - Citt\u00e0 alta",
       "duration_hours": 4.4,
       "distance_km": 107.86,
       "tss": 195,
@@ -820,9 +820,9 @@
       "efficiency_factor": 1.3798449,
       "hrrc": 27,
       "elevation_m": 706.0,
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 3,
+      "effort_response": "neutral",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 4928,
@@ -2681,13 +2681,13 @@
     {
       "date": "2026-07-21",
       "weight_kg": 72.2,
-      "resting_hr": 49,
+      "resting_hr": 50,
       "hrv_rmssd": 42.0,
       "hrv_sdnn": 32.0,
       "sleep_hours": 9.38,
       "sleep_formatted": "9h23m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 64.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.95882,
@@ -2720,13 +2720,13 @@
     {
       "date": "2026-07-22",
       "weight_kg": null,
-      "resting_hr": 53,
+      "resting_hr": 51,
       "hrv_rmssd": 58.0,
       "hrv_sdnn": 37.0,
       "sleep_hours": 7.57,
       "sleep_formatted": "7h34m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 78.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.88655,
@@ -2759,13 +2759,13 @@
     {
       "date": "2026-07-23",
       "weight_kg": 72.1,
-      "resting_hr": 52,
+      "resting_hr": 48,
       "hrv_rmssd": 38.0,
       "hrv_sdnn": 41.0,
       "sleep_hours": 6.68,
       "sleep_formatted": "6h41m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 67.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.82842,
@@ -2803,8 +2803,8 @@
       "hrv_sdnn": 48.0,
       "sleep_hours": 7.28,
       "sleep_formatted": "7h17m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 71.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.766804,
@@ -2837,13 +2837,13 @@
     {
       "date": "2026-07-25",
       "weight_kg": null,
-      "resting_hr": 41,
+      "resting_hr": 42,
       "hrv_rmssd": 86.0,
       "hrv_sdnn": 58.0,
       "sleep_hours": 8.0,
       "sleep_formatted": "8h",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 70.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.798393,
@@ -2876,13 +2876,13 @@
     {
       "date": "2026-07-26",
       "weight_kg": null,
-      "resting_hr": 43,
+      "resting_hr": 42,
       "hrv_rmssd": 79.0,
       "hrv_sdnn": 57.0,
       "sleep_hours": 9.07,
       "sleep_formatted": "9h4m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 78.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.78168,
@@ -2952,7 +2952,21 @@
       "readiness": 8.5
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 125386795,
+      "date": "2026-07-28",
+      "name": "ACQUISTO S810",
+      "type": "NOTE",
+      "sport_type": null,
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": ""
+    }
+  ],
   "workout_summary_stats": {
     "attempted": 0,
     "success": 0,
@@ -2967,7 +2981,7 @@
     "total_tss": 581,
     "activities_count": 4,
     "avg_hrv": 61.0,
-    "avg_resting_hr": 47.6
+    "avg_resting_hr": 46.9
   },
   "race_calendar": {
     "next_race": null,
