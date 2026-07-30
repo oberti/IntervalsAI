@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T17:00:59.295215",
+  "generated_at": "2026-07-30T18:46:30.686847",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -1183,6 +1183,25 @@
           "duration_secs": 9217,
           "avg_hr": 122,
           "max_hr": 165,
+          "zone": 2
+        }
+      ]
+    },
+    {
+      "activity_id": "i170868009",
+      "date": "2026-07-30",
+      "type": "Ride",
+      "name": "Bici da corsa",
+      "interval_summary": [
+        "1x 2h43m 120bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "9790s@120bpm",
+          "duration_secs": 9790,
+          "avg_hr": 120,
+          "max_hr": 163,
           "zone": 2
         }
       ]
