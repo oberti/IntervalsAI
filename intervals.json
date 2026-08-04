@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T15:35:28.350471",
+  "generated_at": "2026-08-04T17:21:38.269884",
   "version": "3.108",
   "script_hash": "41b49b1747e6",
   "scan_hours": 72,
@@ -616,6 +616,26 @@
           "avg_hr": 137,
           "max_hr": 181,
           "zone": 2
+        }
+      ]
+    },
+    {
+      "activity_id": "i172460541",
+      "date": "2026-08-04",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 11023,
+          "avg_power": 115,
+          "max_power": 549,
+          "avg_hr": 114,
+          "max_hr": 164,
+          "avg_cadence": 58.62369,
+          "zone": 1,
+          "training_load": 77.41668
         }
       ]
     }
