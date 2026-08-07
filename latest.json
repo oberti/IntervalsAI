@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-07T06:47:13.280627",
+    "last_updated": "2026-08-07T08:15:28.141206",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.122"
@@ -661,7 +661,7 @@
     "p_max": 893,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.744904,
-    "calculation_timestamp": "2026-08-07T06:47:13.279706",
+    "calculation_timestamp": "2026-08-07T08:15:28.139905",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -679,7 +679,7 @@
       "id": "i173163047",
       "date": "2026-08-06T17:18:24",
       "type": "Ride",
-      "name": "Afternoon Ride",
+      "name": "Berbenno da Brembilla",
       "duration_hours": 2.29,
       "duration_formatted": "2h17m12s",
       "distance_km": 53.96,
