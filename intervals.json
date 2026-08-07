@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T15:44:56.685421",
+  "generated_at": "2026-08-07T00:40:55.743280",
   "schema_version": 1,
   "version": "3.122",
   "script_hash": "5216d761e3d0",
@@ -711,34 +711,6 @@
       "zone_basis": "power"
     },
     {
-      "activity_id": "i168537158",
-      "date": "2026-07-23",
-      "start_datetime": "2026-07-23T17:27:37",
-      "type": "Ride",
-      "name": "San Pellegrino",
-      "interval_summary": null,
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 8394,
-          "moving_secs": 8394,
-          "start_secs": 0,
-          "end_secs": 8394,
-          "avg_power": 128,
-          "max_power": 625,
-          "avg_hr": 113,
-          "max_hr": 161,
-          "min_hr": 72,
-          "avg_cadence": 54.867985,
-          "zone": 1,
-          "w_bal_start": 13440,
-          "w_bal_end": 13439,
-          "training_load": 79.28867
-        }
-      ],
-      "zone_basis": "power"
-    },
-    {
       "activity_id": "i172842096",
       "date": "2026-08-05",
       "start_datetime": "2026-08-05T17:24:38",
@@ -838,6 +810,34 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i173163047",
+      "date": "2026-08-06",
+      "start_datetime": "2026-08-06T17:18:24",
+      "type": "Ride",
+      "name": "Afternoon Ride",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 8581,
+          "moving_secs": 8243,
+          "start_secs": 0,
+          "end_secs": 8581,
+          "avg_power": 125,
+          "max_power": 436,
+          "avg_hr": 114,
+          "max_hr": 163,
+          "min_hr": 71,
+          "avg_cadence": 59.09976,
+          "zone": 1,
+          "w_bal_start": 13440,
+          "w_bal_end": 13439,
+          "training_load": 82.114586
+        }
+      ],
+      "zone_basis": "power"
     }
   ],
   "fetch_state": {
@@ -851,12 +851,12 @@
         "reason": "ok"
       },
       "streams": {
-        "attempts": 14,
+        "attempts": 15,
         "first_seen": "2026-08-05T09:08:26.402928",
-        "last_attempt": "2026-08-06T15:44:56.685421",
+        "last_attempt": "2026-08-07T00:40:55.743280",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-06T21:44:56.685421"
+        "next_retry_at": "2026-08-07T06:40:55.743280"
       }
     },
     "i171645466": {
@@ -961,23 +961,6 @@
         "reason": "retry_expired"
       }
     },
-    "i168537158": {
-      "date": "2026-07-23",
-      "intervals": {
-        "attempts": 1,
-        "first_seen": "2026-08-05T09:08:26.402928",
-        "last_attempt": "2026-08-05T09:08:26.402928",
-        "status": "ok",
-        "reason": "ok"
-      },
-      "streams": {
-        "attempts": 1,
-        "first_seen": "2026-08-05T09:08:26.402928",
-        "last_attempt": "2026-08-05T09:08:26.402928",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i172842096": {
       "date": "2026-08-05",
       "intervals": {
@@ -988,12 +971,30 @@
         "reason": "ok"
       },
       "streams": {
-        "attempts": 11,
+        "attempts": 12,
         "first_seen": "2026-08-05T18:53:23.283075",
-        "last_attempt": "2026-08-06T15:44:56.685421",
+        "last_attempt": "2026-08-07T00:40:55.743280",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-06T16:14:56.685421"
+        "next_retry_at": "2026-08-07T01:10:55.743280"
+      }
+    },
+    "i173163047": {
+      "date": "2026-08-06",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-08-07T00:40:55.743280",
+        "last_attempt": "2026-08-07T00:40:55.743280",
+        "status": "ok",
+        "reason": "ok"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-08-07T00:40:55.743280",
+        "last_attempt": "2026-08-07T00:40:55.743280",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-08-07T00:45:55.743280"
       }
     }
   }
