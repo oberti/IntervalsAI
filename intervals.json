@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T09:57:15.899583",
+  "generated_at": "2026-08-09T10:41:34.292316",
   "schema_version": 1,
   "version": "3.122",
   "script_hash": "5216d761e3d0",
@@ -1156,6 +1156,71 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i173985429",
+      "date": "2026-08-09",
+      "start_datetime": "2026-08-09T07:48:48",
+      "type": "Ride",
+      "name": "Pedalata mattutina",
+      "interval_summary": [
+        "1x 5m42s 217w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1958,
+          "moving_secs": 1958,
+          "start_secs": 0,
+          "end_secs": 1958,
+          "avg_power": 161,
+          "max_power": 496,
+          "avg_hr": 131,
+          "max_hr": 173,
+          "min_hr": 87,
+          "avg_cadence": 68.12666,
+          "zone": 2,
+          "w_bal_start": 13440,
+          "w_bal_end": 13388,
+          "training_load": 26.665457
+        },
+        {
+          "type": "WORK",
+          "label": "342s@217w86rpm",
+          "duration_secs": 342,
+          "moving_secs": 342,
+          "start_secs": 1958,
+          "end_secs": 2300,
+          "avg_power": 217,
+          "max_power": 328,
+          "avg_hr": 146,
+          "max_hr": 157,
+          "min_hr": 124,
+          "avg_cadence": 86.29825,
+          "zone": 3,
+          "w_bal_start": 13389,
+          "w_bal_end": 13155,
+          "training_load": 6.1599617
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 11405,
+          "moving_secs": 10578,
+          "start_secs": 2300,
+          "end_secs": 13705,
+          "avg_power": 144,
+          "max_power": 657,
+          "avg_hr": 126,
+          "max_hr": 172,
+          "min_hr": 73,
+          "avg_cadence": 61.53252,
+          "zone": 1,
+          "w_bal_start": 13156,
+          "w_bal_end": 13423,
+          "training_load": 121.84476
+        }
+      ],
+      "zone_basis": "power"
     }
   ],
   "fetch_state": {
@@ -1312,6 +1377,24 @@
         "status": "pending",
         "reason": "no_data",
         "next_retry_at": "2026-08-09T12:08:23.333527"
+      }
+    },
+    "i173985429": {
+      "date": "2026-08-09",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-08-09T10:41:34.292316",
+        "last_attempt": "2026-08-09T10:41:34.292316",
+        "status": "ok",
+        "reason": "ok"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-08-09T10:41:34.292316",
+        "last_attempt": "2026-08-09T10:41:34.292316",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-08-09T10:46:34.292316"
       }
     }
   }
