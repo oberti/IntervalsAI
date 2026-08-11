@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-11T19:46:35.328024",
+    "last_updated": "2026-08-11T20:47:45.337642",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.122"
@@ -230,10 +230,10 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 72.5,
+      "weight_kg": 72.4,
       "display": {
         "weight": {
-          "value": 72.5,
+          "value": 72.4,
           "unit": "kg"
         }
       },
@@ -250,7 +250,7 @@
       "motivation": 2,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 96.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -270,19 +270,22 @@
       "readiness": 8.7
     },
     "weight": {
-      "weight_latest_kg": 72.5,
-      "weight_latest_date": "2026-08-06",
-      "wkg_current": 3.68,
+      "weight_latest_kg": 72.4,
+      "weight_latest_date": "2026-08-11",
+      "wkg_current": 3.69,
       "wkg_ftp_source": "tested",
       "ftp_setting_date": "2026-08-11",
-      "weight_28d_slope_kg_per_week": 0.034,
+      "wkg_block_start": 3.69,
+      "wkg_block_end": 3.69,
+      "wkg_block_delta": 0.0,
+      "weight_28d_slope_kg_per_week": 0.052,
       "display": {
         "weight_latest": {
-          "value": 72.5,
+          "value": 72.4,
           "unit": "kg"
         },
         "weight_28d_slope_per_week": {
-          "value": 0.034,
+          "value": 0.052,
           "unit": "kg/week"
         }
       }
@@ -492,20 +495,20 @@
           "start": "2026-07-01",
           "end": "2026-08-11"
         },
-        "weight_kg": 72.5,
+        "weight_kg": 72.4,
         "weight_source": "wellness_recent",
         "cycling": {
           "anchors": {
             "300s": {
               "actual_watts": 290,
-              "actual_wpkg": 4.0,
+              "actual_wpkg": 4.01,
               "actual_hr": 167,
               "pct_lthr": 95.4,
               "source": "observed_outdoor",
               "coggan_watts": 283,
-              "coggan_wpkg": 3.9,
+              "coggan_wpkg": 3.91,
               "cp_model_watts": 333,
-              "cp_model_wpkg": 4.59,
+              "cp_model_wpkg": 4.6,
               "model_divergence_pct": -12.9
             },
             "600s": {
@@ -515,7 +518,7 @@
               "pct_lthr": 94.9,
               "source": "observed_outdoor",
               "coggan_watts": 259,
-              "coggan_wpkg": 3.57,
+              "coggan_wpkg": 3.58,
               "cp_model_watts": 300,
               "cp_model_wpkg": 4.14,
               "model_divergence_pct": -8.0
@@ -527,7 +530,7 @@
               "pct_lthr": 93.7,
               "source": "observed_outdoor",
               "coggan_watts": 248,
-              "coggan_wpkg": 3.42,
+              "coggan_wpkg": 3.43,
               "cp_model_watts": 284,
               "cp_model_wpkg": 3.92,
               "model_divergence_pct": -8.5
@@ -541,17 +544,17 @@
               "coggan_watts": 240,
               "coggan_wpkg": 3.31,
               "cp_model_watts": 278,
-              "cp_model_wpkg": 3.83,
+              "cp_model_wpkg": 3.84,
               "model_divergence_pct": -9.4
             },
             "3600s": {
               "actual_watts": 220,
-              "actual_wpkg": 3.03,
+              "actual_wpkg": 3.04,
               "actual_hr": 150,
               "pct_lthr": 85.7,
               "source": "observed_outdoor",
               "coggan_watts": 230,
-              "coggan_wpkg": 3.17,
+              "coggan_wpkg": 3.18,
               "cp_model_watts": 273,
               "cp_model_wpkg": 3.77,
               "model_divergence_pct": -19.4
@@ -577,7 +580,7 @@
               "coggan_watts": 208,
               "coggan_wpkg": 2.87,
               "cp_model_watts": 270,
-              "cp_model_wpkg": 3.72,
+              "cp_model_wpkg": 3.73,
               "model_divergence_pct": -28.1
             }
           },
@@ -655,7 +658,7 @@
     "p_max": 893,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.716595,
-    "calculation_timestamp": "2026-08-11T19:46:35.326827",
+    "calculation_timestamp": "2026-08-11T20:47:45.336357",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -3748,7 +3751,7 @@
       "motivation": 3,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 99.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -3793,7 +3796,7 @@
       "motivation": 3,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 99.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -3835,7 +3838,7 @@
       "motivation": 3,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 98.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -3877,7 +3880,7 @@
       "motivation": 2,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 99.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -3919,7 +3922,7 @@
       "motivation": 3,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 98.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -3961,7 +3964,7 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 96.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -3982,9 +3985,12 @@
     },
     {
       "date": "2026-08-11",
-      "weight_kg": null,
+      "weight_kg": 72.4,
       "display": {
-        "weight": null
+        "weight": {
+          "value": 72.4,
+          "unit": "kg"
+        }
       },
       "resting_hr": 42,
       "hrv_rmssd": 84.0,
@@ -4003,7 +4009,7 @@
       "motivation": 2,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 96.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
