@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T09:12:56.049381",
+  "generated_at": "2026-08-12T10:28:08.173923",
   "schema_version": 1,
   "version": "3.122",
   "script_hash": "5216d761e3d0",
@@ -1106,6 +1106,34 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i175068400",
+      "date": "2026-08-12",
+      "start_datetime": "2026-08-12T07:24:25",
+      "type": "Ride",
+      "name": "Pedalata mattutina",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 14467,
+          "moving_secs": 12901,
+          "start_secs": 0,
+          "end_secs": 14467,
+          "avg_power": 129,
+          "max_power": 592,
+          "avg_hr": 116,
+          "max_hr": 164,
+          "min_hr": 71,
+          "avg_cadence": 58.703342,
+          "zone": 1,
+          "w_bal_start": 13440,
+          "w_bal_end": 13439,
+          "training_load": 126.917046
+        }
+      ],
+      "zone_basis": "power"
     }
   ],
   "fetch_state": {
@@ -1261,6 +1289,24 @@
         "status": "pending",
         "reason": "no_data",
         "next_retry_at": "2026-08-12T13:52:51.040402"
+      }
+    },
+    "i175068400": {
+      "date": "2026-08-12",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-08-12T10:28:08.173923",
+        "last_attempt": "2026-08-12T10:28:08.173923",
+        "status": "ok",
+        "reason": "ok"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-08-12T10:28:08.173923",
+        "last_attempt": "2026-08-12T10:28:08.173923",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-08-12T10:33:08.173923"
       }
     }
   }
