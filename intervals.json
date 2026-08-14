@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T23:59:10.414909",
+  "generated_at": "2026-08-14T02:35:54.040455",
   "schema_version": 1,
   "version": "3.122",
   "script_hash": "5216d761e3d0",
@@ -79,31 +79,6 @@
           "avg_hr": 135,
           "max_hr": 184,
           "min_hr": 72,
-          "zone": 2
-        }
-      ],
-      "zone_basis": "hr"
-    },
-    {
-      "activity_id": "i170868009",
-      "date": "2026-07-30",
-      "start_datetime": "2026-07-30T17:22:22",
-      "type": "Ride",
-      "name": "San Pellegrino",
-      "interval_summary": [
-        "1x 2h43m 120bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "9790s@120bpm",
-          "duration_secs": 9790,
-          "moving_secs": 9790,
-          "start_secs": 0,
-          "end_secs": 9790,
-          "avg_hr": 120,
-          "max_hr": 163,
-          "min_hr": 69,
           "zone": 2
         }
       ],
@@ -1452,23 +1427,6 @@
         "reason": "retry_expired"
       }
     },
-    "i170868009": {
-      "date": "2026-07-30",
-      "intervals": {
-        "attempts": 1,
-        "first_seen": "2026-08-05T09:08:26.402928",
-        "last_attempt": "2026-08-05T09:08:26.402928",
-        "status": "ok",
-        "reason": "ok"
-      },
-      "streams": {
-        "attempts": 1,
-        "first_seen": "2026-08-05T09:08:26.402928",
-        "last_attempt": "2026-08-05T09:08:26.402928",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i172842096": {
       "date": "2026-08-05",
       "intervals": {
@@ -1565,12 +1523,12 @@
         "reason": "ok"
       },
       "streams": {
-        "attempts": 16,
+        "attempts": 17,
         "first_seen": "2026-08-12T10:28:08.173923",
-        "last_attempt": "2026-08-13T19:24:45.220374",
+        "last_attempt": "2026-08-14T02:35:54.040455",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-14T01:24:45.220374"
+        "next_retry_at": "2026-08-14T08:35:54.040455"
       }
     },
     "i175423437": {
