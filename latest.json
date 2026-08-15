@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-15T13:52:05.400973",
+    "last_updated": "2026-08-15T14:23:55.070748",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.122"
@@ -475,19 +475,19 @@
         },
         "anchors": {
           "60s": {
-            "current_bpm": 189,
+            "current_bpm": 174,
             "previous_bpm": 182,
-            "pct_change": 3.8
+            "pct_change": -4.4
           },
           "300s": {
-            "current_bpm": 181,
+            "current_bpm": 167,
             "previous_bpm": 167,
-            "pct_change": 8.4
+            "pct_change": 0.0
           },
           "1200s": {
-            "current_bpm": 168,
+            "current_bpm": 164,
             "previous_bpm": 164,
-            "pct_change": 2.4
+            "pct_change": 0.0
           },
           "3600s": {
             "current_bpm": 148,
@@ -495,7 +495,7 @@
             "pct_change": -1.3
           }
         },
-        "rotation_index": 5.5,
+        "rotation_index": -1.6,
         "note": "Compares max sustained HR at 4 anchor durations (60s anaerobic ceiling, 300s VO2max HR, 1200s threshold HR, 3600s endurance HR) across two 28d windows. rotation_index = mean(60s,300s pct_change) - mean(1200s,3600s pct_change). Positive = intensity-biased HR shift, negative = endurance-biased. No sport filter \u2014 HR is cross-sport physiological (dominated by hardest efforts). IMPORTANT: rising max sustained HR is ambiguous \u2014 may indicate improved cardiac output (good) or accumulated fatigue/dehydration/heat (bad). Cross-reference with resting HRV, resting HR, RPE, and environmental context before interpreting. Null when either window has fewer than 3 valid anchor durations."
       },
       "sustainability_profile": {
@@ -511,8 +511,8 @@
             "300s": {
               "actual_watts": 290,
               "actual_wpkg": 4.05,
-              "actual_hr": 181,
-              "pct_lthr": 103.4,
+              "actual_hr": 167,
+              "pct_lthr": 95.4,
               "source": "observed_outdoor",
               "coggan_watts": 283,
               "coggan_wpkg": 3.95,
@@ -523,8 +523,8 @@
             "600s": {
               "actual_watts": 276,
               "actual_wpkg": 3.85,
-              "actual_hr": 181,
-              "pct_lthr": 103.4,
+              "actual_hr": 166,
+              "pct_lthr": 94.9,
               "source": "observed_outdoor",
               "coggan_watts": 259,
               "coggan_wpkg": 3.62,
@@ -535,8 +535,8 @@
             "1200s": {
               "actual_watts": 260,
               "actual_wpkg": 3.63,
-              "actual_hr": 168,
-              "pct_lthr": 96.0,
+              "actual_hr": 164,
+              "pct_lthr": 93.7,
               "source": "observed_outdoor",
               "coggan_watts": 248,
               "coggan_wpkg": 3.46,
@@ -667,7 +667,7 @@
     "p_max": 893,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.984398,
-    "calculation_timestamp": "2026-08-15T13:52:05.399757",
+    "calculation_timestamp": "2026-08-15T14:23:55.069526",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 7,
@@ -734,9 +734,9 @@
           "unit": "km/h"
         }
       },
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 2,
+      "rpe": 5,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 8168,
