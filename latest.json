@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-16T09:53:24.021985",
+    "last_updated": "2026-08-16T10:24:43.753814",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.122"
@@ -102,8 +102,8 @@
   "athlete_notes": null,
   "alerts": [],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
         "status": "green",
@@ -132,14 +132,14 @@
         "value_yesterday": 1.38
       },
       "tsb": {
-        "status": "amber",
-        "value": -22.4
+        "status": "red",
+        "value": -37.3
       }
     },
     "signal_summary": {
       "green": 4,
-      "amber": 1,
-      "red": 0,
+      "amber": 0,
+      "red": 1,
       "unavailable": 1
     },
     "phase_context": {
@@ -149,8 +149,17 @@
       "modifier_applied": "default"
     },
     "race_week_defers": false,
-    "modification": null,
-    "reason": "P3 green light. 4 green, 1 amber (threshold 2), 0 red.",
+    "modification": {
+      "triggers": [
+        "tsb"
+      ],
+      "suggested_adjustments": {
+        "intensity": "preserve",
+        "volume": "reduce",
+        "cap_zone": null
+      }
+    },
+    "reason": "P2 signal count. 1 red (tsb), 0 amber ().",
     "alarm_refs": []
   },
   "history": {
@@ -194,10 +203,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 102.91,
-      "atl": 125.3,
-      "tsb": -22.39,
-      "ramp_rate": 3.6,
+      "ctl": 106.11,
+      "atl": 143.41,
+      "tsb": -37.3,
+      "ramp_rate": 6.8,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -670,7 +679,7 @@
     "p_max": 893,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 49.020428,
-    "calculation_timestamp": "2026-08-16T09:53:24.020717",
+    "calculation_timestamp": "2026-08-16T10:24:43.752431",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 7,
@@ -685,7 +694,7 @@
   },
   "recent_activities": [
     {
-      "id": "19763381021",
+      "id": "19763945411",
       "date": "2026-08-16T07:44:05",
       "type": "Unknown",
       "name": "",
