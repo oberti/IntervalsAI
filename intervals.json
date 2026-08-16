@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T23:45:35.939897",
+  "generated_at": "2026-08-16T01:25:35.245261",
   "schema_version": 1,
   "version": "3.122",
   "script_hash": "5216d761e3d0",
@@ -54,31 +54,6 @@
           "avg_hr": 137,
           "max_hr": 181,
           "min_hr": 76,
-          "zone": 2
-        }
-      ],
-      "zone_basis": "hr"
-    },
-    {
-      "activity_id": "i171377555",
-      "date": "2026-08-01",
-      "start_datetime": "2026-08-01T06:21:56",
-      "type": "Ride",
-      "name": "Giro del Lago d'Iseo",
-      "interval_summary": [
-        "1x 5h46m 135bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "20764s@135bpm",
-          "duration_secs": 20764,
-          "moving_secs": 20764,
-          "start_secs": 0,
-          "end_secs": 20764,
-          "avg_hr": 135,
-          "max_hr": 184,
-          "min_hr": 72,
           "zone": 2
         }
       ],
@@ -1779,23 +1754,6 @@
     },
     "i171645466": {
       "date": "2026-08-02",
-      "intervals": {
-        "attempts": 1,
-        "first_seen": "2026-08-05T09:08:26.402928",
-        "last_attempt": "2026-08-05T09:08:26.402928",
-        "status": "ok",
-        "reason": "ok"
-      },
-      "streams": {
-        "attempts": 1,
-        "first_seen": "2026-08-05T09:08:26.402928",
-        "last_attempt": "2026-08-05T09:08:26.402928",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
-    "i171377555": {
-      "date": "2026-08-01",
       "intervals": {
         "attempts": 1,
         "first_seen": "2026-08-05T09:08:26.402928",
