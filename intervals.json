@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T23:45:31.422911",
+  "generated_at": "2026-08-17T01:22:21.423112",
   "schema_version": 1,
   "version": "3.122",
   "script_hash": "5216d761e3d0",
@@ -33,31 +33,6 @@
         }
       ],
       "zone_basis": "power"
-    },
-    {
-      "activity_id": "i171645466",
-      "date": "2026-08-02",
-      "start_datetime": "2026-08-02T07:52:14",
-      "type": "Ride",
-      "name": "Miragolo - La Passata - Selvino",
-      "interval_summary": [
-        "1x 3h29m 137bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "12599s@137bpm",
-          "duration_secs": 12599,
-          "moving_secs": 12599,
-          "start_secs": 0,
-          "end_secs": 12599,
-          "avg_hr": 137,
-          "max_hr": 181,
-          "min_hr": 76,
-          "zone": 2
-        }
-      ],
-      "zone_basis": "hr"
     },
     {
       "activity_id": "i172842096",
@@ -2116,23 +2091,6 @@
         "attempts": 17,
         "first_seen": "2026-08-05T09:08:26.402928",
         "last_attempt": "2026-08-07T13:52:05.790637",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
-    "i171645466": {
-      "date": "2026-08-02",
-      "intervals": {
-        "attempts": 1,
-        "first_seen": "2026-08-05T09:08:26.402928",
-        "last_attempt": "2026-08-05T09:08:26.402928",
-        "status": "ok",
-        "reason": "ok"
-      },
-      "streams": {
-        "attempts": 1,
-        "first_seen": "2026-08-05T09:08:26.402928",
-        "last_attempt": "2026-08-05T09:08:26.402928",
         "status": "tombstone",
         "reason": "retry_expired"
       }
