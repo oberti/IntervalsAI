@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-17T05:50:38.527134",
+    "last_updated": "2026-08-17T06:58:50.642646",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.122"
@@ -668,7 +668,7 @@
     "p_max": 893,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.983532,
-    "calculation_timestamp": "2026-08-17T05:50:38.526157",
+    "calculation_timestamp": "2026-08-17T06:58:50.641246",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -1791,7 +1791,7 @@
       "id": "i173985429",
       "date": "2026-08-09T07:48:48",
       "type": "Ride",
-      "name": "Pedalata mattutina",
+      "name": "Bernigolo - Piazza Brembana",
       "duration_hours": 3.57,
       "duration_formatted": "3h34m29s",
       "distance_km": 89.4,
@@ -1956,7 +1956,7 @@
       "id": "i173758911",
       "date": "2026-08-08T05:55:29",
       "type": "Ride",
-      "name": "Pedalata mattutina",
+      "name": "Passo del Vivione da Via Mala",
       "duration_hours": 8.57,
       "duration_formatted": "8h34m25s",
       "distance_km": 193.6,
