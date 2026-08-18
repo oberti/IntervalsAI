@@ -4,6 +4,93 @@ Intervals.icu → GitHub/Local JSON Export
 Exports training data for LLM access.
 Supports both automated GitHub sync and manual local export.
 
+Version 3.127 - Start-of-day ACWR for readiness; ACWR loses standalone P1 authority.
+  derived_metrics.acwr stays live and today-inclusive for retrospective load reporting.
+  readiness_decision now reads a separate derived_metrics.acwr_start_of_day, computed
+  from the same 7d/28d windows with activities dated today excluded, so today's bucket
+  is empty. It is not a midnight snapshot: it is recomputed from current source data on
+  every sync with activities dated as_of_date excluded. The readiness value is
+  therefore unchanged by a workout completed today and cannot veto a later same-day
+  session. Tomorrow is not decided from today's post-workout snapshot either: tomorrow
+  morning computes a new start-of-day value, which will include today's training. The
+  value still moves when an earlier day's activity is backfilled or corrected. On a sync
+  with no activity dated today the two values are identical.
+  Windows and fetch depth are unchanged - no extra day fetched, no snapshot persisted.
+  ACWR no longer forces P1 on its own. Section 11 classifies it as a Tier-2 load metric
+  and Tier 2 must not override Tier-1 primary readiness, yet ACWR >= 1.5 alone produced
+  a non-overridable Skip and ACWR >= 1.3 alone a non-overridable Modify at the top of
+  the Gabbett sweet spot. P1 Skip now requires >= 1.5 AND a corroborating Tier-1 signal
+  (hrv, rhr, sleep or ri at amber or red); the standalone >= 1.3 Modify branch is gone.
+  Uncorroborated ACWR counts as a P2 amber/red like any other signal, raw value still
+  visible. Impellizzeri et al. (2020).
+  The live acwr alert keeps its severity for consumer compatibility but drops the
+  injury-risk claim and carries scope "live_retrospective" / readiness_eligible False;
+  derived_metrics gains acwr_scope / acwr_readiness_eligible for the same reason.
+  Alerts, weekly-row ACWR, acwr_trend, phase detection and _interpret_acwr are unchanged
+  and continue to read the live value.
+  Pairs with SECTION_11.md / SKILL.md v11.59.
+
+Version 3.126 - Apple Watch SDNN explained, never substituted.
+  Apple's native HRV is SDNN, which Intervals.icu stores separately from the rMSSD in
+  hrv. Readiness reads rMSSD only, so an athlete whose latest wellness record carries
+  SDNN but no usable rMSSD gets signals.hrv.status "unavailable" with no stated cause
+  (issue #25). signals.hrv now carries reason "rmssd_missing_sdnn_available" in that
+  case. The key is additive and omitted when it does not apply; status, value,
+  baseline_7d, delta_pct, the signal counts and every P0-P3 branch are unchanged.
+  SDNN is never converted, relabelled or thresholded as rMSSD.
+  Pairs with SECTION_11.md / SKILL.md v11.58.
+
+Version 3.125 - VirtualRow joins the rowing sport family.
+  SPORT_FAMILIES had no entry for VirtualRow, so indoor and virtual rowing fell through
+  .get(type, "other") and was classified as other (issue #22). Cycling and ski already
+  pair their Virtual* variant with the outdoor type; rowing was the one family missing
+  it. VirtualRow is added to SPORT_FAMILIES and to both SUSTAINABILITY_POWER_TYPES and
+  SUSTAINABILITY_HR_TYPES, so it inherits rowing-family behaviour everywhere: per-sport
+  monotony, sustainability curves, interval-fetch eligibility (rowing is in
+  INTERVAL_SPORT_FAMILIES) and thresholds.sports["rowing"]. Collision with Rowing needs
+  no new rule: _build_sport_thresholds already resolves by populated-field count then
+  alphabetical type, and Rowing sorts first.
+  Housekeeping folded in: the generate_history() save message now names the resolved
+  path, and the auto-history path no longer rewrites a file generate_history() has
+  already written.
+  Pairs with SECTION_11.md / SKILL.md v11.57.
+
+Version 3.124 - Present-but-null list fields no longer crash the sync.
+  Intervals.icu returns sportInfo, sportSettings and sportSettings[].types as the key
+  PRESENT with a null value, not absent, on records written by third-party wellness
+  clients. A .get(key, []) default only applies to an ABSENT key, so the null reached
+  the loop and raised TypeError, failing the whole sync (issue #23). Four expressions
+  are switched to `or []`: sportInfo in _extract_power_model_from_wellness, sportSettings
+  and types in _build_sport_thresholds, and types in _build_ftp_timeline. Behaviour on
+  absent, empty and populated payloads is unchanged, since an empty list already took
+  the same path as the [] default; only null changes, from raise to skip.
+  Deliberately NOT changed: the icu_intervals read is already guarded by an isinstance
+  check (its null bucketing is a retry-ladder semantics question, not this bug), and the
+  icu_zone_times / icu_hr_zone_times reads are each immediately gated by a truthiness
+  test, where null is falsy and harmless.
+  Pairs with SECTION_11.md / SKILL.md v11.56.
+
+Version 3.123 - Custom-interval edits invalidate the interval cache.
+  A successful interval fetch was treated as permanent: fetch_state ok meant the
+  activity was never queued again, so intervals the athlete added or edited in
+  Intervals.icu after that sync stayed invisible until intervals.json was deleted
+  (issue #20). The activity list already fetched every sync carries icu_sync_date,
+  observed to advance on controlled repeated interval edits, and icu_intervals_edited;
+  the fix uses the former as an invalidation token gated by the latter, so detection
+  costs no extra API request and the unchanged steady state still makes zero calls.
+  The refresh runs as its own lifecycle (fetch_state[id].intervals.refresh) rather
+  than through the pending/retry ladder, because that ladder's deadline derives from
+  activity_start: an edit days after the ride would expire on its first failure and
+  tombstone an endpoint whose cached payload is still good. During a refresh the
+  endpoint holds status ok, and a failure preserves the payload, attempts, first_seen
+  and source_icu_sync_date, advancing only refresh.attempts / refresh.next_retry_at
+  (_schedule_refresh, clocked from the attempt, no deadline, continuing at the ladder
+  maximum until retention pruning). A terminal 404/410 exhausts that one target while
+  retaining the payload; a later, different token re-arms it. Absent icu_sync_date
+  fails closed to prior behaviour, never a loop. Streams are never queued by this arm.
+  fetch_state is internal, so schema_version stays 1 and activities[] is unchanged.
+  Pairs with SECTION_11.md / SKILL.md v11.55.
+
 Version 3.122 - DFA a1 crossing estimate-eligibility + artifact truthfulness.
   (1) Crossing eligibility. a1 is a windowed estimator - alphaHRV publishes it from the
   prior DFA_LOOKBACK_BEATS beats, so the window's DURATION varies with HR - while watts is
@@ -97,306 +184,15 @@ Version 3.120 - intervals.json schema correctness (B1). HARD MIGRATION: per-inte
   retention window. No classifier or placeholder normalization in this release.
   SECTION_11.md v11.52.
 
-Version 3.119 - Per-interval min_hr (issue #19). The interval mapping copied
-  average_heartrate and max_heartrate but dropped min_heartrate, which Intervals.icu already
-  returns on the same /activity/{id}?intervals=true payload - no new API call. Additive only;
-  None-stripping keeps the key absent when unavailable. min_hr is the lowest HR reported
-  upstream for the segment and does NOT establish recovery-zone compliance: a segment average
-  carries the delayed fall from the preceding work bout, and any extremum can be produced by a
-  stop, a dropout or an artifact rather than by physiology. SECTION_11.md v11.51 adds the strict
-  interpretation rule and suspends the four HR-recovery progression/regression use sites that
-  had no defined input. script_hash change invalidates intervals.json - next run re-scans the
-  full 14d retention window. SECTION_11.md v11.51.
+Version 3.119–3.116 — Per-interval min_hr from the existing activity payload, no new API call (issue #19; SECTION_11.md v11.51 adds the interpretation rule that no single segment statistic establishes recovery-zone compliance, and suspends the four HR-recovery use sites that had no defined input); DFA a1 >1.0 band renamed tiz_recovery → tiz_easy with dominant_band now selected on raw band secs and exact ties resolved by descending intensity rather than alphabetically; P1 readiness alarm_refs built per firing branch instead of listing every persistent tier-1 ref; P1 persistent-alert skip gated on severity warning/alarm in addition to tier and persistence.
 
-Version 3.118 - DFA a1 easy-band rename + dominant_band tie rule. The >1.0 band is renamed
-  tiz_recovery -> tiz_easy (short key recovery -> easy in dfa_summary.tiz_pct,
-  latest_session.tiz_split_pct and the dominant_band VALUE). a1 > 1.0 is the well-correlated
-  easy state above the easy_guard (1.0); it can occur on a recovery ride OR an endurance ride
-  and does not classify the session as recovery - the v3.115 name invited exactly that
-  misreading in reports. Band boundaries and values are UNCHANGED. Not a keys-only release:
-  dominant_band is now selected on raw band secs instead of the rounded one-decimal pct
-  (rounding could manufacture ties), and a genuine exact-second tie resolves by descending
-  intensity (supra > tempo > endurance > easy) instead of alphabetically, so band key names
-  can no longer influence the result and a true tie never understates internal load. No
-  dominant_band change on current live sessions. Hard migration - no dual recovery/easy keys;
-  the script_hash change invalidates intervals.json, so the next run re-scans the full 14d
-  retention window and re-fetches streams. SECTION_11.md v11.50.
+Version 3.115–3.113 — DFA a1 marker cycle: four TIZ bands renamed to match the corrected marker semantics (values and boundaries unchanged); three self-describing markers easy_guard (a1 1.0, a conservative easy-state guard, never a threshold), lt1 (0.75, literature HRVT1) and lt2 (0.5), each carrying marker_dfa_a1, with the LT1 crossing corrected from 1.0; crossing estimates require sustained contiguous dwell and gate independently per threshold with reason codes; _generate_intervals receives the 28d activity set so first-run backfill reaches the full 14d window, and cached entries whose activity is no longer present are pruned.
 
-Version 3.117 - P1 readiness alarm_refs per-branch attribution: the P1 skip return listed
-  every tier1_persistent ref whenever any P1 reason fired, so an ACWR- or TSB-triggered skip
-  with RI >= 0.7 (persistent branch inactive) and unrelated persistent alerts present could
-  name refs that did not trigger the decision. alarm_refs is now built per firing branch -
-  ACWR contributes the acwr alert ref only if that object is present (guaranteed at >=1.5,
-  which exceeds the >=1.35 alert threshold); the TSB+HRV composite contributes none (no
-  discrete alert object to resolve to, per the alerts[] schema); the RI<0.7 persistent branch
-  contributes its tier-1 metrics only when it fires. Matches the shipped v11.47 alarm_refs
-  contract ("names that triggered P0/P1, each resolving to an alerts[] object"), so doc body
-  unchanged. Also: tier1_persistent persistence_days test switched from (x or 0) >= 2 to an
-  explicit None check (behavior identical). P0 already clean; P2/P3/modify return []. Output
-  change in the edge case only. SECTION_11.md v11.49 records the release (changelog-only).
+Version 3.112–3.109 — Body weight signal block (current_status.weight: latest, W/kg with FTP source tag, block trajectory, 7d average, 28d slope, each field gated on its own data density); latest.history.last_generated freshness fix; weekly capability rollup on weekly_180d and monthly dominant_phase aligned to _detect_phase_v2 by modal aggregation, plus the or-chain → is-None fix at four extraction sites where an exact 0.0 fell through to a sibling key; Display Unit Semantics, with display.{value, unit} pairs alongside canonical metric at every narrative-bearing site.
 
-Version 3.116 - P1 readiness-skip severity gate (Commit B of the alert-tier cycle): the P1
-  "persistent tier-1 alert" skip branch now requires severity in ("warning", "alarm"), not
-  tier alone. Inert on current data - the only tier-1 info alerts (race_taper, race_week)
-  carry persistence_days None and were already excluded by the >=2 check; guards against a
-  future tier-1 info alert with a real persistence value silently forcing a P1 skip. Behavior
-  change to the readiness ladder in principle, no output change today. SECTION_11.md v11.48
-  syncs the P1 doc line + alerts[].severity / alerts[].persistence_days schema rows.
+Version 3.108–3.105 — Conservative error classification for the intervals, streams and terrain fetchers so a transient failure is retried rather than cached as truth; completed-activity terrain_summary and weather_summary on outdoor recent_activities[] with explicit status keys and a units block; has_intervals narrowed to require at least one WORK segment, so whole-session RECOVERY placeholders stop reading as structured; effort_response classifier reading session IF against the RPE expectation bands, null below IF 0.65 by design.
 
-Version 3.115 - DFA a1 TIZ band rename (Commit C of A/B/C): the four time-in-zone bands
-  are renamed to marker-consistent names - values/boundaries UNCHANGED, keys only.
-  Per-session dfa block: tiz_below_lt1 -> tiz_recovery (a1>1.0), tiz_lt1_transition ->
-  tiz_endurance (0.75-1.0), tiz_transition_lt2 -> tiz_tempo (0.5-0.75), tiz_above_lt2 ->
-  tiz_supra (a1<0.5). Compact summaries (latest_session.tiz_split_pct, recent_activities[].
-  dfa_summary.tiz_pct, dominant_band) carry the bare short keys: recovery / endurance /
-  tempo / supra. The old names encoded the pre-v3.114 error (LT1=1.0); the new names read
-  correctly against LT1=0.75 (the 0.75-1.0 band is endurance approaching LT1 from below (LT1 at the 0.75 edge), not a 'transition',
-  and the >1.0 band is recovery, not 'below LT1'). SECTION_11.md v11.46 + report display
-  labels harmonized (Z2/transition/SS/above-LT2 -> recovery/endurance/tempo/supra).
-
-Version 3.114 - DFA a1 three-marker semantics (Commit A of A/B/C): the LT1 crossing
-  estimate moves from a1=1.0 to the literature HRVT1 value a1=0.75 (aerobic threshold),
-  and a1=1.0 becomes its own named 'easy_guard' marker (a conservative easy-state guard,
-  NOT a threshold). Three markers now: easy_guard (1.0), lt1 (0.75), lt2 (0.5). Each
-  per-session crossing block and each trailing estimate carries marker_dfa_a1 so the JSON
-  is self-describing (no AI need remember which a1 value a field means). Per-marker gating/
-  reason logic generalized via _build_marker (called 3x). Sport-level confidence stays a
-  coarse max across the THRESHOLD markers only (lt1, lt2) - easy_guard excluded so easy
-  rides can't inflate threshold-calibration confidence. capability_metrics_note rewritten.
-  NOTE: old lt1_estimate semantics (a1=1.0) now live under easy_guard_estimate; the new
-  lt1_estimate (a1=0.75) reads higher and populates less often. SECTION_11.md v11.45 +
-  report templates + TIZ band rename follow in Commits B/C.
-
-Version 3.113 - DFA a1 crossing integrity: LT1/LT2 crossing estimates now
-  require a sustained CONTIGUOUS crossing (>=DFA_MIN_CROSSING_DWELL_SECS in-band
-  seconds, bridging <=DFA_CROSSING_MAX_GAP_SECS of original ride-time), measured
-  on the original stream index (valid_idx) since valid_* arrays are compacted.
-  Each crossing block gains contiguous_secs, n_qualifying_segments, and a reason
-  (ok / no_samples_in_band / insufficient_total_dwell / no_contiguous_dwell);
-  avg_hr/avg_watts populate only at reason=="ok". trailing_by_sport estimates are
-  gated INDEPENDENTLY per threshold (>=DFA_MIN_CROSSING_SESSIONS_N qualifying
-  sessions), fixing the hollow-block bug where one threshold's crossings emitted
-  the other's estimate all-null; new lt1_reason/lt2_reason explain a null.
-  Sport-level confidence retained as a coarse max-across-thresholds signal.
-  capability_metrics_note updated. (SECTION_11.md v11.44 pairs.)
-  Also (v3.113): _generate_intervals now receives the 28d extended activity set so
-  first-run backfill reaches the full 14d retention window (was silently truncated
-  to the 7d display set), and prunes cached entries whose activity_id is no longer
-  present (deleted/re-uploaded rides); completed recent_activities gain
-  duration_formatted; DFA entries gain start_datetime for same-day latest_session
-  tiebreak.
-
-Version 3.112 - Body weight signal block (current_status.weight): gated fields
-  for block-level W/kg and weekly weight trend, all surfaced via a single
-  _build_weight_signal helper. Failed-gate fields are absent from the JSON;
-  AI layer omits the corresponding report section silently (no boilerplate).
-  Display blocks ship for narrated weights per Display Unit Semantics; W/kg
-  stays unit-universal.
-  Fields:
-    weight_latest_kg / weight_latest_date — gate: latest weigh-in age <=14d
-    wkg_current + wkg_ftp_source [+ ftp_setting_date] — gate: weight_latest
-      present + FTP source. Tested cycling FTP from sportSettings preferred,
-      eFTP fallback. eFTP is not suppressed for stale tested FTP — the
-      source tag plus ftp_setting_date carry the staleness signal. Date
-      reflects the FTP setting change recorded in ftp_history.json (not a
-      formal test date — Intervals does not expose one).
-    wkg_block_start / wkg_block_end / wkg_block_delta — gate: >=1 weigh-in
-      within the FIRST 4 days of the trailing 28d window AND >=1 weigh-in
-      within the LAST 4 days (v1 block proxy; protocol does not yet track
-      explicit block boundaries). Both endpoints use current FTP, so delta
-      reflects weight change only.
-    weight_7d_avg_kg — gate: >=4 weigh-ins in trailing 7d
-    weight_28d_slope_kg_per_week — gate: >=14 weigh-ins in trailing 28d
-    display.{weight_latest, weight_7d_avg, weight_28d_slope_per_week} —
-      _to_display style {value, unit} pairs respecting athlete weight pref;
-      slope built manually to preserve 3dp and append "/week" to unit code.
-  Pairs with SECTION_11.md v11.43 (new Body Weight Handling section incl.
-  Deliberately Deferred subsection) and weight rows in BLOCK / WEEKLY
-  report templates. Pre-workout and post-workout templates intentionally
-  untouched in v1.
-
-Version 3.111 - latest.history.last_generated freshness fix: auto-history
-  generation block (should_generate_history → generate_history → write/publish)
-  moved in main() from after collect_training_data to before it.
-  _get_history_confidence() inside collect_training_data now reads the
-  just-written history.json, so latest.history.last_generated reflects the same
-  generated_at as the on-disk history. Previously, runs that triggered a
-  history rebuild published latest.json with stale last_generated because the
-  freshness read happened during data dict construction, before the rebuild
-  step. Local and GitHub modes share a single guarded block — args.output picks
-  the write target. try/except resilience preserved: failed history regen still
-  permits latest.json publish. Routes/intervals generation unchanged (still
-  runs after collect_training_data, which populates _intervals_data and
-  _routes_data). No schema change.
-
-Version 3.110 - Weekly capability rollup + monthly phase alignment + decoupling 0.0 fix:
-  (1) weekly_180d rows now carry six per-week capability fields: durability_mean /
-  durability_qualifying (VI<=1.05, VI>0, mt>=5400, decoupling not None), ef_mean /
-  ef_qualifying (cycling types, VI<=1.05, VI>0, mt>=1200, EF not None), hrrc_mean /
-  hrrc_qualifying (icu_hrr>0). N>=1 emits a mean; qualifying count signals confidence.
-  Trajectory layer for Season Report v2 — no alert or trend logic at this layer.
-  (2) monthly_*y[].dominant_phase now derives from modal aggregation of already-computed
-  weekly_180d[].phase_detected values rather than the previous standalone CTL-trend +
-  qi_pct inline rule. Overlap test: week_start < next_month AND week_end >= current_month
-  (catches boundary weeks straddling month edges). Most-frequent label wins; TSS is
-  tie-break only. Null when no overlapping weekly rows (month outside 180d window).
-  Vocabulary now matches _detect_phase_v2 output.
-  (3) _calculate_durability: replaced `or`-chain fallback (`get("icu_hr_decoupling") or
-  get("decoupling")`) with explicit is-None check — prevents silent drop of 0.0 values.
-  (4) Same is-None pattern applied to all three HRRc dict-extraction sites
-  (_calculate_hrrc_trend qualifying filter, weekly capability rollup, activity formatter
-  raw_hrrc): explicit `value is None` check before falling through to `hrr`. If API ever
-  returns `{"value": 0, ...}`, 0 is now treated as authoritative (then filtered by the
-  >0 gate) rather than falling through to a sibling key. SEASON_REPORT_TEMPLATE.md Notes
-  section updated: phase-narrative bullet now describes modal-from-_detect_phase_v2
-  derivation and the structural null-for-older-months behavior; capability-absent bullet
-  replaced with per-week trajectory field documentation.
-
-Version 3.109 - Display Unit Semantics: every narrative-bearing field that ships in
-  canonical metric (distance_km, elevation_m, weight_kg, height_m, avg_speed/max_speed
-  as KPH, position_km, total_distance_km, total_elevation_m, elevation_per_km,
-  distance_meters) now sits alongside a nested display block ({value, unit} sub-objects
-  under `display.*`) converted to the athlete's Intervals.icu unit preferences. One
-  schema shape across every emission site — AI rule is uniformly "quote display.*".
-  Canonical fields are preserved verbatim — the AI quotes display.* in narrative;
-  calculations continue to use the canonical fields (preserves the no-virtual-math
-  contract). New athlete_profile.display_preferences block surfaces the six-key prefs
-  map (wind/temp/rain/distance/weight/height) — no new API call (already extracted by
-  _athlete_units_from_dict). Two new helpers: _to_display(value, kind, athlete_units) —
-  single converter for six kinds (distance / elevation / elevation_per_distance /
-  weight / height / speed), null-safe, idempotent on metric (just rounds);
-  _refresh_terrain_display(ts, athlete_units) — recomputes display sub-objects on
-  copy-forward terrain caches (recent_activities terrain copy-forward + routes.json
-  attachment-id cache) so a unit-pref change picks up next sync without invalidating
-  the expensive trackpoint analysis. Sites: athlete_profile.display.height,
-  current_status.current_metrics.display.weight, recent_activities[].display.{distance,
-  elevation, avg_speed, max_speed}, terrain_summary.display.{total_distance,
-  total_elevation, elevation_per_distance} + climbs[]/descents[].display.{position,
-  distance, elevation} (recent_activities and routes.json — same code path via
-  _analyze_terrain), summary.by_activity_type[].display.distance,
-  wellness_data[].display.weight, history.json daily_90d/weekly_180d[].display.weight,
-  monthly_*y[].display.avg_weight (aggregate naming preserved),
-  race_calendar.all_races[].display.distance. Sustainability profile weight_kg
-  deliberately stays canonical-only (calculation input for W/kg, not user-facing).
-  Existing per-activity unit siblings (avg_speed_unit/max_speed_unit/avg_temp_unit/
-  wind_speed_unit) and weather_summary.units block left as-is — additive layer, not
-  replacement; SECTION_11.md v11.40 documents the layering.
-
-Version 3.108 - Conservative error classification for intervals/streams/terrain fetchers:
-  resolves v3.107 TODO. _fetch_activity_intervals, _fetch_activity_streams, and
-  _fetch_terrain_streams now return (status, payload) tuples: terminal_error for HTTP
-  404/410 only, transient for everything else (5xx, 429, all other 4xx incl. 401/403,
-  network, timeout, parse, shape). Caller skips the cache write on transient — activity
-  stays out of cached_ids and is retried next sync. Pre-3.108 streams/intervals caught
-  all exceptions as []/{}, so a transient hiccup wrote a partial entry that locked out
-  valid DFA/interval data forever. Conservative {404, 410} whitelist prevents auth or
-  config glitches (401, 403) from permanently marking activities as failed. Terrain 4xx
-  branch narrowed from broad-4xx-terminal to the same whitelist. Schema unchanged.
-
-Version 3.107 - Completed-Activity Terrain & Weather: terrain_summary and weather_summary
-  blocks embedded on outdoor activities in recent_activities[]. State-on-record (no new
-  files) — sync.py loads its own previous latest.json at start of each run and copies
-  forward; presence of terrain_summary or a terminal terrain_status IS the "already
-  pulled" signal. Indoor activities have no field at all (type is the indoor signal).
-  New _fetch_terrain_streams returns (status, payload) with terminal/transient
-  classification (5xx/429/network NOT cached). latlng dual-array gotcha: Intervals stores
-  lat in data and lng in data2 — NOT Strava's paired [lat, lng]. max_grade_pct now tracks
-  max abs grade across all 200m chunks rather than detected-climbs-only — earlier impl
-  reported 0.0 on rolling routes whose kickers didn't cross the sustained-climb threshold.
-  Smoothed-pipeline attenuates peak gradients (12-15% real reads as 6-8%); SECTION_11
-  max_grade_pct >= 8 trigger calibrated to this scale. weather_summary uses stable keys
-  plus a units sub-block; athlete unit settings fetched once per sync. weather_status
-  re-evaluated every sync (unlike terrain) since Intervals can compute weather
-  minutes-to-hours after upload. New helpers: _compute_grade_distribution,
-  _streams_to_trackpoints, _fetch_terrain_streams, _athlete_units_from_dict,
-  _load_previous_latest, _build_terrain_for_activity, _build_weather_for_activity.
-  Companion: examples/agentic/pull.py read-only streams/units fetcher.
-
-Version 3.106 - has_intervals semantics fix: has_intervals is now true only when at least
-  one interval segment is type=="WORK". Pre-existing bug: a non-empty intervals list was
-  treated as structured, but Intervals.icu emits a single whole-session RECOVERY placeholder
-  on unstructured endurance rides. Live v3.105 test across 62 activities showed 9 false
-  positives (SkiErg, virtual endurance) vs 3 true RECOVERY,WORK structures. This realizes
-  the v3.101 intent ("narrowed to structured segments only") which never took effect at the
-  check level. has_dfa and intervals collection logic unchanged — only the downstream flag
-  is tightened.
-
-Version 3.105 - Effort Response Signal: new effort_response key on every recent_activities[]
-  entry. Deterministic classifier mapping session IF (icu_intensity) against reported RPE
-  (icu_rpe) through the v11.34 RPE Expectation Bands. Values: "positive" (RPE below band —
-  fitness/freshness tell), "neutral" (RPE within band), "negative" (RPE above band —
-  fatigue/under-recovery tell), null when IF or RPE absent, RPE <= 0, or IF < 0.65 (out of
-  band coverage — recovery/aborted sessions are a deliberate gap, not missing data). Session
-  IF used by design; matches whole-session RPE the athlete actually logs, and work-portion
-  IF from intervals.json is available for case-by-case inspection but not the field value.
-  icu_intensity is stored as percentage (0-100+); classifier normalizes to decimal at entry
-  to match the canonical band table in SECTION_11.md §RPE Expectation Bands. Interpretive
-  overlay — does NOT alter Feel/RPE Override rules (v11.14) and does NOT enter the
-  readiness P0-P3 ladder.
-
-Version 3.104 - Aggregate Durability reliability gate: alarm (28d mean > 5%) now requires
-  qualifying_sessions_28d >= 5 before firing; declining warning (7d > 28d by > 2%) now
-  requires qualifying_sessions_7d >= 3 AND qualifying_sessions_28d >= 5. Below gate, metrics
-  stay visible in capability.durability but no alert fires. Two new fields on the durability
-  object: reliability_limited (bool, true when N28<5 or N7<3) and reliability_note (string
-  with both N values and both minimums, null when unlimited). The high_drift_count_7d >= 3
-  warning is count-based and untouched. Filter criteria (VI <= 1.05, >= 90min) unchanged —
-  this is a sample-size safeguard, not a metric redefinition. Addresses GitHub issue #11.
-
-Version 3.103 - Athlete profile + notes + per-field unit labels: new top-level athlete_profile
-  block in latest.json (date_of_birth, derived age, height_m, sex, location, timezone,
-  platform_activated, derived years_on_platform) sourced from the existing athlete endpoint
-  call — zero new API calls. New top-level athlete_notes block (raw string passthrough of
-  icu_notes; raw form chosen to keep the change minimal — restructure expected when mini-
-  dossier work lands). Per-field unit labels added to recent_activities entries:
-  avg_temp_unit ("C"/"F" from athlete.fahrenheit), wind_speed_unit (MPS/KPH/MPH from
-  athlete.wind_speed enum, passthrough), avg_speed_unit and max_speed_unit (hardcoded
-  "KPH" — sync.py converts m/s → km/h unconditionally at format time, label reflects the
-  emitted value, not user preference; a US user gets KPH regardless of account setting,
-  which is the current latent behavior the label now surfaces). Sibling-field form chosen
-  over nested {value, unit} object — additive, non-breaking for existing consumers reading
-  these as scalars. New helpers _years_since() (ISO YYYY-MM-DD → complete years to today,
-  null-safe; serves both age-from-DOB and tenure-from-activation) and _compose_location()
-  (joins city/state/country with .strip() to handle Intervals.icu trailing-space data,
-  returns null when all parts empty). athlete_profile fields are informational; do NOT
-  enter readiness P0–P3 logic, threshold computation, or any numeric coaching pathway.
-  icu_api_key is in the raw athlete dict response — explicit-allow extraction pattern
-  preserved; never serialize the raw athlete dict.
-
-Version 3.102 - Phase detection fixes: corrected three independent bugs causing in-Build weeks
-  to misclassify as Base on Mon/Tue after a deload→Build cycle. (1) ctl_slope was a 2-point chord
-  divided by len(values) instead of (n-1) and included the in-progress current week's partial
-  mid-day CTL — replaced with statistics.linear_regression over finalized weeks (chord-over-(n-1)
-  fallback for Python <3.10). (2) Build/Base scorer used hard_sessions_planned (current week
-  remainder only), never merging completed-so-far with planned-remaining — added
-  current_week_hard_days_completed and current_week_hard_days_total on stream_2; scorer now
-  reads the merged total. (3) plan_coverage_* denominator was hard-coded expected_sessions=5,
-  producing values up to 2.6 for athletes training 12-17 sessions/week — now derives from rolling
-  4-week mean activity_count over finalized weeks (fallback 5). New is_backfill flag on
-  _phase_stream1_features and _detect_phase_v2 controls whether weekly_rows[-1] is sliced off
-  (live, in-progress week excluded) or kept (backfill, target week sits at [-1]). History
-  regen loop now skips the in-progress current week entirely. Live weekly_rows build extended
-  to include activity_count per row (was history-only before).
-
-Version 3.101 - has_dfa split + dfa_summary: new has_dfa boolean on recent_activities[] in
-  latest.json, independent from has_intervals. has_intervals semantics narrowed to structured
-  segments only — a steady Z2 ride with AlphaHRV now reports has_intervals: false, has_dfa: true
-  (previously the latter overloaded the former). New compact dfa_summary block attached when
-  has_dfa: true AND quality.sufficient: true — fields: avg, dominant_band (max-pct, alphabetical
-  tiebreak), tiz_pct (4 bands), valid_pct, sufficient, plus optional drift_delta/drift_interpretable
-  and lt1/lt2 watts/hr (omitted when underlying data absent — never null-filled). Lets the AI
-  write post-workout DFA commentary from latest.json alone for the common case. quality.sufficient
-  tightened: previously duration-only (>=20 min valid); now also requires valid_pct >= 70%. New
-  constant DFA_SUFFICIENT_MIN_VALID_PCT = 70.0. Excludes noisy AlphaHRV sessions that previously
-  passed the duration gate (pre-existing latent bug). New helper _build_dfa_summary() — pure
-  extractor, no computation, single source of truth shared with capability summary.
-
-Version 3.100 - DFA power calibration indoor/outdoor split: trailing_by_sport.cycling lt1/lt2
-  estimates now split watts by environment (watts_outdoor, watts_indoor — always present, null
-  when no qualifying sessions). HR stays pooled. Per-environment n_sessions for depth assessment.
-  Shared _is_indoor_cycling() resolver (VirtualRide = indoor) replaces inline checks.
-  Non-cycling sports unchanged. Activity name anonymization removed — names pass through as-is
-  for coaching context (route identification, terrain association). athlete_id always redacted.
+Version 3.104–3.100 — Aggregate durability alert paths gated on qualifying-session counts with reliability_limited/reliability_note below gate (issue #11); athlete_profile, athlete_notes and per-field unit labels from the existing athlete call; three phase-detection fixes for in-Build weeks misclassifying; has_dfa split from has_intervals with the compact dfa_summary block and quality.sufficient tightened to require valid_pct ≥ 70; DFA power calibration split into watts_outdoor/watts_indoor with HR pooled, and activity-name anonymization removed (athlete_id still always redacted).
 
 Version 3.99–3.96 — DFA a1 Protocol (per-session dfa block, dfa_a1_profile, streams fetcher, 14d retention); schema rename derived_metrics.polarisation_index → easy_time_ratio; readiness signal hygiene (low-side ACWR removed, RI 2-day persistence, ACWR boundary unification, recovery_index_yesterday); course character fix (elevation_per_km only, climb-category upgrade retained).
 
@@ -436,7 +232,7 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.122"
+    VERSION = "3.127"
     INTERVALS_FILE = "intervals.json"
     ROUTES_FILE = "routes.json"
 
@@ -464,6 +260,10 @@ class IntervalsSync:
     # (Gronwald/Rogers 2020, Rogers 2021, Mateo-March 2023). 1.0 is BELOW the aerobic threshold
     # (well-correlated easy state) — Section 11 uses it as a deliberate conservative easy-state
     # guard, NOT as LT1. Mapping cycling-validated; other sports get rollups but validated=False.
+    # RETRACTION (v11.45, recorded here because it is the reason 1.0 must not come back as LT1):
+    # the prior basis for LT1 = 1.0 was a "Rowlands 2017" citation. No such DFA paper is
+    # locatable and no source places LT1 at α1 1.0; the citation was removed as miscited.
+    # Do not restore 1.0 as a threshold on the strength of that reference reappearing.
     DFA_EASY_GUARD = 1.0                # v3.114: conservative easy-state guard (α1 1.0) — NOT a threshold
     DFA_LT1 = 0.75                      # v3.114: HRVT1 / aerobic threshold (literature; was 1.0)
     DFA_LT2 = 0.5                       # DFA a1 below this = above LT2 (supra-threshold)
@@ -524,6 +324,7 @@ class IntervalsSync:
         "TrailRun": "run",
         "Swim": "swim",
         "Rowing": "rowing",
+        "VirtualRow": "rowing",
         "WeightTraining": "strength",
         "Yoga": "other",
         "Workout": "other",
@@ -573,14 +374,14 @@ class IntervalsSync:
     SUSTAINABILITY_POWER_TYPES = {
         "cycling": ["Ride", "VirtualRide"],
         "ski":     ["NordicSki", "VirtualSki"],
-        "rowing":  ["Rowing"],
+        "rowing":  ["Rowing", "VirtualRow"],
     }
     
     # Activity types for sport-filtered hr-curves fetch
     SUSTAINABILITY_HR_TYPES = {
         "cycling": ["Ride", "VirtualRide"],
         "ski":     ["NordicSki", "VirtualSki"],
-        "rowing":  ["Rowing"],
+        "rowing":  ["Rowing", "VirtualRow"],
     }
     
     def __init__(self, athlete_id: str, intervals_api_key: str, github_token: str = None, 
@@ -1724,6 +1525,28 @@ class IntervalsSync:
             return None
         return nxt.isoformat()
 
+    def _schedule_refresh(self, attempts: int, now: datetime,
+                          retry_after_secs: Optional[int] = None) -> str:
+        """
+        Next attempt timestamp for an outstanding interval refresh.
+
+        Distinct from _schedule_retry: the clock is the refresh attempt, never
+        activity_start. An edit lands days after the ride, so an activity_start
+        deadline would expire the refresh before its first retry and tombstone an
+        endpoint whose cached payload is still good. There is no deadline here —
+        past the fast ladder a due refresh continues at the maximum delay until
+        retention pruning removes the activity, so an outage self-heals without
+        polling every sync.
+        """
+        delay = self.INTERVAL_RETRY_LADDER[-1][1]
+        for through, secs in self.INTERVAL_RETRY_LADDER:
+            if through is None or attempts <= through:
+                delay = secs
+                break
+        if retry_after_secs is not None:
+            delay = max(delay, int(retry_after_secs))
+        return (now + timedelta(seconds=delay)).isoformat()
+
     def _advance_endpoint_state(self, prev: Optional[Dict], endpoint: str, outcome: str,
                                 reason: str, now: datetime, activity_start: datetime,
                                 paired_planned: bool,
@@ -1895,7 +1718,7 @@ class IntervalsSync:
             if state is None:
                 if date_str < scan_cutoff or act_id in cached_ids:
                     continue
-                candidates.append((act, {"intervals": True, "streams": True}))
+                candidates.append((act, {"intervals": True, "streams": True}, False))
                 continue
             due = {}
             for endpoint in ("intervals", "streams"):
@@ -1905,14 +1728,38 @@ class IntervalsSync:
                 nxt = ep_state.get("next_retry_at")
                 if nxt is None or str(nxt) <= now_iso:
                     due[endpoint] = True
+            # REFRESH — a completed interval fetch is only settled until the athlete
+            # edits the activity. icu_sync_date is observed to advance on controlled
+            # repeated edits, so it serves as the invalidation token; icu_intervals_edited
+            # gates the check to activities that carry custom intervals at all. Scan
+            # window does not apply (an edit arrives long after the ride); retention and
+            # present_activity_ids still do, both already applied above. Intervals only —
+            # stream availability is a property of the recording, which editing cannot
+            # change.
+            refresh = False
+            ep_state = state.get("intervals") or {}
+            if ep_state.get("status") == "ok" and act.get("icu_intervals_edited") is True:
+                token = act.get("icu_sync_date")
+                # Absent token: no basis for comparison, and re-fetching on absence
+                # would loop forever. Fail closed to current behaviour.
+                if token and token != ep_state.get("source_icu_sync_date"):
+                    ref = ep_state.get("refresh") or {}
+                    if ref.get("target_sync_date") != token:
+                        refresh = True          # new token supersedes any prior chase
+                    elif ref.get("status") != "exhausted":
+                        nxt = ref.get("next_retry_at")
+                        if nxt is None or str(nxt) <= now_iso:
+                            refresh = True
+                    if refresh:
+                        due["intervals"] = True
             if due:
-                candidates.append((act, due))
+                candidates.append((act, due, refresh))
 
         # Fetch due endpoints. Payload updates are collected per activity and applied
         # sibling-by-sibling during the merge — never as a whole-record replacement.
         updates = {}
         fetched_any = 0
-        for act, due in candidates:
+        for act, due, refresh in candidates:
             act_id = str(act.get("id"))
             act_start = self._activity_start_dt(act)
             paired = act_id in paired_ids
@@ -1929,6 +1776,7 @@ class IntervalsSync:
             if due.get("intervals"):
                 status, payload = self._fetch_activity_intervals(act_id)
                 retry_after = self._last_retry_after_secs
+                token = act.get("icu_sync_date")
                 if status == "ok":
                     segments, zone_basis = self._format_interval_segments(payload, act)
                     upd["intervals"] = segments
@@ -1936,7 +1784,37 @@ class IntervalsSync:
                     state["intervals"] = self._advance_endpoint_state(
                         state.get("intervals"), "intervals", "ok", "ok",
                         now, act_start, paired)
+                    # _advance_endpoint_state rebuilds the dict from a fixed key set, so
+                    # the token is written here rather than carried through it. Dropping
+                    # `refresh` on success is the intended effect of that rebuild.
+                    if token:
+                        state["intervals"]["source_icu_sync_date"] = token
                     fetched_any += 1
+                elif refresh:
+                    # A failed refresh must not cost the cached payload. Endpoint status,
+                    # attempts, first_seen and the last successful token are all left
+                    # standing; only the refresh sub-object advances. A terminal 404/410
+                    # exhausts this target alone — a later, different token re-arms it.
+                    ep = state.get("intervals") or {}
+                    prev_ref = ep.get("refresh") or {}
+                    attempts = (int(prev_ref.get("attempts", 0)) + 1
+                                if prev_ref.get("target_sync_date") == token else 1)
+                    ref = {"target_sync_date": token, "attempts": attempts}
+                    if status == "terminal_error":
+                        ref["status"] = "exhausted"
+                        ref["reason"] = "terminal_error"
+                    else:
+                        ref["reason"] = "no_data" if status == "no_data" else "transient"
+                        ref["next_retry_at"] = self._schedule_refresh(
+                            attempts, now, retry_after)
+                    ep["refresh"] = ref
+                    # An endpoint request did occur. status, reason, attempts, first_seen
+                    # and source_icu_sync_date stay put; retry counting lives in refresh.
+                    ep["last_attempt"] = now.isoformat()
+                    state["intervals"] = ep
+                    if self.debug:
+                        print(f"    ⚠️  interval refresh {ref['reason']} for {act_id} "
+                              f"(cached payload retained)")
                 elif status == "terminal_error":
                     state["intervals"] = self._advance_endpoint_state(
                         state.get("intervals"), "intervals", "tombstone", "terminal_error",
@@ -2801,7 +2679,9 @@ class IntervalsSync:
         Extract eFTP, W', P-max from wellness.sportInfo.
         These are the accurate live estimates that match the Intervals.icu UI.
         """
-        sport_info = wellness_data.get("sportInfo", [])
+        # v3.124: sportInfo arrives present-but-null from third-party wellness clients,
+        # so the [] default never applies. Same for the reads below.
+        sport_info = wellness_data.get("sportInfo") or []
         
         # Find cycling sport info
         cycling_info = None
@@ -3369,7 +3249,7 @@ class IntervalsSync:
                 "data_period": f"Last {days_back} days (including today)",
                 "extended_data_note": f"ACWR and baselines calculated from {days_for_acwr} days of data",
                 "capability_metrics_note": "The 'capability' block in derived_metrics contains durability trend (aggregate decoupling 7d/28d), efficiency factor trend (aggregate EF 7d/28d), HRRc trend (heart rate recovery 7d/28d), TID comparison (7d vs 28d distribution drift), power curve delta (MMP shift at anchor durations across 28d windows — energy system adaptation direction), HR curve delta (max sustained HR shift at anchor durations — cardiac adaptation, cross-sport), sustainability profile (per-sport power/HR sustainability table for race estimation — 42d window, sport-filtered), and DFA a1 profile (per-session non-linear HRV index from AlphaHRV Connect IQ field — latest_session + trailing_by_sport with crossing-band easy_guard / LT1 / LT2 estimates). These measure HOW the athlete expresses fitness, not just load. Use these for coaching context alongside traditional load metrics. Durability and EF trend direction matters more than absolute values. HRRc is display only — higher = better parasympathetic recovery. Power curve delta rotation_index reveals whether gains are sprint-biased (positive) or endurance-biased (negative). HR curve delta is ambiguous — rising max sustained HR may indicate fitness or fatigue; cross-reference with resting HRV/HR and RPE. Sustainability profile provides race estimation lookup: actual MMP, Coggan predicted (cycling only), CP/W' model (cycling only), model_divergence_pct (actual vs CP — divergence IS the coaching signal). CP/W' is primary for durations ≤20min; Coggan duration factors are the established reference for ≥60min. Source flag (observed_outdoor/observed_indoor) matters for cycling race estimation — indoor MMP is typically 3-5% lower. DFA a1 profile: three self-describing markers (each estimate + crossing block carries marker_dfa_a1) — easy_guard (a1 1.0, a conservative easy-state guard, NOT a threshold), lt1 (a1 0.75, HRVT1 / aerobic threshold), lt2 (a1 0.5, HRVT2 / anaerobic threshold). The literature threshold markers (0.75 / 0.5) are cycling-validated only - non-cycling sports get rollups but validated=False. Every estimate requires a SUSTAINED contiguous crossing: each session's easy_guard_crossing / lt1_crossing / lt2_crossing carries a reason (ok / no_samples_in_band / insufficient_total_dwell / no_contiguous_dwell); scattered in-band time does not produce an estimate. v3.122: dwell is not sufficient. Each crossing also carries estimate_eligible / estimate_reason / n_eligible_segments - a1 reflects the prior 200 beats while watts is instantaneous, so a crossing recorded across varying power blends work and recovery into a number that is not usable as a threshold estimate. avg_hr / avg_watts stay populated on a dwell-qualified but estimate-ineligible crossing as descriptive evidence (a dwell-failed crossing has null averages as before); read estimate_eligible, never infer from absence. Compact lt1_/lt2_ summary fields and all trailing rollups consume eligible crossings only. HR is pooled across sessions; watts are split by environment for cycling (watts_outdoor, watts_indoor with per-environment n_sessions) - compare watts_outdoor against ftp, watts_indoor against ftp_indoor. Non-cycling sports keep pooled watts. easy_guard_estimate, lt1_estimate and lt2_estimate are each gated INDEPENDENTLY - null when that marker has fewer than 3 estimate-ELIGIBLE marker-sessions (v3.122 - not merely dwell-qualified; see easy_guard_eligible_sessions / lt1_eligible_sessions / lt2_eligible_sessions alongside the *_crossing_sessions counts, and note that any gap between them means at least one dwell-qualified marker-session was estimate-rejected). An estimate is null whenever minimum estimate-eligible session depth is not met. If at least one eligible session exists, trailing_by_sport.{sport}.easy_guard_reason / lt1_reason / lt2_reason is insufficient_sessions. If none exists, the staged reason identifies the dominant blocker: dwell failure, incomplete coverage, excessive artifacts, non-positive mean power, or non-stationary power. Do NOT read a null estimate as 'the athlete did not sustain that marker' - read the reason. IMPORTANT: easy_guard is a conservative easy-state compliance guard, NOT an LT1/aerobic-threshold estimate - never compare it to dossier zones and never treat it as a calibration or staleness signal; only lt1 (0.75) and lt2 (0.5) inform threshold calibration. lt1 (0.75) populates only on rides that sustain aerobic-threshold intensity, so it is often null on easy/deload riding - that is expected, not a data gap. Sport-level confidence is a coarse max across the THRESHOLD markers only (lt1, lt2; easy_guard excluded) - low is suppressed for calibration delta surfacing, usable at 'moderate' or 'high'; per-marker estimate presence + reason are authoritative. DFA a1 is a Tier-2 interpretive signal - does NOT enter readiness P0-P3 ladder, does NOT auto-update dossier zones; surfaces calibration deltas only (from lt1/lt2, never easy_guard). Quality gate: refuse to interpret any DFA output when latest_session.sufficient=false. Threshold (lt1/lt2) calibration additionally requires trailing confidence != null; when confidence is null, do NOT surface lt1/lt2 calibration deltas. easy_guard is NOT gated on confidence (it is excluded from it) - interpret easy_guard_estimate from its own reason / n_sessions / quality when present, but never as a calibration signal. See SECTION_11.md DFA a1 Protocol for full interpretation rules.",
-                "readiness_decision_note": "The 'readiness_decision' block contains a pre-computed go/modify/skip recommendation with priority level (P0=safety, P1=overload, P2=fatigue, P3=green), individual signal statuses, phase-adjusted thresholds, and structured modification guidance. Use this as the baseline for pre-workout recommendations. Override with explanation in the coach note if the AI's contextual judgment disagrees.",
+                "readiness_decision_note": "The 'readiness_decision' block contains a pre-computed go/modify/skip recommendation with priority level (P0=safety, P1=overload, P2=fatigue, P3=green), individual signal statuses, phase-adjusted thresholds, and structured modification guidance. Use this as the baseline for pre-workout recommendations. Override only under the override rules in SECTION_11.md (Feel/RPE Override): athlete-reported state escalates unconditionally, de-escalation is P2-only, P0/P1 are not overridable. signals.acwr is the START-OF-DAY value from derived_metrics.acwr_start_of_day - the same 7d/28d windows with today's activities excluded - so it does not move when a workout is completed today. derived_metrics.acwr stays live and today-inclusive: retrospective load context only (acwr_readiness_eligible false), never used to approve, modify or veto a later same-day session or tomorrow's. Tomorrow is decided from tomorrow morning's readiness output, whose start-of-day value will include today's training. ACWR alone no longer forces P1 - a Skip needs start-of-day ACWR >= 1.5 plus a corroborating Tier-1 signal, and uncorroborated ACWR counts as an ordinary P2 amber/red. signals.hrv may carry an optional reason: 'rmssd_missing_sdnn_available' means the latest wellness record has no usable rMSSD but does carry SDNN. SDNN is a different metric and is explanatory metadata only - never a readiness input, never treated as HRV. Report HRV as unavailable and name the cause.",
                 "zone_preference": self.zone_preference if self.zone_preference else "default (power preferred, HR fallback)",
                 "wellness_field_scales": {
                     "note": "All categorical wellness fields use a 1-4 positional scale where 1 = best state, 4 = worst state. Labels differ per field but direction is consistent. Fields are null when not reported.",
@@ -3497,8 +3377,8 @@ class IntervalsSync:
         """
         candidates: dict[str, tuple[dict, int, str]] = {}
 
-        for sport in athlete.get("sportSettings", []):
-            for sport_type in sport.get("types", []):
+        for sport in athlete.get("sportSettings") or []:          # v3.124: present-but-null
+            for sport_type in sport.get("types") or []:           # v3.124: present-but-null
                 family = self.SPORT_FAMILIES.get(sport_type)
                 if not family:
                     continue
@@ -3763,6 +3643,31 @@ class IntervalsSync:
         acute_load = tss_7d_total / 7 if tss_7d_total else 0
         chronic_load = tss_28d_total / 28 if tss_28d_total else 0
         acwr = round(acute_load / chronic_load, 2) if chronic_load > 0 else None
+
+        # === START-OF-DAY ACWR (readiness basis, v3.127) ===
+        # Same windows, same divisors, same source lists - only today's activities are
+        # excluded, leaving today's bucket empty. Not a midnight snapshot: recomputed
+        # from current source data on every sync with activities dated as_of_date
+        # excluded. readiness_decision consumes this; `acwr` above stays live.
+        # Deliberately mirrors the live source lists (activities_7d for the acute window,
+        # activities_28d for the chronic) rather than "correcting" either, so the two
+        # values are the same metric read at two moments. With no activity dated today
+        # they are identical.
+        # Not a persisted snapshot: recomputed every sync, so a corrected earlier-day
+        # activity still moves it while a workout completed today cannot.
+        # The empty today bucket is intentional and inherited, not a defect - the
+        # 1.3/1.5 thresholds have only ever been applied to a today-inclusive window
+        # with a partly-empty current day. Do not "fix" it by shifting the windows back.
+        today_str = datetime.now().strftime("%Y-%m-%d")
+        activities_7d_sod = [a for a in activities_7d
+                             if a.get("start_date_local", "")[:10] != today_str]
+        activities_28d_sod = [a for a in activities_28d
+                              if a.get("start_date_local", "")[:10] != today_str]
+        sod_7d_total = sum(self._get_daily_tss(activities_7d_sod, days=7))
+        sod_28d_total = sum(self._get_daily_tss(activities_28d_sod, days=28))
+        sod_acute = sod_7d_total / 7 if sod_7d_total else 0
+        sod_chronic = sod_28d_total / 28 if sod_28d_total else 0
+        acwr_start_of_day = round(sod_acute / sod_chronic, 2) if sod_chronic > 0 else None
         
         # === MONOTONY (Total) ===
         # Formula: mean(daily_tss) / stdev(daily_tss)
@@ -4096,6 +4001,19 @@ class IntervalsSync:
             # Tier 2: Secondary Load Metrics
             "acwr": acwr,
             "acwr_interpretation": self._interpret_acwr(acwr),
+            # v3.127: the live field is retrospective load reporting. Readiness reads
+            # acwr_start_of_day below; these two keys close the raw-field back door.
+            "acwr_scope": "live_retrospective",
+            "acwr_readiness_eligible": False,
+            "acwr_start_of_day": {
+                "value": acwr_start_of_day,
+                "interpretation": self._interpret_acwr(acwr_start_of_day),
+                "scope": "start_of_day",
+                "as_of_date": today_str,
+                "current_day_load_included": False,
+                "acute_days": 7,
+                "chronic_days": 28
+            },
             "monotony": monotony,
             "monotony_interpretation": self._interpret_monotony(monotony, effective_monotony, is_multi_sport),
             "primary_sport": primary_sport,
@@ -6130,11 +6048,16 @@ class IntervalsSync:
         mono_trend = features.get("monotony_trend")
         
         # Overreached: requires convergence of multiple signals, not a single metric.
-        # Path A: Current week ACWR >= 1.5 (acute spike, Gabbett danger zone)
-        # Path B: Sustained elevated monotony (>2.5) + ACWR trending up or >=1.3
+        # Both paths are gated on elevated monotony - ACWR alone never triggers this.
+        # Path A: elevated monotony + ACWR >= 1.5 (acute spike, Gabbett danger zone)
+        # Path B: elevated monotony + ACWR >= 1.3 with a rising ACWR trend
         if mono_trend == "elevated":
-            # Use CURRENT week's ACWR, not historical max — a spike 3 weeks ago
-            # that's since resolved should not keep triggering Overreached
+            # Most recent row of the caller's window, not the historical max - a spike
+            # 3 weeks ago that has since resolved should not keep triggering Overreached.
+            # NB the caller's window is finalized weeks in live mode (the in-progress
+            # current week is excluded upstream) and the target week in backfill mode,
+            # so this is the last completed week's weekly_180d acwr (7d acute / 21d
+            # chronic), not derived_metrics.acwr (7d/28d).
             current_acwr = recent_rows[-1].get("acwr") if recent_rows else None
             if current_acwr is not None and current_acwr >= 1.5:
                 return "Overreached"
@@ -6427,7 +6350,10 @@ class IntervalsSync:
             reasons.append("INSUFFICIENT_DATA")
             return None, "low", reasons
         
-        # === Priority 1: Overreached (safety) ===
+        # === Priority 1: Overreached (convergence gate, not a safety stop) ===
+        # Reached only via _phase_from_stream1's monotony-gated paths. The
+        # SAFETY_ACWR_OR_MONOTONY reason code is legacy naming, consumer-visible,
+        # and deliberately unchanged.
         if s1_phase == "Overreached":
             return "Overreached", "high", ["SAFETY_ACWR_OR_MONOTONY"]
         
@@ -6724,6 +6650,12 @@ class IntervalsSync:
         # --- ACWR Alerts ---
         # High-side only. Low ACWR = undertraining / reduced recent load context,
         # not overload risk. Low-side is surfaced via derived_metrics.acwr_interpretation.
+        # v3.127: these fire on the LIVE value, which includes today's completed load.
+        # severity is unchanged for consumer compatibility, but the risk claim is gone:
+        # ACWR is not a standalone injury-risk conclusion (Impellizzeri et al. 2020).
+        # scope and readiness_eligible say explicitly that this is reporting, not a
+        # decision input — an AI acting on an "alarm" between sessions would recreate
+        # the same-day veto the start-of-day basis removes.
         if acwr is not None:
             if acwr >= 1.35:
                 alerts.append({
@@ -6731,9 +6663,11 @@ class IntervalsSync:
                     "value": acwr,
                     "severity": "alarm",
                     "threshold": "1.35",
-                    "context": f"ACWR {acwr} above safe range. Injury/overreach risk elevated.",
+                    "context": f"Live ACWR {acwr} crossed the 1.35 reporting threshold. Retrospective load context only — not a standalone injury-risk conclusion and not a readiness decision. It includes today's completed load, so it must not decide a later same-day session, and must not decide tomorrow before tomorrow morning's new start-of-day calculation. Today's readiness used readiness_decision.signals.acwr (start-of-day).",
                     "persistence_days": None,
-                    "tier": 2
+                    "tier": 2,
+                    "scope": "live_retrospective",
+                    "readiness_eligible": False
                 })
             elif acwr >= 1.3:
                 alerts.append({
@@ -6741,9 +6675,11 @@ class IntervalsSync:
                     "value": acwr,
                     "severity": "warning",
                     "threshold": "1.3",
-                    "context": f"ACWR {acwr} at edge of optimal range. Monitor closely. Alarm at 1.35.",
+                    "context": f"Live ACWR {acwr} crossed the 1.3 reporting threshold; 1.35 is the next band. Retrospective load context only — not a standalone injury-risk conclusion and not a readiness decision. It includes today's completed load, so it must not decide a later same-day session, and must not decide tomorrow before tomorrow morning's new start-of-day calculation.",
                     "persistence_days": None,
-                    "tier": 2
+                    "tier": 2,
+                    "scope": "live_retrospective",
+                    "readiness_eligible": False
                 })
         
         # --- Monotony Alerts (with deload context + multi-sport awareness) ---
@@ -7013,6 +6949,11 @@ class IntervalsSync:
         """
         Check if HRV value is within valid physiological range (10-250ms RMSSD).
         Filters sensor errors while preserving legitimate high values in elite athletes.
+
+        rMSSD only. Apple Watch SDNN (wellness hrvSDNN) falls in the same numeric
+        range and would pass this check if routed through it, so passing is not
+        evidence a value is rMSSD. Nothing routes hrvSDNN here today; never add a
+        path that does in order to substitute it for hrv (issue #25).
         """
         return value is not None and 10 <= value <= 250
 
@@ -7070,7 +7011,7 @@ class IntervalsSync:
         
         Priority ladder (first match wins):
           P0 — Safety stop: RI < 0.6 or any tier-1 alarm → Skip
-          P1 — Acute overload: ACWR >= 1.5, compound TSB+HRV, RI < 0.7 + persistent alerts → Skip/Modify
+          P1 — Acute overload: start-of-day ACWR >= 1.5 WITH a Tier-1 signal amber/red, compound TSB+HRV, RI < 0.7 + persistent alerts → Skip/Modify
           P2 — Accumulated fatigue: signal counting with phase-adjusted thresholds → Modify
           P3 — Green light → Go
         
@@ -7079,7 +7020,11 @@ class IntervalsSync:
         """
         # --- Gather inputs ---
         ri = derived_metrics.get("recovery_index")
-        acwr = derived_metrics.get("acwr")
+        # v3.127: readiness reads the start-of-day basis, never the live value. A
+        # workout completed today must not change today's readiness result.
+        acwr_sod = derived_metrics.get("acwr_start_of_day") or {}
+        acwr = acwr_sod.get("value")
+        acwr_as_of = acwr_sod.get("as_of_date")
         tsb = current_tsb
         
         latest_hrv = derived_metrics.get("latest_hrv")
@@ -7117,6 +7062,16 @@ class IntervalsSync:
         else:
             hrv_delta_pct = None
             signals["hrv"] = {"status": "unavailable", "value": latest_hrv, "baseline_7d": hrv_baseline_7d, "delta_pct": None}
+            # v3.126: readiness reads rMSSD only. A wellness record carrying SDNN but
+            # no usable rMSSD reads "unavailable" with no stated cause; state the
+            # cause, never substitute (issue #25). SDNN is the native Apple Watch
+            # export, but the check is on the data, not the device. The latest_hrv
+            # guard is defensive: a valid rMSSD always contributes to hrv_baseline_7d,
+            # so this branch is currently unreachable with latest_hrv set - the guard
+            # holds if baseline depth ever gains a minimum. Omitted when it does not
+            # apply: consumers must treat the key as optional.
+            if latest_hrv is None and latest_wellness.get("hrvSDNN") is not None:
+                signals["hrv"]["reason"] = "rmssd_missing_sdnn_available"
         
         # RHR signal
         if latest_rhr and rhr_baseline_7d and rhr_baseline_7d > 0:
@@ -7146,7 +7101,7 @@ class IntervalsSync:
         else:
             signals["sleep"] = {"status": "unavailable", "hours": None, "quality": sleep_quality}
         
-        # ACWR signal
+        # ACWR signal — START-OF-DAY basis (v3.127), not the live value.
         # Readiness: high-side only. Low ACWR = reduced recent load (taper/undertraining),
         # not a fatigue/overload signal — context surfaces via acwr_interpretation.
         if acwr is not None:
@@ -7156,9 +7111,13 @@ class IntervalsSync:
                 acwr_status = "amber"
             else:
                 acwr_status = "green"
-            signals["acwr"] = {"status": acwr_status, "value": acwr}
+            signals["acwr"] = {"status": acwr_status, "value": acwr,
+                               "scope": "start_of_day", "as_of_date": acwr_as_of,
+                               "current_day_load_included": False}
         else:
-            signals["acwr"] = {"status": "unavailable", "value": None}
+            signals["acwr"] = {"status": "unavailable", "value": None,
+                               "scope": "start_of_day", "as_of_date": acwr_as_of,
+                               "current_day_load_included": False}
         
         # RI signal — amber requires 2-day persistence to filter single-night noise.
         #   red: ri < 0.6 (single day, immediate)
@@ -7221,10 +7180,23 @@ class IntervalsSync:
         p1_modify_reasons = []
         p1_alarm_refs = []
         
-        if acwr is not None and acwr >= 1.5:
-            p1_skip_reasons.append(f"ACWR {acwr} >= 1.5")
-            # acwr tier-2 alert object always exists here (fires >=1.35; skip >=1.5); ref only if present
-            p1_alarm_refs.extend(a["metric"] for a in alerts if a.get("metric") == "acwr")
+        # v3.127: ACWR is Tier-2 load. Tier 2 must not override Tier-1 primary readiness
+        # (Metric Evaluation Hierarchy), and ACWR is not validated as a standalone
+        # clearance metric (Impellizzeri et al. 2020), so a spike alone no longer forces
+        # a non-overridable Skip. It stops the session only when a Tier-1 primary signal
+        # corroborates it; uncorroborated it counts as an ordinary P2 red.
+        acwr_corroborating = [k for k in ("hrv", "rhr", "sleep", "ri")
+                              if signals.get(k, {}).get("status") in ("amber", "red")]
+        if acwr is not None and acwr >= 1.5 and acwr_corroborating:
+            p1_skip_reasons.append(
+                f"start-of-day ACWR {acwr} (as of {acwr_as_of}, today's load excluded) "
+                f">= 1.5, corroborated by {', '.join(acwr_corroborating)}"
+            )
+            # No alarm_ref. The acwr alert object carries the LIVE value and
+            # readiness_eligible False, so it is not the alert that triggered this branch
+            # and cannot truthfully be cited as one. The reason string above and
+            # signals["acwr"] are the start-of-day audit trail. alarm_refs may therefore
+            # be empty on a P1 skip — already the case for the TSB+HRV composite branch.
         
         # Compound: deep TSB + HRV confirming
         if tsb is not None and tsb < -30 and hrv_delta_pct is not None and hrv_delta_pct < -10:
@@ -7257,8 +7229,10 @@ class IntervalsSync:
             }
         
         # P1 modify tier (sub-skip thresholds)
-        if acwr is not None and acwr >= 1.3:
-            p1_modify_reasons.append(f"ACWR {acwr} >= 1.3")
+        # v3.127: the standalone ACWR >= 1.3 Modify branch is removed. 1.3 is the top of
+        # the Gabbett sweet spot — the edge of normal, not a danger zone — and a Tier-2
+        # metric must not produce a non-overridable P1 alone. ACWR >= 1.3 still registers
+        # as a P2 amber via signals["acwr"].
         if tsb is not None and tsb < -25 and hrv_delta_pct is not None and hrv_delta_pct < -10:
             p1_modify_reasons.append(f"TSB {tsb} < -25 with HRV {hrv_delta_pct}% below baseline")
         
@@ -7275,7 +7249,7 @@ class IntervalsSync:
                     "modifier_applied": modifiers["modifier_applied"]
                 },
                 "race_week_defers": race_week_active,
-                "modification": self._build_modification(["acwr"] if acwr and acwr >= 1.3 else amber_signals),
+                "modification": self._build_modification(amber_signals),
                 "reason": f"P1 acute overload (modify). {'; '.join(p1_modify_reasons)}.",
                 "alarm_refs": []
             }
@@ -7691,7 +7665,7 @@ class IntervalsSync:
         history_path = self.data_dir / self.HISTORY_FILE
         with open(history_path, 'w') as f:
             json.dump(history, f, indent=2, default=str)
-        print(f"  ✅ history.json saved ({len(daily_90d)} daily, {len(weekly_180d)} weekly rows)")
+        print(f"  ✅ history.json saved to {history_path} ({len(daily_90d)} daily, {len(weekly_180d)} weekly rows)")
         
         return history
     
@@ -8232,7 +8206,8 @@ class IntervalsSync:
         cycling_settings = None
         if athlete.get("sportSettings"):
             for sport in athlete["sportSettings"]:
-                if "Ride" in sport.get("types", []) or "VirtualRide" in sport.get("types", []):
+                sport_types = sport.get("types") or []             # v3.124: present-but-null
+                if "Ride" in sport_types or "VirtualRide" in sport_types:
                     cycling_settings = sport
                     break
         
@@ -10648,12 +10623,7 @@ def main():
         try:
             print("\n📊 Auto-generating history.json...")
             history = sync.generate_history()
-            if args.output:
-                history_path = sync.data_dir / sync.HISTORY_FILE
-                with open(history_path, 'w') as f:
-                    json.dump(history, f, indent=2, default=str)
-                print(f"   ✅ history.json saved to {history_path}")
-            else:
+            if not args.output:
                 sync.publish_to_github(history, filepath="history.json",
                                        commit_message=f"Auto-generate history.json - {datetime.now().strftime('%Y-%m-%d')}")
                 print("   ✅ history.json auto-generated and pushed to GitHub")
