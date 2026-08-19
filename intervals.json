@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T23:58:56.507089",
+  "generated_at": "2026-08-19T01:46:08.814226",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -2051,34 +2051,6 @@
       "zone_basis": "power"
     },
     {
-      "activity_id": "i172460541",
-      "date": "2026-08-04",
-      "start_datetime": "2026-08-04T16:00:55",
-      "type": "Ride",
-      "name": "San Giovanni Bianco",
-      "interval_summary": null,
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 11023,
-          "moving_secs": 9728,
-          "start_secs": 0,
-          "end_secs": 11023,
-          "avg_power": 115,
-          "max_power": 549,
-          "avg_hr": 114,
-          "max_hr": 164,
-          "min_hr": 68,
-          "avg_cadence": 58.62369,
-          "zone": 1,
-          "w_bal_start": 13440,
-          "w_bal_end": 13439,
-          "training_load": 77.41668
-        }
-      ],
-      "zone_basis": "power"
-    },
-    {
       "activity_id": "i177281761",
       "date": "2026-08-18",
       "start_datetime": "2026-08-18T17:19:25",
@@ -2723,24 +2695,6 @@
         "reason": "retry_expired"
       }
     },
-    "i172460541": {
-      "date": "2026-08-04",
-      "intervals": {
-        "attempts": 1,
-        "first_seen": "2026-08-18T12:01:38.678439",
-        "last_attempt": "2026-08-18T12:01:38.678439",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-08-05T06:40:02.789+00:00"
-      },
-      "streams": {
-        "attempts": 1,
-        "first_seen": "2026-08-18T12:01:38.678439",
-        "last_attempt": "2026-08-18T12:01:38.678439",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i177281761": {
       "date": "2026-08-18",
       "intervals": {
@@ -2752,12 +2706,12 @@
         "source_icu_sync_date": "2026-08-18T18:19:09.064+00:00"
       },
       "streams": {
-        "attempts": 9,
+        "attempts": 10,
         "first_seen": "2026-08-18T18:58:43.804908",
-        "last_attempt": "2026-08-18T23:36:20.956925",
+        "last_attempt": "2026-08-19T01:46:08.814226",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-19T00:06:20.956925"
+        "next_retry_at": "2026-08-19T02:16:08.814226"
       }
     },
     "i177281832": {
@@ -2771,12 +2725,12 @@
         "source_icu_sync_date": "2026-08-18T18:19:14.604+00:00"
       },
       "streams": {
-        "attempts": 9,
+        "attempts": 10,
         "first_seen": "2026-08-18T18:58:43.804908",
-        "last_attempt": "2026-08-18T23:36:20.956925",
+        "last_attempt": "2026-08-19T01:46:08.814226",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-19T00:06:20.956925"
+        "next_retry_at": "2026-08-19T02:16:08.814226"
       }
     }
   }
