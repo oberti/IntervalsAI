@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T14:41:18.863629",
+  "generated_at": "2026-08-19T15:12:48.214675",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -2540,6 +2540,34 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i177583888",
+      "date": "2026-08-19",
+      "start_datetime": "2026-08-19T14:18:05",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 7431,
+          "moving_secs": 7299,
+          "start_secs": 0,
+          "end_secs": 7431,
+          "avg_power": 68,
+          "max_power": 415,
+          "avg_hr": 122,
+          "max_hr": 170,
+          "min_hr": 79,
+          "avg_cadence": 60.05903,
+          "zone": 1,
+          "w_bal_start": 13440,
+          "w_bal_end": 13439,
+          "training_load": 27.280647
+        }
+      ],
+      "zone_basis": "power"
     }
   ],
   "fetch_state": {
@@ -2740,6 +2768,25 @@
         "last_attempt": "2026-08-19T04:38:32.425317",
         "status": "tombstone",
         "reason": "retry_expired"
+      }
+    },
+    "i177583888": {
+      "date": "2026-08-19",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-08-19T15:12:48.214675",
+        "last_attempt": "2026-08-19T15:12:48.214675",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-08-19T14:56:18.051+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-08-19T15:12:48.214675",
+        "last_attempt": "2026-08-19T15:12:48.214675",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-08-19T15:17:48.214675"
       }
     }
   }
