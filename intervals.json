@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T23:41:21.497913",
+  "generated_at": "2026-08-21T00:00:26.888703",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -1922,34 +1922,6 @@
       "zone_basis": "power"
     },
     {
-      "activity_id": "i173163047",
-      "date": "2026-08-06",
-      "start_datetime": "2026-08-06T17:18:24",
-      "type": "Ride",
-      "name": "Berbenno da Brembilla",
-      "interval_summary": null,
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 8581,
-          "moving_secs": 8243,
-          "start_secs": 0,
-          "end_secs": 8581,
-          "avg_power": 125,
-          "max_power": 436,
-          "avg_hr": 114,
-          "max_hr": 163,
-          "min_hr": 71,
-          "avg_cadence": 59.09976,
-          "zone": 1,
-          "w_bal_start": 13440,
-          "w_bal_end": 13439,
-          "training_load": 82.114586
-        }
-      ],
-      "zone_basis": "power"
-    },
-    {
       "activity_id": "i177281761",
       "date": "2026-08-18",
       "start_datetime": "2026-08-18T17:19:25",
@@ -2161,24 +2133,6 @@
         "status": "ok",
         "reason": "ok",
         "source_icu_sync_date": "2026-08-17T10:44:11.843+00:00"
-      },
-      "streams": {
-        "attempts": 1,
-        "first_seen": "2026-08-18T12:01:38.678439",
-        "last_attempt": "2026-08-18T12:01:38.678439",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
-    "i173163047": {
-      "date": "2026-08-06",
-      "intervals": {
-        "attempts": 1,
-        "first_seen": "2026-08-18T12:01:38.678439",
-        "last_attempt": "2026-08-18T12:01:38.678439",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-08-07T06:55:14.400+00:00"
       },
       "streams": {
         "attempts": 1,
