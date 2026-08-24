@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T08:27:06.659485",
+  "generated_at": "2026-08-24T09:24:55.646571",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -1327,6 +1327,102 @@
         }
       ],
       "zone_basis": "hr"
+    },
+    {
+      "activity_id": "i179160720",
+      "date": "2026-08-23",
+      "start_datetime": "2026-08-23T07:41:14",
+      "type": "Ride",
+      "name": "Colle Gallo - Altino - Citt\u00e0 alta",
+      "interval_summary": [
+        "1x 1h11m 130bpm",
+        "1x 10m45s 143bpm",
+        "1x 25m26s 148bpm",
+        "1x 3m11s 132bpm",
+        "1x 16m38s 127bpm",
+        "1x 2h21m 117bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "4267s@130bpm62rpm",
+          "duration_secs": 4267,
+          "moving_secs": 4044,
+          "start_secs": 0,
+          "end_secs": 4267,
+          "avg_hr": 130,
+          "max_hr": 172,
+          "min_hr": 88,
+          "avg_cadence": 62.390274,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "645s@143bpm71rpm",
+          "duration_secs": 645,
+          "moving_secs": 645,
+          "start_secs": 4267,
+          "end_secs": 4912,
+          "avg_hr": 143,
+          "max_hr": 164,
+          "min_hr": 122,
+          "avg_cadence": 71.1969,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "1526s@148bpm69rpm",
+          "duration_secs": 1526,
+          "moving_secs": 1526,
+          "start_secs": 4912,
+          "end_secs": 6438,
+          "avg_hr": 148,
+          "max_hr": 168,
+          "min_hr": 127,
+          "avg_cadence": 68.83552,
+          "zone": 3
+        },
+        {
+          "type": "WORK",
+          "label": "191s@132bpm24rpm",
+          "duration_secs": 191,
+          "moving_secs": 47,
+          "start_secs": 6438,
+          "end_secs": 6629,
+          "avg_hr": 132,
+          "max_hr": 159,
+          "min_hr": 111,
+          "avg_cadence": 24.040817,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "998s@127bpm48rpm",
+          "duration_secs": 998,
+          "moving_secs": 907,
+          "start_secs": 6629,
+          "end_secs": 7627,
+          "avg_hr": 127,
+          "max_hr": 159,
+          "min_hr": 89,
+          "avg_cadence": 48.41474,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "8496s@117bpm43rpm",
+          "duration_secs": 8496,
+          "moving_secs": 6466,
+          "start_secs": 7627,
+          "end_secs": 16123,
+          "avg_hr": 117,
+          "max_hr": 171,
+          "min_hr": 78,
+          "avg_cadence": 43.10076,
+          "zone": 1
+        }
+      ],
+      "zone_basis": "hr"
     }
   ],
   "fetch_state": {
@@ -1441,20 +1537,20 @@
     "i179115106": {
       "date": "2026-08-22",
       "intervals": {
-        "attempts": 1,
-        "first_seen": "2026-08-24T07:37:24.867901",
-        "last_attempt": "2026-08-24T07:37:24.867901",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-08-24T07:01:28.484+00:00"
-      },
-      "streams": {
         "attempts": 2,
         "first_seen": "2026-08-24T07:37:24.867901",
-        "last_attempt": "2026-08-24T08:27:06.659485",
+        "last_attempt": "2026-08-24T09:24:55.646571",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-08-24T09:20:52.091+00:00"
+      },
+      "streams": {
+        "attempts": 3,
+        "first_seen": "2026-08-24T07:37:24.867901",
+        "last_attempt": "2026-08-24T09:24:55.646571",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-24T08:32:06.659485"
+        "next_retry_at": "2026-08-24T09:29:55.646571"
       }
     },
     "i179115513": {
@@ -1468,12 +1564,31 @@
         "source_icu_sync_date": "2026-08-24T06:58:13.929+00:00"
       },
       "streams": {
-        "attempts": 2,
+        "attempts": 3,
         "first_seen": "2026-08-24T07:37:24.867901",
-        "last_attempt": "2026-08-24T08:27:06.659485",
+        "last_attempt": "2026-08-24T09:24:55.646571",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-24T08:32:06.659485"
+        "next_retry_at": "2026-08-24T09:29:55.646571"
+      }
+    },
+    "i179160720": {
+      "date": "2026-08-23",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-08-24T09:24:55.646571",
+        "last_attempt": "2026-08-24T09:24:55.646571",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-08-24T09:21:37.417+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-08-24T09:24:55.646571",
+        "last_attempt": "2026-08-24T09:24:55.646571",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-08-24T09:29:55.646571"
       }
     }
   }
