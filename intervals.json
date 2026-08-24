@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T23:46:37.389751",
+  "generated_at": "2026-08-24T01:24:20.563391",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -1279,71 +1279,6 @@
       "zone_basis": "power"
     },
     {
-      "activity_id": "i173985429",
-      "date": "2026-08-09",
-      "start_datetime": "2026-08-09T07:48:48",
-      "type": "Ride",
-      "name": "Bernigolo - Piazza Brembana",
-      "interval_summary": [
-        "1x 5m42s 217w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1958,
-          "moving_secs": 1958,
-          "start_secs": 0,
-          "end_secs": 1958,
-          "avg_power": 161,
-          "max_power": 496,
-          "avg_hr": 131,
-          "max_hr": 173,
-          "min_hr": 87,
-          "avg_cadence": 68.12666,
-          "zone": 2,
-          "w_bal_start": 13440,
-          "w_bal_end": 13388,
-          "training_load": 26.665457
-        },
-        {
-          "type": "WORK",
-          "label": "342s@217w86rpm",
-          "duration_secs": 342,
-          "moving_secs": 342,
-          "start_secs": 1958,
-          "end_secs": 2300,
-          "avg_power": 217,
-          "max_power": 328,
-          "avg_hr": 146,
-          "max_hr": 157,
-          "min_hr": 124,
-          "avg_cadence": 86.29825,
-          "zone": 3,
-          "w_bal_start": 13389,
-          "w_bal_end": 13155,
-          "training_load": 6.1599617
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 11405,
-          "moving_secs": 10578,
-          "start_secs": 2300,
-          "end_secs": 13705,
-          "avg_power": 144,
-          "max_power": 657,
-          "avg_hr": 126,
-          "max_hr": 172,
-          "min_hr": 73,
-          "avg_cadence": 61.53252,
-          "zone": 1,
-          "w_bal_start": 13156,
-          "w_bal_end": 13423,
-          "training_load": 121.84476
-        }
-      ],
-      "zone_basis": "power"
-    },
-    {
       "activity_id": "i177281761",
       "date": "2026-08-18",
       "start_datetime": "2026-08-18T17:19:25",
@@ -2221,24 +2156,6 @@
         "status": "ok",
         "reason": "ok",
         "source_icu_sync_date": "2026-08-17T07:10:42.541+00:00"
-      },
-      "streams": {
-        "attempts": 1,
-        "first_seen": "2026-08-18T12:01:38.678439",
-        "last_attempt": "2026-08-18T12:01:38.678439",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
-    "i173985429": {
-      "date": "2026-08-09",
-      "intervals": {
-        "attempts": 1,
-        "first_seen": "2026-08-18T12:01:38.678439",
-        "last_attempt": "2026-08-18T12:01:38.678439",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-08-17T06:58:37.813+00:00"
       },
       "streams": {
         "attempts": 1,
