@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T23:35:06.277926",
+  "generated_at": "2026-08-27T05:05:13.066020",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -902,34 +902,6 @@
       "zone_basis": "power"
     },
     {
-      "activity_id": "i175068400",
-      "date": "2026-08-12",
-      "start_datetime": "2026-08-12T07:24:25",
-      "type": "Ride",
-      "name": "Piazza Brembana",
-      "interval_summary": null,
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 14467,
-          "moving_secs": 12901,
-          "start_secs": 0,
-          "end_secs": 14467,
-          "avg_power": 129,
-          "max_power": 592,
-          "avg_hr": 116,
-          "max_hr": 164,
-          "min_hr": 71,
-          "avg_cadence": 58.703342,
-          "zone": 1,
-          "w_bal_start": 13440,
-          "w_bal_end": 13439,
-          "training_load": 126.917046
-        }
-      ],
-      "zone_basis": "power"
-    },
-    {
       "activity_id": "i177281761",
       "date": "2026-08-18",
       "start_datetime": "2026-08-18T17:19:25",
@@ -1349,24 +1321,6 @@
         "reason": "retry_expired"
       }
     },
-    "i175068400": {
-      "date": "2026-08-12",
-      "intervals": {
-        "attempts": 1,
-        "first_seen": "2026-08-18T12:01:38.678439",
-        "last_attempt": "2026-08-18T12:01:38.678439",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-08-17T07:11:36.163+00:00"
-      },
-      "streams": {
-        "attempts": 1,
-        "first_seen": "2026-08-18T12:01:38.678439",
-        "last_attempt": "2026-08-18T12:01:38.678439",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i177281761": {
       "date": "2026-08-18",
       "intervals": {
@@ -1450,12 +1404,12 @@
         "source_icu_sync_date": "2026-08-25T18:59:55.894+00:00"
       },
       "streams": {
-        "attempts": 15,
+        "attempts": 16,
         "first_seen": "2026-08-25T18:57:19.318261",
-        "last_attempt": "2026-08-26T18:14:56.821238",
+        "last_attempt": "2026-08-27T05:05:13.066020",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-27T00:14:56.821238"
+        "next_retry_at": "2026-08-27T11:05:13.066020"
       }
     },
     "i179980966": {
@@ -1469,12 +1423,12 @@
         "source_icu_sync_date": "2026-08-26T10:48:59.376+00:00"
       },
       "streams": {
-        "attempts": 9,
+        "attempts": 10,
         "first_seen": "2026-08-26T11:13:09.268629",
-        "last_attempt": "2026-08-26T23:35:06.277926",
+        "last_attempt": "2026-08-27T05:05:13.066020",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-27T00:05:06.277926"
+        "next_retry_at": "2026-08-27T05:35:13.066020"
       }
     }
   }
