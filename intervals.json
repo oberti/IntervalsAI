@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T13:12:51.063193",
+  "generated_at": "2026-08-30T17:32:58.295908",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -1283,7 +1283,7 @@
       "name": "Pedalata mattutina",
       "interval_summary": [
         "1x 86s 263w",
-        "1x 10s 404w",
+        "1x 6s 388w",
         "1x 4m5s 234w",
         "1x 3m16s 260w"
       ],
@@ -1325,38 +1325,38 @@
         },
         {
           "type": "RECOVERY",
-          "duration_secs": 492,
-          "moving_secs": 492,
+          "duration_secs": 496,
+          "moving_secs": 496,
           "start_secs": 4294,
-          "end_secs": 4786,
-          "avg_power": 235,
+          "end_secs": 4790,
+          "avg_power": 236,
           "max_power": 515,
           "avg_hr": 151,
           "max_hr": 171,
           "min_hr": 139,
-          "avg_cadence": 69.07723,
+          "avg_cadence": 69.09073,
           "zone": 3,
           "w_bal_start": 10255,
-          "w_bal_end": 9583,
-          "training_load": 10.950549
+          "w_bal_end": 8937,
+          "training_load": 11.0395775
         },
         {
           "type": "WORK",
-          "label": "10s@404w76rpm",
-          "duration_secs": 10,
-          "moving_secs": 10,
-          "start_secs": 4786,
+          "label": "6s@388w79rpm",
+          "duration_secs": 6,
+          "moving_secs": 6,
+          "start_secs": 4790,
           "end_secs": 4796,
-          "avg_power": 404,
-          "max_power": 440,
+          "avg_power": 388,
+          "max_power": 413,
           "avg_hr": 169,
-          "max_hr": 171,
+          "max_hr": 170,
           "min_hr": 169,
-          "avg_cadence": 75.9,
-          "zone": 7,
-          "w_bal_start": 9410,
+          "avg_cadence": 79.333336,
+          "zone": 6,
+          "w_bal_start": 8805,
           "w_bal_end": 8210,
-          "training_load": 0.33451086
+          "training_load": 0.21181622
         },
         {
           "type": "RECOVERY",
@@ -1587,12 +1587,11 @@
         "source_icu_sync_date": "2026-08-28T09:28:53.701+00:00"
       },
       "streams": {
-        "attempts": 12,
+        "attempts": 13,
         "first_seen": "2026-08-28T01:09:21.247439",
-        "last_attempt": "2026-08-30T13:12:51.063193",
-        "status": "pending",
-        "reason": "no_data",
-        "next_retry_at": "2026-08-30T13:42:51.063193"
+        "last_attempt": "2026-08-30T17:32:58.295908",
+        "status": "tombstone",
+        "reason": "retry_expired"
       }
     },
     "i180948664": {
@@ -1606,31 +1605,31 @@
         "source_icu_sync_date": "2026-08-29T10:36:46.868+00:00"
       },
       "streams": {
-        "attempts": 8,
+        "attempts": 9,
         "first_seen": "2026-08-29T11:06:16.668552",
-        "last_attempt": "2026-08-30T13:12:51.063193",
+        "last_attempt": "2026-08-30T17:32:58.295908",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-30T13:42:51.063193"
+        "next_retry_at": "2026-08-30T18:02:58.295908"
       }
     },
     "i181268366": {
       "date": "2026-08-30",
       "intervals": {
-        "attempts": 1,
+        "attempts": 2,
         "first_seen": "2026-08-30T13:12:51.063193",
-        "last_attempt": "2026-08-30T13:12:51.063193",
+        "last_attempt": "2026-08-30T17:32:58.295908",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-08-30T09:55:02.161+00:00"
+        "source_icu_sync_date": "2026-08-30T14:36:26.991+00:00"
       },
       "streams": {
-        "attempts": 1,
+        "attempts": 2,
         "first_seen": "2026-08-30T13:12:51.063193",
-        "last_attempt": "2026-08-30T13:12:51.063193",
+        "last_attempt": "2026-08-30T17:32:58.295908",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-08-30T13:17:51.063193"
+        "next_retry_at": "2026-08-30T17:37:58.295908"
       }
     }
   }
