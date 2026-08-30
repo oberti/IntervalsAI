@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-30T13:12:53.063599",
+    "last_updated": "2026-08-30T17:33:00.143020",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.127"
@@ -662,7 +662,7 @@
     "p_max": 890,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-30T13:12:53.062255",
+    "calculation_timestamp": "2026-08-30T17:33:00.142068",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 7,
@@ -680,7 +680,7 @@
       "id": "i181268366",
       "date": "2026-08-30T07:43:27",
       "type": "Ride",
-      "name": "Pedalata mattutina",
+      "name": "Selvino - Citt\u00e0 alta ",
       "duration_hours": 3.17,
       "duration_formatted": "3h10m16s",
       "distance_km": 70.95,
@@ -729,9 +729,9 @@
           "unit": "km/h"
         }
       },
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 5,
+      "effort_response": "negative",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 5643,
