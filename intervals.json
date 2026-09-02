@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T15:14:20.803433",
+  "generated_at": "2026-09-02T18:46:25.892910",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -1167,6 +1167,107 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i182573411",
+      "date": "2026-09-02",
+      "start_datetime": "2026-09-02T17:20:08",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": [
+        "1x 12s 467w",
+        "1x 52s 258w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3706,
+          "moving_secs": 3569,
+          "start_secs": 0,
+          "end_secs": 3706,
+          "avg_power": 125,
+          "max_power": 375,
+          "avg_hr": 114,
+          "max_hr": 161,
+          "min_hr": 60,
+          "avg_cadence": 55.00308,
+          "zone": 1,
+          "w_bal_start": 13440,
+          "w_bal_end": 13407,
+          "training_load": 32.120846
+        },
+        {
+          "type": "WORK",
+          "label": "12s@467w89rpm",
+          "duration_secs": 12,
+          "moving_secs": 12,
+          "start_secs": 3706,
+          "end_secs": 3718,
+          "avg_power": 467,
+          "max_power": 626,
+          "avg_hr": 103,
+          "max_hr": 135,
+          "min_hr": 69,
+          "avg_cadence": 89.0,
+          "zone": 7,
+          "w_bal_start": 13079,
+          "w_bal_end": 11000,
+          "training_load": 0.10802976
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 996,
+          "moving_secs": 996,
+          "start_secs": 3718,
+          "end_secs": 4714,
+          "avg_power": 137,
+          "max_power": 478,
+          "avg_hr": 113,
+          "max_hr": 154,
+          "min_hr": 74,
+          "avg_cadence": 57.45683,
+          "zone": 1,
+          "w_bal_start": 10870,
+          "w_bal_end": 12452,
+          "training_load": 10.694254
+        },
+        {
+          "type": "WORK",
+          "label": "52s@258w70rpm",
+          "duration_secs": 52,
+          "moving_secs": 52,
+          "start_secs": 4714,
+          "end_secs": 4766,
+          "avg_power": 258,
+          "max_power": 494,
+          "avg_hr": 161,
+          "max_hr": 178,
+          "min_hr": 138,
+          "avg_cadence": 69.57692,
+          "zone": 4,
+          "w_bal_start": 12265,
+          "w_bal_end": 10033,
+          "training_load": 1.9221168
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 822,
+          "moving_secs": 764,
+          "start_secs": 4766,
+          "end_secs": 5588,
+          "avg_power": 102,
+          "max_power": 432,
+          "avg_hr": 112,
+          "max_hr": 148,
+          "min_hr": 84,
+          "avg_cadence": 36.80599,
+          "zone": 1,
+          "w_bal_start": 10100,
+          "w_bal_end": 13421,
+          "training_load": 5.654421
+        }
+      ],
+      "zone_basis": "power"
     }
   ],
   "fetch_state": {
@@ -1325,12 +1426,31 @@
         "source_icu_sync_date": "2026-09-01T18:26:49.075+00:00"
       },
       "streams": {
-        "attempts": 6,
+        "attempts": 7,
         "first_seen": "2026-09-01T21:07:00.981453",
-        "last_attempt": "2026-09-02T15:14:20.803433",
+        "last_attempt": "2026-09-02T18:46:25.892910",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-02T15:19:20.803433"
+        "next_retry_at": "2026-09-02T19:16:25.892910"
+      }
+    },
+    "i182573411": {
+      "date": "2026-09-02",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-09-02T18:46:25.892910",
+        "last_attempt": "2026-09-02T18:46:25.892910",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-09-02T17:55:45.663+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-09-02T18:46:25.892910",
+        "last_attempt": "2026-09-02T18:46:25.892910",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-09-02T18:51:25.892910"
       }
     }
   }
