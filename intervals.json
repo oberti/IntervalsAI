@@ -1,76 +1,11 @@
 {
-  "generated_at": "2026-09-01T23:19:07.953860",
+  "generated_at": "2026-09-02T01:15:26.628489",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i177281761",
-      "date": "2026-08-18",
-      "start_datetime": "2026-08-18T17:19:25",
-      "type": "Ride",
-      "name": "Pedalata pomeridiana",
-      "interval_summary": [
-        "1x 1h1m 124bpm",
-        "1x 23m10s 151bpm",
-        "1x 1h9m 111bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "3661s@124bpm1rpm",
-          "duration_secs": 3661,
-          "moving_secs": 3575,
-          "start_secs": 0,
-          "end_secs": 3661,
-          "avg_hr": 124,
-          "max_hr": 170,
-          "min_hr": 77,
-          "avg_cadence": 1.1802588,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "1390s@151bpm7rpm",
-          "duration_secs": 1390,
-          "moving_secs": 1382,
-          "start_secs": 3661,
-          "end_secs": 5051,
-          "avg_hr": 151,
-          "max_hr": 172,
-          "min_hr": 109,
-          "avg_cadence": 6.5647144,
-          "zone": 3
-        },
-        {
-          "type": "WORK",
-          "label": "4195s@111bpm1rpm",
-          "duration_secs": 4195,
-          "moving_secs": 3977,
-          "start_secs": 5051,
-          "end_secs": 9246,
-          "avg_hr": 111,
-          "max_hr": 174,
-          "min_hr": 73,
-          "avg_cadence": 0.977341,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 185,
-          "moving_secs": 22,
-          "start_secs": 9246,
-          "end_secs": 9431,
-          "avg_hr": 111,
-          "max_hr": 139,
-          "min_hr": 91,
-          "zone": 1
-        }
-      ],
-      "zone_basis": "hr"
-    },
     {
       "activity_id": "i179115106",
       "date": "2026-08-22",
@@ -1235,24 +1170,6 @@
     }
   ],
   "fetch_state": {
-    "i177281761": {
-      "date": "2026-08-18",
-      "intervals": {
-        "attempts": 5,
-        "first_seen": "2026-08-18T18:58:43.804908",
-        "last_attempt": "2026-08-27T16:31:42.927647",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-08-27T08:21:45.448+00:00"
-      },
-      "streams": {
-        "attempts": 22,
-        "first_seen": "2026-08-18T18:58:43.804908",
-        "last_attempt": "2026-08-21T15:14:22.490557",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i179115106": {
       "date": "2026-08-22",
       "intervals": {
@@ -1390,12 +1307,12 @@
         "source_icu_sync_date": "2026-09-01T07:45:25.613+00:00"
       },
       "streams": {
-        "attempts": 13,
+        "attempts": 14,
         "first_seen": "2026-08-30T13:12:51.063193",
-        "last_attempt": "2026-09-01T18:14:03.044808",
+        "last_attempt": "2026-09-02T01:15:26.628489",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-02T00:14:03.044808"
+        "next_retry_at": "2026-09-02T07:15:26.628489"
       }
     },
     "i182199848": {
@@ -1409,12 +1326,12 @@
         "source_icu_sync_date": "2026-09-01T18:26:49.075+00:00"
       },
       "streams": {
-        "attempts": 2,
+        "attempts": 3,
         "first_seen": "2026-09-01T21:07:00.981453",
-        "last_attempt": "2026-09-01T23:19:07.953860",
+        "last_attempt": "2026-09-02T01:15:26.628489",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-01T23:24:07.953860"
+        "next_retry_at": "2026-09-02T01:20:26.628489"
       }
     }
   }
