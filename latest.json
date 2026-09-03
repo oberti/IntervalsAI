@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-03T06:24:26.675284",
+    "last_updated": "2026-09-03T11:33:08.301454",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.127"
@@ -113,9 +113,9 @@
       },
       "rhr": {
         "status": "green",
-        "value": 38,
-        "baseline_7d": 42.1,
-        "delta_bpm": -4.1
+        "value": 37,
+        "baseline_7d": 42,
+        "delta_bpm": -5
       },
       "sleep": {
         "status": "unavailable",
@@ -131,8 +131,8 @@
       },
       "ri": {
         "status": "green",
-        "value": 1.67,
-        "value_yesterday": 0.68
+        "value": 1.71,
+        "value_yesterday": 0.72
       },
       "tsb": {
         "status": "green",
@@ -240,7 +240,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 38,
+      "resting_hr": 37,
       "hrv": 155.0,
       "sleep_quality": 2,
       "sleep_hours": null,
@@ -292,14 +292,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.67,
-    "recovery_index_yesterday": 0.68,
+    "recovery_index": 1.71,
+    "recovery_index_yesterday": 0.72,
     "hrv_baseline_7d": 102.7,
-    "rhr_baseline_7d": 42.1,
+    "rhr_baseline_7d": 42,
     "hrv_baseline_28d": 92.5,
-    "rhr_baseline_28d": 42.9,
+    "rhr_baseline_28d": 43.9,
     "latest_hrv": 155.0,
-    "latest_rhr": 38,
+    "latest_rhr": 37,
     "acwr": 0.71,
     "acwr_interpretation": "undertraining",
     "acwr_scope": "live_retrospective",
@@ -667,7 +667,7 @@
     "p_max": 887,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.85667,
-    "calculation_timestamp": "2026-09-03T06:24:26.673908",
+    "calculation_timestamp": "2026-09-03T11:33:08.300147",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -685,7 +685,7 @@
       "id": "i182573411",
       "date": "2026-09-02T17:20:08",
       "type": "Ride",
-      "name": "Pedalata pomeridiana",
+      "name": "Ciclabile Valle Brembana - Clanezzo",
       "duration_hours": 1.5,
       "duration_formatted": "1h29m50s",
       "distance_km": 37.42,
@@ -2171,7 +2171,7 @@
       "name": "Chiavenna",
       "duration_hours": 7.21,
       "duration_formatted": "7h12m25s",
-      "distance_km": 0.0,
+      "distance_km": 204.0,
       "tss": 399,
       "intensity_factor": 74.015274,
       "avg_power": null,
@@ -2179,7 +2179,7 @@
       "avg_hr": 144,
       "max_hr": 182,
       "avg_cadence": 72.9675,
-      "avg_speed": 25.3,
+      "avg_speed": 28.0,
       "avg_speed_unit": "KPH",
       "max_speed": 98.9,
       "max_speed_unit": "KPH",
@@ -2201,7 +2201,7 @@
       "elevation_m": 1120.0,
       "display": {
         "distance": {
-          "value": 0.0,
+          "value": 204.0,
           "unit": "km"
         },
         "elevation": {
@@ -2209,7 +2209,7 @@
           "unit": "m"
         },
         "avg_speed": {
-          "value": 25.3,
+          "value": 28.0,
           "unit": "km/h"
         },
         "max_speed": {
@@ -4349,8 +4349,8 @@
       "hrv_sdnn": 63.0,
       "sleep_hours": 6.23,
       "sleep_formatted": "6h14m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 66.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.80808,
@@ -4389,13 +4389,13 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 43,
+      "resting_hr": 42,
       "hrv_rmssd": 101.0,
       "hrv_sdnn": 74.0,
       "sleep_hours": 8.37,
       "sleep_formatted": "8h22m",
       "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_score": 80.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.804432,
@@ -4479,13 +4479,13 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 39,
+      "resting_hr": 42,
       "hrv_rmssd": 118.0,
       "hrv_sdnn": 107.0,
       "sleep_hours": 6.57,
       "sleep_formatted": "6h34m",
-      "sleep_quality": 2,
-      "sleep_score": 6.0,
+      "sleep_quality": 3,
+      "sleep_score": 71.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.809753,
@@ -4529,8 +4529,8 @@
       "hrv_sdnn": 81.0,
       "sleep_hours": 8.95,
       "sleep_formatted": "8h57m",
-      "sleep_quality": 2,
-      "sleep_score": 7.0,
+      "sleep_quality": 3,
+      "sleep_score": 71.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.78675,
@@ -4566,7 +4566,7 @@
       "display": {
         "weight": null
       },
-      "resting_hr": 42,
+      "resting_hr": 40,
       "hrv_rmssd": 70.0,
       "hrv_sdnn": 59.0,
       "sleep_hours": null,
@@ -4608,7 +4608,7 @@
       "display": {
         "weight": null
       },
-      "resting_hr": 38,
+      "resting_hr": 37,
       "hrv_rmssd": 155.0,
       "hrv_sdnn": 249.0,
       "sleep_hours": null,
@@ -4660,7 +4660,7 @@
     "total_tss": 573,
     "activities_count": 4,
     "avg_hrv": 102.7,
-    "avg_resting_hr": 42.1
+    "avg_resting_hr": 42.0
   },
   "race_calendar": {
     "next_race": null,
