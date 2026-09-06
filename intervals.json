@@ -1,79 +1,11 @@
 {
-  "generated_at": "2026-09-05T23:22:59.998365",
+  "generated_at": "2026-09-06T01:15:01.318547",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i179115106",
-      "date": "2026-08-22",
-      "start_datetime": "2026-08-22T06:58:32",
-      "type": "Ride",
-      "name": "Chiavenna",
-      "interval_summary": [
-        "1x 3h54m 142bpm",
-        "1x 49m1s 135bpm",
-        "1x 2m34s 158bpm",
-        "1x 3h30m 146bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "14041s@142bpm69rpm",
-          "duration_secs": 14041,
-          "moving_secs": 12485,
-          "start_secs": 0,
-          "end_secs": 14041,
-          "avg_hr": 142,
-          "max_hr": 180,
-          "min_hr": 90,
-          "avg_cadence": 69.2433,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "2941s@135bpm62rpm",
-          "duration_secs": 2941,
-          "moving_secs": 1797,
-          "start_secs": 14041,
-          "end_secs": 16982,
-          "avg_hr": 135,
-          "max_hr": 176,
-          "min_hr": 92,
-          "avg_cadence": 61.84909,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "154s@158bpm85rpm",
-          "duration_secs": 154,
-          "moving_secs": 154,
-          "start_secs": 16982,
-          "end_secs": 17136,
-          "avg_hr": 158,
-          "max_hr": 169,
-          "min_hr": 146,
-          "avg_cadence": 85.0,
-          "zone": 3
-        },
-        {
-          "type": "WORK",
-          "label": "12629s@146bpm67rpm",
-          "duration_secs": 12629,
-          "moving_secs": 11576,
-          "start_secs": 17136,
-          "end_secs": 29765,
-          "avg_hr": 146,
-          "max_hr": 182,
-          "min_hr": 98,
-          "avg_cadence": 66.576065,
-          "zone": 3
-        }
-      ],
-      "zone_basis": "hr"
-    },
     {
       "activity_id": "i179160720",
       "date": "2026-08-23",
@@ -1756,24 +1688,6 @@
     }
   ],
   "fetch_state": {
-    "i179115106": {
-      "date": "2026-08-22",
-      "intervals": {
-        "attempts": 4,
-        "first_seen": "2026-08-24T07:37:24.867901",
-        "last_attempt": "2026-08-27T16:31:42.927647",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-08-27T08:21:49.509+00:00"
-      },
-      "streams": {
-        "attempts": 15,
-        "first_seen": "2026-08-24T07:37:24.867901",
-        "last_attempt": "2026-08-25T07:00:31.808717",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i179160720": {
       "date": "2026-08-23",
       "intervals": {
@@ -1948,12 +1862,12 @@
         "source_icu_sync_date": "2026-09-05T16:29:28.294+00:00"
       },
       "streams": {
-        "attempts": 6,
+        "attempts": 7,
         "first_seen": "2026-09-05T12:32:20.786860",
-        "last_attempt": "2026-09-05T23:22:59.998365",
+        "last_attempt": "2026-09-06T01:15:01.318547",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-05T23:27:59.998365"
+        "next_retry_at": "2026-09-06T01:45:01.318547"
       }
     }
   }
