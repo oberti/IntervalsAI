@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T08:19:05.645597",
+  "generated_at": "2026-09-11T12:57:27.228386",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -1977,6 +1977,34 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i185552672",
+      "date": "2026-09-11",
+      "start_datetime": "2026-09-11T07:42:37",
+      "type": "Ride",
+      "name": "Pedalata mattutina",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 12857,
+          "moving_secs": 12031,
+          "start_secs": 0,
+          "end_secs": 12857,
+          "avg_power": 121,
+          "max_power": 438,
+          "avg_hr": 124,
+          "max_hr": 171,
+          "min_hr": 79,
+          "avg_cadence": 50.545372,
+          "zone": 1,
+          "w_bal_start": 13440,
+          "w_bal_end": 13439,
+          "training_load": 106.8351
+        }
+      ],
+      "zone_basis": "power"
     }
   ],
   "fetch_state": {
@@ -2136,12 +2164,31 @@
         "source_icu_sync_date": "2026-09-10T19:03:24.672+00:00"
       },
       "streams": {
-        "attempts": 5,
+        "attempts": 6,
         "first_seen": "2026-09-10T19:34:13.085655",
-        "last_attempt": "2026-09-11T08:19:05.645597",
+        "last_attempt": "2026-09-11T12:57:27.228386",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-11T08:24:05.645597"
+        "next_retry_at": "2026-09-11T13:02:27.228386"
+      }
+    },
+    "i185552672": {
+      "date": "2026-09-11",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-09-11T12:57:27.228386",
+        "last_attempt": "2026-09-11T12:57:27.228386",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-09-11T10:02:57.552+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-09-11T12:57:27.228386",
+        "last_attempt": "2026-09-11T12:57:27.228386",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-09-11T13:02:27.228386"
       }
     }
   }
