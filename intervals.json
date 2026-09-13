@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T10:21:03.340595",
+  "generated_at": "2026-09-13T14:34:38.626514",
   "schema_version": 1,
   "version": "3.127",
   "script_hash": "81a9546c6d66",
@@ -1688,6 +1688,34 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i186288797",
+      "date": "2026-09-13",
+      "start_datetime": "2026-09-13T06:59:36",
+      "type": "Ride",
+      "name": "Pedalata mattutina",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 16090,
+          "moving_secs": 15322,
+          "start_secs": 0,
+          "end_secs": 16090,
+          "avg_power": 130,
+          "max_power": 705,
+          "avg_hr": 111,
+          "max_hr": 168,
+          "min_hr": 31,
+          "avg_cadence": 53.160084,
+          "zone": 1,
+          "w_bal_start": 13440,
+          "w_bal_end": 13401,
+          "training_load": 152.77782
+        }
+      ],
+      "zone_basis": "power"
     }
   ],
   "fetch_state": {
@@ -1828,12 +1856,11 @@
         "source_icu_sync_date": "2026-09-10T19:03:24.672+00:00"
       },
       "streams": {
-        "attempts": 15,
+        "attempts": 16,
         "first_seen": "2026-09-10T19:34:13.085655",
-        "last_attempt": "2026-09-13T05:12:45.140058",
-        "status": "pending",
-        "reason": "no_data",
-        "next_retry_at": "2026-09-13T11:12:45.140058"
+        "last_attempt": "2026-09-13T14:34:38.626514",
+        "status": "tombstone",
+        "reason": "retry_expired"
       }
     },
     "i185552672": {
@@ -1866,12 +1893,31 @@
         "source_icu_sync_date": "2026-09-12T12:12:18.807+00:00"
       },
       "streams": {
-        "attempts": 8,
+        "attempts": 9,
         "first_seen": "2026-09-12T12:42:51.667696",
-        "last_attempt": "2026-09-13T10:21:03.340595",
+        "last_attempt": "2026-09-13T14:34:38.626514",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-13T10:51:03.340595"
+        "next_retry_at": "2026-09-13T15:04:38.626514"
+      }
+    },
+    "i186288797": {
+      "date": "2026-09-13",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-09-13T14:34:38.626514",
+        "last_attempt": "2026-09-13T14:34:38.626514",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-09-13T13:55:34.489+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-09-13T14:34:38.626514",
+        "last_attempt": "2026-09-13T14:34:38.626514",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-09-13T14:39:38.626514"
       }
     }
   }
