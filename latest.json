@@ -71,7 +71,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-16T01:26:29.299357",
+    "last_updated": "2026-09-16T06:33:35.544566",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.132"
@@ -101,16 +101,26 @@
     "years_on_platform": 7
   },
   "athlete_notes": null,
-  "alerts": [],
+  "alerts": [
+    {
+      "metric": "hrv",
+      "value": 49.0,
+      "severity": "warning",
+      "threshold": "\u2193>20% vs baseline (75.7)",
+      "context": "HRV 49.0 is 35.3% below baseline. Monitor \u2014 alarm if persists >2 days.",
+      "persistence_days": 1,
+      "tier": 1
+    }
+  ],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 81.0,
-        "delta_pct": null
+        "status": "red",
+        "value": 49.0,
+        "baseline_7d": 75.7,
+        "delta_pct": -35.3
       },
       "rhr": {
         "status": "unavailable",
@@ -121,7 +131,7 @@
       "sleep": {
         "status": "unavailable",
         "hours": null,
-        "quality": null
+        "quality": 2
       },
       "acwr": {
         "status": "green",
@@ -143,8 +153,8 @@
     "signal_summary": {
       "green": 2,
       "amber": 0,
-      "red": 0,
-      "unavailable": 4
+      "red": 1,
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Build",
@@ -153,8 +163,17 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "modification": {
+      "triggers": [
+        "hrv"
+      ],
+      "suggested_adjustments": {
+        "intensity": "reduce",
+        "volume": "preserve",
+        "cap_zone": null
+      }
+    },
+    "reason": "P2 signal count. 1 red (hrv), 0 amber ().",
     "alarm_refs": []
   },
   "health_context": {
@@ -209,7 +228,7 @@
       "w_prime": 19601,
       "w_prime_kj": 19.6,
       "p_max": 880,
-      "vo2max": null,
+      "vo2max": 48.720486,
       "sports": {
         "cycling": {
           "lthr": 175,
@@ -254,16 +273,16 @@
         }
       },
       "resting_hr": 55,
-      "hrv": null,
-      "sleep_quality": null,
+      "hrv": 49.0,
+      "sleep_quality": 2,
       "sleep_hours": null,
       "sleep_formatted": null,
-      "sleep_score": null,
-      "fatigue": null,
-      "soreness": null,
+      "sleep_score": 6.0,
+      "fatigue": 2,
+      "soreness": 2,
       "stress": null,
       "mood": null,
-      "motivation": null,
+      "motivation": 3,
       "injury": null,
       "hydration": null,
       "spO2": null,
@@ -283,7 +302,7 @@
       "fat_g": null,
       "menstrual_phase": null,
       "menstrual_phase_predicted": null,
-      "readiness": null
+      "readiness": 7.9
     },
     "weight": {
       "weight_latest_kg": 72.0,
@@ -302,11 +321,11 @@
   "derived_metrics": {
     "recovery_index": null,
     "recovery_index_yesterday": null,
-    "hrv_baseline_7d": 81.0,
+    "hrv_baseline_7d": 75.7,
     "rhr_baseline_7d": 46.2,
-    "hrv_baseline_28d": 86.3,
+    "hrv_baseline_28d": 84.7,
     "rhr_baseline_28d": 44.6,
-    "latest_hrv": null,
+    "latest_hrv": 49.0,
     "latest_rhr": null,
     "acwr": 1.17,
     "acwr_interpretation": "optimal",
@@ -674,10 +693,10 @@
     "w_prime_kj": 19.6,
     "p_max": 880,
     "power_model_source": "wellness.sportInfo",
-    "vo2max": null,
-    "calculation_timestamp": "2026-09-16T01:26:29.297997",
+    "vo2max": 48.720486,
+    "calculation_timestamp": "2026-09-16T06:33:35.543344",
     "data_quality": {
-      "hrv_data_points": 5,
+      "hrv_data_points": 6,
       "rhr_data_points": 6,
       "activities_7d": 5,
       "activities_28d": 19,
@@ -693,7 +712,7 @@
       "id": "i187066290",
       "date": "2026-09-15T17:24:40",
       "type": "Ride",
-      "name": "Pedalata pomeridiana",
+      "name": "San Pellegrino",
       "duration_hours": 2.36,
       "duration_formatted": "2h21m29s",
       "distance_km": 57.95,
@@ -742,8 +761,8 @@
           "unit": "km/h"
         }
       },
-      "feel": null,
-      "rpe": null,
+      "feel": 4,
+      "rpe": 3,
       "effort_response": null,
       "zone_distribution": {
         "hr_zones": {
@@ -4358,20 +4377,20 @@
         "weight": null
       },
       "resting_hr": null,
-      "hrv_rmssd": null,
-      "hrv_sdnn": null,
+      "hrv_rmssd": 49.0,
+      "hrv_sdnn": 40.0,
       "sleep_hours": null,
       "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_quality": 2,
+      "sleep_score": 6.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
-      "vo2max": null,
-      "fatigue": null,
-      "soreness": null,
+      "vo2max": 48.720486,
+      "fatigue": 2,
+      "soreness": 2,
       "stress": null,
       "mood": null,
-      "motivation": null,
+      "motivation": 3,
       "injury": null,
       "hydration": null,
       "spO2": null,
@@ -4391,7 +4410,7 @@
       "fat_g": null,
       "menstrual_phase": null,
       "menstrual_phase_predicted": null,
-      "readiness": null
+      "readiness": 7.9
     }
   ],
   "planned_workouts": [],
@@ -4408,7 +4427,7 @@
     "total_training_formatted": "17h23m",
     "total_tss": 710,
     "activities_count": 5,
-    "avg_hrv": 81.0,
+    "avg_hrv": 75.7,
     "avg_resting_hr": 46.2
   },
   "race_calendar": {
