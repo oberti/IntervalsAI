@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T22:21:13.495701",
+  "generated_at": "2026-09-18T00:39:40.452456",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -1111,90 +1111,6 @@
       "zone_basis": "power"
     },
     {
-      "activity_id": "i182973171",
-      "date": "2026-09-03",
-      "start_datetime": "2026-09-03T17:18:03",
-      "type": "Ride",
-      "name": "Sant'Antonio Abbandonato da Brembilla",
-      "interval_summary": [
-        "1x 50m48s 172w",
-        "1x 4m16s 212w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3584,
-          "moving_secs": 3393,
-          "start_secs": 0,
-          "end_secs": 3584,
-          "avg_power": 144,
-          "max_power": 503,
-          "avg_hr": 124,
-          "max_hr": 167,
-          "min_hr": 70,
-          "avg_cadence": 59.463215,
-          "zone": 1,
-          "w_bal_start": 13440,
-          "w_bal_end": 13344,
-          "training_load": 36.828114
-        },
-        {
-          "type": "WORK",
-          "label": "3048s@172w55rpm",
-          "duration_secs": 3048,
-          "moving_secs": 3048,
-          "start_secs": 3584,
-          "end_secs": 6632,
-          "avg_power": 172,
-          "max_power": 285,
-          "avg_hr": 133,
-          "max_hr": 154,
-          "min_hr": 102,
-          "avg_cadence": 55.31857,
-          "zone": 2,
-          "w_bal_start": 13344,
-          "w_bal_end": 13439,
-          "training_load": 37.62963
-        },
-        {
-          "type": "WORK",
-          "label": "256s@212w67rpm",
-          "duration_secs": 256,
-          "moving_secs": 256,
-          "start_secs": 3585,
-          "end_secs": 3841,
-          "avg_power": 212,
-          "max_power": 281,
-          "avg_hr": 139,
-          "max_hr": 150,
-          "min_hr": 117,
-          "avg_cadence": 67.33984,
-          "zone": 3,
-          "w_bal_start": 13344,
-          "w_bal_end": 13399,
-          "training_load": 4.3989954
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3760,
-          "moving_secs": 3591,
-          "start_secs": 6632,
-          "end_secs": 10392,
-          "avg_power": 96,
-          "max_power": 461,
-          "avg_hr": 109,
-          "max_hr": 172,
-          "min_hr": 65,
-          "avg_cadence": 39.42678,
-          "zone": 1,
-          "w_bal_start": 13439,
-          "w_bal_end": 13364,
-          "training_load": 28.99836
-        }
-      ],
-      "zone_basis": "power"
-    },
-    {
       "activity_id": "i187066290",
       "date": "2026-09-15",
       "start_datetime": "2026-09-15T17:24:40",
@@ -1661,24 +1577,6 @@
         "reason": "retry_expired"
       }
     },
-    "i182973171": {
-      "date": "2026-09-03",
-      "intervals": {
-        "attempts": 3,
-        "first_seen": "2026-09-14T16:36:34.574932",
-        "last_attempt": "2026-09-17T15:40:16.774646",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-09-17T12:05:33.571+00:00"
-      },
-      "streams": {
-        "attempts": 1,
-        "first_seen": "2026-09-14T16:36:34.574932",
-        "last_attempt": "2026-09-14T16:36:34.574932",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i187066290": {
       "date": "2026-09-15",
       "intervals": {
@@ -1709,12 +1607,12 @@
         "source_icu_sync_date": "2026-09-17T12:05:46.080+00:00"
       },
       "streams": {
-        "attempts": 8,
+        "attempts": 9,
         "first_seen": "2026-09-16T19:58:04.310609",
-        "last_attempt": "2026-09-17T22:21:13.495701",
+        "last_attempt": "2026-09-18T00:39:40.452456",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-17T22:51:13.495701"
+        "next_retry_at": "2026-09-18T01:09:40.452456"
       }
     },
     "i187717680": {
@@ -1728,12 +1626,12 @@
         "source_icu_sync_date": "2026-09-17T18:08:06.835+00:00"
       },
       "streams": {
-        "attempts": 2,
+        "attempts": 3,
         "first_seen": "2026-09-17T19:17:31.187128",
-        "last_attempt": "2026-09-17T22:21:13.495701",
+        "last_attempt": "2026-09-18T00:39:40.452456",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-17T22:26:13.495701"
+        "next_retry_at": "2026-09-18T00:44:40.452456"
       }
     }
   }
