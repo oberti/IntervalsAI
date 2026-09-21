@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T13:43:16.604760",
+  "generated_at": "2026-09-21T18:55:02.191043",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -1350,7 +1350,7 @@
       "interval_summary": [
         "1x 41m51s 229w",
         "1x 17s 403w",
-        "1x 34s 407w",
+        "1x 33s 410w",
         "1x 15s 615w",
         "1x 12s 452w"
       ],
@@ -1444,38 +1444,38 @@
         },
         {
           "type": "WORK",
-          "label": "34s@407w81rpm",
-          "duration_secs": 34,
-          "moving_secs": 34,
+          "label": "33s@410w81rpm",
+          "duration_secs": 33,
+          "moving_secs": 33,
           "start_secs": 12063,
-          "end_secs": 12097,
-          "avg_power": 407,
+          "end_secs": 12096,
+          "avg_power": 410,
           "max_power": 496,
-          "avg_hr": 156,
-          "max_hr": 181,
+          "avg_hr": 155,
+          "max_hr": 179,
           "min_hr": 126,
-          "avg_cadence": 80.73529,
+          "avg_cadence": 81.030304,
           "zone": 7,
           "w_bal_start": 12908,
-          "w_bal_end": 8356,
-          "training_load": 1.5045745
+          "w_bal_end": 8390,
+          "training_load": 1.4344382
         },
         {
           "type": "RECOVERY",
-          "duration_secs": 83,
-          "moving_secs": 83,
-          "start_secs": 12097,
+          "duration_secs": 84,
+          "moving_secs": 84,
+          "start_secs": 12096,
           "end_secs": 12180,
-          "avg_power": 142,
+          "avg_power": 143,
           "max_power": 547,
           "avg_hr": 163,
           "max_hr": 188,
           "min_hr": 128,
-          "avg_cadence": 58.55422,
+          "avg_cadence": 58.70238,
           "zone": 1,
-          "w_bal_start": 8279,
+          "w_bal_start": 8356,
           "w_bal_end": 10667,
-          "training_load": 2.0051725
+          "training_load": 2.0950544
         },
         {
           "type": "WORK",
@@ -1718,20 +1718,20 @@
     "i188473309": {
       "date": "2026-09-20",
       "intervals": {
-        "attempts": 2,
+        "attempts": 3,
         "first_seen": "2026-09-20T12:04:54.498937",
-        "last_attempt": "2026-09-21T13:43:16.604760",
+        "last_attempt": "2026-09-21T18:55:02.191043",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-21T12:09:50.206+00:00"
+        "source_icu_sync_date": "2026-09-21T14:27:02.861+00:00"
       },
       "streams": {
-        "attempts": 8,
+        "attempts": 9,
         "first_seen": "2026-09-20T12:04:54.498937",
-        "last_attempt": "2026-09-21T13:43:16.604760",
+        "last_attempt": "2026-09-21T18:55:02.191043",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-21T14:13:16.604760"
+        "next_retry_at": "2026-09-21T19:25:02.191043"
       }
     }
   }
