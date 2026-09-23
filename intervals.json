@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T16:45:58.094008",
+  "generated_at": "2026-09-23T19:59:22.146886",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -1550,6 +1550,34 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i189664428",
+      "date": "2026-09-23",
+      "start_datetime": "2026-09-23T17:22:03",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 5662,
+          "moving_secs": 5476,
+          "start_secs": 0,
+          "end_secs": 5662,
+          "avg_power": 114,
+          "max_power": 445,
+          "avg_hr": 105,
+          "max_hr": 157,
+          "min_hr": 56,
+          "avg_cadence": 49.33546,
+          "zone": 1,
+          "w_bal_start": 13440,
+          "w_bal_end": 13432,
+          "training_load": 47.956207
+        }
+      ],
+      "zone_basis": "power"
     }
   ],
   "fetch_state": {
@@ -1726,12 +1754,31 @@
         "source_icu_sync_date": "2026-09-23T07:22:36.487+00:00"
       },
       "streams": {
-        "attempts": 6,
+        "attempts": 7,
         "first_seen": "2026-09-22T20:01:49.166996",
-        "last_attempt": "2026-09-23T16:45:58.094008",
+        "last_attempt": "2026-09-23T19:59:22.146886",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-23T16:50:58.094008"
+        "next_retry_at": "2026-09-23T20:29:22.146886"
+      }
+    },
+    "i189664428": {
+      "date": "2026-09-23",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-09-23T19:59:22.146886",
+        "last_attempt": "2026-09-23T19:59:22.146886",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-09-23T18:00:41.826+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-09-23T19:59:22.146886",
+        "last_attempt": "2026-09-23T19:59:22.146886",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-09-23T20:04:22.146886"
       }
     }
   }
