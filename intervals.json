@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T22:07:44.983140",
+  "generated_at": "2026-09-27T00:37:54.729629",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -67,143 +67,6 @@
           "w_bal_start": 13382,
           "w_bal_end": 13401,
           "training_load": 66.526505
-        }
-      ],
-      "zone_basis": "power"
-    },
-    {
-      "activity_id": "i185884355",
-      "date": "2026-09-12",
-      "start_datetime": "2026-09-12T07:02:03",
-      "type": "Ride",
-      "name": "Valbrona via Rezzago - Colma di Sormano - Paderno",
-      "interval_summary": [
-        "1x 1h2m 191w",
-        "1x 23m45s 209w",
-        "1x 11s 448w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 5060,
-          "moving_secs": 5055,
-          "start_secs": 0,
-          "end_secs": 5060,
-          "avg_power": 158,
-          "max_power": 494,
-          "avg_hr": 129,
-          "max_hr": 170,
-          "min_hr": 90,
-          "avg_cadence": 66.992485,
-          "zone": 2,
-          "w_bal_start": 13440,
-          "w_bal_end": 12210,
-          "training_load": 60.29765
-        },
-        {
-          "type": "WORK",
-          "label": "3767s@191w65rpm",
-          "duration_secs": 3767,
-          "moving_secs": 3543,
-          "start_secs": 5060,
-          "end_secs": 8827,
-          "avg_power": 191,
-          "max_power": 415,
-          "avg_hr": 140,
-          "max_hr": 172,
-          "min_hr": 97,
-          "avg_cadence": 65.208626,
-          "zone": 2,
-          "w_bal_start": 12230,
-          "w_bal_end": 13179,
-          "training_load": 56.299385
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 149,
-          "moving_secs": 149,
-          "start_secs": 8827,
-          "end_secs": 8976,
-          "avg_power": 80,
-          "max_power": 391,
-          "avg_hr": 121,
-          "max_hr": 146,
-          "min_hr": 99,
-          "avg_cadence": 46.10067,
-          "zone": 1,
-          "w_bal_start": 13182,
-          "w_bal_end": 13283,
-          "training_load": 0.71533126
-        },
-        {
-          "type": "WORK",
-          "label": "1425s@209w68rpm",
-          "duration_secs": 1425,
-          "moving_secs": 1425,
-          "start_secs": 8976,
-          "end_secs": 10401,
-          "avg_power": 209,
-          "max_power": 401,
-          "avg_hr": 149,
-          "max_hr": 172,
-          "min_hr": 113,
-          "avg_cadence": 68.17965,
-          "zone": 3,
-          "w_bal_start": 13234,
-          "w_bal_end": 13339,
-          "training_load": 24.955229
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 4496,
-          "moving_secs": 4118,
-          "start_secs": 10401,
-          "end_secs": 14897,
-          "avg_power": 121,
-          "max_power": 529,
-          "avg_hr": 127,
-          "max_hr": 176,
-          "min_hr": 86,
-          "avg_cadence": 42.91614,
-          "zone": 1,
-          "w_bal_start": 13339,
-          "w_bal_end": 11717,
-          "training_load": 47.9535
-        },
-        {
-          "type": "WORK",
-          "label": "11s@448w76rpm",
-          "duration_secs": 11,
-          "moving_secs": 11,
-          "start_secs": 14897,
-          "end_secs": 14908,
-          "avg_power": 448,
-          "max_power": 550,
-          "avg_hr": 151,
-          "max_hr": 159,
-          "min_hr": 144,
-          "avg_cadence": 76.09091,
-          "zone": 7,
-          "w_bal_start": 11597,
-          "w_bal_end": 9716,
-          "training_load": 0.24894404
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3464,
-          "moving_secs": 3219,
-          "start_secs": 14908,
-          "end_secs": 18372,
-          "avg_power": 111,
-          "max_power": 532,
-          "avg_hr": 130,
-          "max_hr": 178,
-          "min_hr": 35,
-          "avg_cadence": 42.916615,
-          "zone": 1,
-          "w_bal_start": 9572,
-          "w_bal_end": 13377,
-          "training_load": 33.294018
         }
       ],
       "zone_basis": "power"
@@ -1942,24 +1805,6 @@
         "reason": "retry_expired"
       }
     },
-    "i185884355": {
-      "date": "2026-09-12",
-      "intervals": {
-        "attempts": 5,
-        "first_seen": "2026-09-14T16:36:34.574932",
-        "last_attempt": "2026-09-25T17:27:08.418481",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-09-25T12:46:24.703+00:00"
-      },
-      "streams": {
-        "attempts": 5,
-        "first_seen": "2026-09-14T16:36:34.574932",
-        "last_attempt": "2026-09-15T07:23:32.048594",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i187066290": {
       "date": "2026-09-15",
       "intervals": {
@@ -2116,12 +1961,12 @@
         "source_icu_sync_date": "2026-09-26T16:20:34.652+00:00"
       },
       "streams": {
-        "attempts": 4,
+        "attempts": 5,
         "first_seen": "2026-09-26T12:29:30.228131",
-        "last_attempt": "2026-09-26T22:07:44.983140",
+        "last_attempt": "2026-09-27T00:37:54.729629",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-26T22:12:44.983140"
+        "next_retry_at": "2026-09-27T00:42:54.729629"
       }
     }
   }
