@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T07:00:16.279795",
+  "generated_at": "2026-09-28T15:29:16.758816",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -1974,12 +1974,12 @@
     "i187066290": {
       "date": "2026-09-15",
       "intervals": {
-        "attempts": 6,
+        "attempts": 7,
         "first_seen": "2026-09-15T20:27:11.152637",
-        "last_attempt": "2026-09-25T17:27:08.418481",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-25T12:46:27.549+00:00"
+        "source_icu_sync_date": "2026-09-28T07:11:54.154+00:00"
       },
       "streams": {
         "attempts": 15,
@@ -1992,12 +1992,12 @@
     "i187394726": {
       "date": "2026-09-16",
       "intervals": {
-        "attempts": 6,
+        "attempts": 7,
         "first_seen": "2026-09-16T19:58:04.310609",
-        "last_attempt": "2026-09-25T17:27:08.418481",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-25T12:46:28.617+00:00"
+        "source_icu_sync_date": "2026-09-28T07:11:55.278+00:00"
       },
       "streams": {
         "attempts": 16,
@@ -2010,12 +2010,12 @@
     "i187717680": {
       "date": "2026-09-17",
       "intervals": {
-        "attempts": 4,
+        "attempts": 5,
         "first_seen": "2026-09-17T19:17:31.187128",
-        "last_attempt": "2026-09-25T17:27:08.418481",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-25T12:46:29.685+00:00"
+        "source_icu_sync_date": "2026-09-28T07:11:56.337+00:00"
       },
       "streams": {
         "attempts": 16,
@@ -2028,12 +2028,12 @@
     "i188208558": {
       "date": "2026-09-19",
       "intervals": {
-        "attempts": 4,
+        "attempts": 5,
         "first_seen": "2026-09-19T13:26:33.718659",
-        "last_attempt": "2026-09-25T17:27:08.418481",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-25T12:46:31.302+00:00"
+        "source_icu_sync_date": "2026-09-28T07:11:58.026+00:00"
       },
       "streams": {
         "attempts": 16,
@@ -2046,12 +2046,12 @@
     "i188473309": {
       "date": "2026-09-20",
       "intervals": {
-        "attempts": 4,
+        "attempts": 5,
         "first_seen": "2026-09-20T12:04:54.498937",
-        "last_attempt": "2026-09-25T17:27:08.418481",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-25T12:46:32.943+00:00"
+        "source_icu_sync_date": "2026-09-28T07:11:59.439+00:00"
       },
       "streams": {
         "attempts": 15,
@@ -2064,12 +2064,12 @@
     "i189299055": {
       "date": "2026-09-22",
       "intervals": {
-        "attempts": 4,
+        "attempts": 5,
         "first_seen": "2026-09-22T20:01:49.166996",
-        "last_attempt": "2026-09-28T07:00:16.279795",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-28T06:36:24.838+00:00"
+        "source_icu_sync_date": "2026-09-28T07:12:00.460+00:00"
       },
       "streams": {
         "attempts": 15,
@@ -2082,12 +2082,12 @@
     "i189664428": {
       "date": "2026-09-23",
       "intervals": {
-        "attempts": 2,
+        "attempts": 3,
         "first_seen": "2026-09-23T19:59:22.146886",
-        "last_attempt": "2026-09-25T17:27:08.418481",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-25T12:46:35.162+00:00"
+        "source_icu_sync_date": "2026-09-28T07:12:01.767+00:00"
       },
       "streams": {
         "attempts": 15,
@@ -2100,12 +2100,12 @@
     "i190047293": {
       "date": "2026-09-24",
       "intervals": {
-        "attempts": 3,
+        "attempts": 4,
         "first_seen": "2026-09-24T20:10:30.394621",
-        "last_attempt": "2026-09-25T17:27:08.418481",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-25T12:46:36.121+00:00"
+        "source_icu_sync_date": "2026-09-28T07:12:02.844+00:00"
       },
       "streams": {
         "attempts": 15,
@@ -2118,39 +2118,39 @@
     "i190537008": {
       "date": "2026-09-26",
       "intervals": {
-        "attempts": 3,
+        "attempts": 4,
         "first_seen": "2026-09-26T12:29:30.228131",
-        "last_attempt": "2026-09-28T07:00:16.279795",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-28T06:33:34.030+00:00"
+        "source_icu_sync_date": "2026-09-28T07:12:05.187+00:00"
       },
       "streams": {
-        "attempts": 12,
+        "attempts": 13,
         "first_seen": "2026-09-26T12:29:30.228131",
-        "last_attempt": "2026-09-28T07:00:16.279795",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-28T07:30:16.279795"
+        "next_retry_at": "2026-09-28T21:29:16.758816"
       }
     },
     "i190812517": {
       "date": "2026-09-27",
       "intervals": {
-        "attempts": 3,
+        "attempts": 4,
         "first_seen": "2026-09-27T11:39:00.564409",
-        "last_attempt": "2026-09-28T07:00:16.279795",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-28T06:32:21.479+00:00"
+        "source_icu_sync_date": "2026-09-28T07:12:06.777+00:00"
       },
       "streams": {
-        "attempts": 6,
+        "attempts": 7,
         "first_seen": "2026-09-27T11:39:00.564409",
-        "last_attempt": "2026-09-28T07:00:16.279795",
+        "last_attempt": "2026-09-28T15:29:16.758816",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-28T07:05:16.279795"
+        "next_retry_at": "2026-09-28T15:59:16.758816"
       }
     }
   }
