@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T15:08:40.730555",
+  "generated_at": "2026-09-30T20:02:33.419801",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -1968,6 +1968,108 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i191978501",
+      "date": "2026-09-30",
+      "start_datetime": "2026-09-30T17:28:31",
+      "type": "Ride",
+      "name": "Afternoon Ride",
+      "interval_summary": [
+        "1x 6m38s 257w",
+        "1x 61s 286w",
+        "1x 12s 401w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2928,
+          "moving_secs": 2924,
+          "start_secs": 0,
+          "end_secs": 2928,
+          "avg_power": 151,
+          "max_power": 524,
+          "avg_cadence": 57.915897,
+          "zone": 2,
+          "w_bal_start": 13440,
+          "w_bal_end": 13295,
+          "training_load": 33.717686
+        },
+        {
+          "type": "WORK",
+          "label": "398s@257w74rpm",
+          "duration_secs": 398,
+          "moving_secs": 398,
+          "start_secs": 2928,
+          "end_secs": 3326,
+          "avg_power": 257,
+          "max_power": 362,
+          "avg_cadence": 73.65327,
+          "zone": 4,
+          "w_bal_start": 13295,
+          "w_bal_end": 8359,
+          "training_load": 10.483462
+        },
+        {
+          "type": "WORK",
+          "label": "61s@286w79rpm",
+          "duration_secs": 61,
+          "moving_secs": 61,
+          "start_secs": 3265,
+          "end_secs": 3326,
+          "avg_power": 286,
+          "max_power": 314,
+          "avg_cadence": 78.672134,
+          "zone": 5,
+          "w_bal_start": 9531,
+          "w_bal_end": 8359,
+          "training_load": 2.0266116
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2987,
+          "moving_secs": 2955,
+          "start_secs": 3326,
+          "end_secs": 6313,
+          "avg_power": 130,
+          "max_power": 810,
+          "avg_cadence": 55.246616,
+          "zone": 1,
+          "w_bal_start": 8355,
+          "w_bal_end": 13431,
+          "training_load": 32.10099
+        },
+        {
+          "type": "WORK",
+          "label": "12s@401w60rpm",
+          "duration_secs": 12,
+          "moving_secs": 12,
+          "start_secs": 6313,
+          "end_secs": 6325,
+          "avg_power": 401,
+          "max_power": 446,
+          "avg_cadence": 60.166668,
+          "zone": 7,
+          "w_bal_start": 13304,
+          "w_bal_end": 11815,
+          "training_load": 0.18331018
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 487,
+          "moving_secs": 487,
+          "start_secs": 6325,
+          "end_secs": 6812,
+          "avg_power": 130,
+          "max_power": 426,
+          "avg_cadence": 53.611908,
+          "zone": 1,
+          "w_bal_start": 11739,
+          "w_bal_end": 13411,
+          "training_load": 5.61385
+        }
+      ],
+      "zone_basis": "power"
     }
   ],
   "fetch_state": {
@@ -2144,12 +2246,31 @@
         "source_icu_sync_date": "2026-09-30T10:15:37.158+00:00"
       },
       "streams": {
-        "attempts": 5,
+        "attempts": 6,
         "first_seen": "2026-09-29T19:11:19.714114",
-        "last_attempt": "2026-09-30T15:08:40.730555",
+        "last_attempt": "2026-09-30T20:02:33.419801",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-09-30T15:13:40.730555"
+        "next_retry_at": "2026-09-30T20:07:33.419801"
+      }
+    },
+    "i191978501": {
+      "date": "2026-09-30",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-09-30T20:02:33.419801",
+        "last_attempt": "2026-09-30T20:02:33.419801",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-09-30T17:56:59.094+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-09-30T20:02:33.419801",
+        "last_attempt": "2026-09-30T20:02:33.419801",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-09-30T20:07:33.419801"
       }
     }
   }
