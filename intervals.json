@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T04:49:07.781201",
+  "generated_at": "2026-10-01T11:25:50.128154",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -1911,24 +1911,55 @@
       "type": "Ride",
       "name": "Afternoon Ride",
       "interval_summary": [
-        "1x 6m38s 257w",
+        "1x 18m37s 165w",
+        "2x 6m38s 257w",
         "1x 61s 286w",
         "1x 12s 401w"
       ],
       "intervals": [
         {
           "type": "RECOVERY",
-          "duration_secs": 2928,
-          "moving_secs": 2924,
+          "duration_secs": 2924,
+          "moving_secs": 2920,
           "start_secs": 0,
-          "end_secs": 2928,
+          "end_secs": 2924,
           "avg_power": 151,
           "max_power": 524,
-          "avg_cadence": 57.915897,
+          "avg_cadence": 57.906197,
           "zone": 2,
           "w_bal_start": 13440,
-          "w_bal_end": 13295,
-          "training_load": 33.717686
+          "w_bal_end": 13292,
+          "training_load": 33.671574
+        },
+        {
+          "type": "WORK",
+          "label": "1117s@165w57rpm",
+          "duration_secs": 1117,
+          "moving_secs": 1085,
+          "start_secs": 2924,
+          "end_secs": 4041,
+          "avg_power": 165,
+          "max_power": 810,
+          "avg_cadence": 57.427258,
+          "zone": 2,
+          "w_bal_start": 13293,
+          "w_bal_end": 13243,
+          "training_load": 19.524557
+        },
+        {
+          "type": "WORK",
+          "label": "398s@257w74rpm",
+          "duration_secs": 398,
+          "moving_secs": 398,
+          "start_secs": 2928,
+          "end_secs": 3326,
+          "avg_power": 257,
+          "max_power": 362,
+          "avg_cadence": 73.65327,
+          "zone": 4,
+          "w_bal_start": 13295,
+          "w_bal_end": 8359,
+          "training_load": 10.483462
         },
         {
           "type": "WORK",
@@ -1962,17 +1993,17 @@
         },
         {
           "type": "RECOVERY",
-          "duration_secs": 2987,
-          "moving_secs": 2955,
-          "start_secs": 3326,
+          "duration_secs": 2272,
+          "moving_secs": 2272,
+          "start_secs": 4041,
           "end_secs": 6313,
-          "avg_power": 130,
-          "max_power": 810,
-          "avg_cadence": 55.246616,
+          "avg_power": 136,
+          "max_power": 423,
+          "avg_cadence": 57.44586,
           "zone": 1,
-          "w_bal_start": 8355,
+          "w_bal_start": 13245,
           "w_bal_end": 13431,
-          "training_load": 32.10099
+          "training_load": 24.986296
         },
         {
           "type": "WORK",
@@ -2163,31 +2194,31 @@
         "source_icu_sync_date": "2026-09-30T10:15:37.158+00:00"
       },
       "streams": {
-        "attempts": 8,
+        "attempts": 9,
         "first_seen": "2026-09-29T19:11:19.714114",
-        "last_attempt": "2026-10-01T04:49:07.781201",
+        "last_attempt": "2026-10-01T11:25:50.128154",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-10-01T05:19:07.781201"
+        "next_retry_at": "2026-10-01T11:55:50.128154"
       }
     },
     "i191978501": {
       "date": "2026-09-30",
       "intervals": {
-        "attempts": 1,
+        "attempts": 2,
         "first_seen": "2026-09-30T20:02:33.419801",
-        "last_attempt": "2026-09-30T20:02:33.419801",
+        "last_attempt": "2026-10-01T11:25:50.128154",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-09-30T17:56:59.094+00:00"
+        "source_icu_sync_date": "2026-10-01T07:37:57.437+00:00"
       },
       "streams": {
-        "attempts": 3,
+        "attempts": 4,
         "first_seen": "2026-09-30T20:02:33.419801",
-        "last_attempt": "2026-10-01T04:49:07.781201",
+        "last_attempt": "2026-10-01T11:25:50.128154",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-10-01T04:54:07.781201"
+        "next_retry_at": "2026-10-01T11:30:50.128154"
       }
     }
   }
