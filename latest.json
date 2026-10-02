@@ -71,7 +71,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-02T07:32:01.387494",
+    "last_updated": "2026-10-02T14:09:18.840795",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.132"
@@ -678,7 +678,7 @@
     "p_max": 873,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.811256,
-    "calculation_timestamp": "2026-10-02T07:32:01.386053",
+    "calculation_timestamp": "2026-10-02T14:09:18.839483",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -696,7 +696,7 @@
       "id": "i192368060",
       "date": "2026-10-01T17:20:35",
       "type": "Ride",
-      "name": "Afternoon Ride",
+      "name": "Berbenno",
       "duration_hours": 1.86,
       "duration_formatted": "1h51m45s",
       "distance_km": 48.05,
@@ -745,9 +745,9 @@
           "unit": "km/h"
         }
       },
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 4,
+      "effort_response": "neutral",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 2161,
