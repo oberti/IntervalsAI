@@ -1,39 +1,11 @@
 {
-  "generated_at": "2026-10-07T23:50:51.066695",
+  "generated_at": "2026-10-08T05:07:21.424678",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i189664428",
-      "date": "2026-09-23",
-      "start_datetime": "2026-09-23T17:22:03",
-      "type": "Ride",
-      "name": "Pedalata pomeridiana",
-      "interval_summary": null,
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 5662,
-          "moving_secs": 5476,
-          "start_secs": 0,
-          "end_secs": 5662,
-          "avg_power": 114,
-          "max_power": 445,
-          "avg_hr": 105,
-          "max_hr": 157,
-          "min_hr": 56,
-          "avg_cadence": 49.33546,
-          "zone": 1,
-          "w_bal_start": 13440,
-          "w_bal_end": 13432,
-          "training_load": 47.956207
-        }
-      ],
-      "zone_basis": "power"
-    },
     {
       "activity_id": "i190047293",
       "date": "2026-09-24",
@@ -2089,24 +2061,6 @@
     }
   ],
   "fetch_state": {
-    "i189664428": {
-      "date": "2026-09-23",
-      "intervals": {
-        "attempts": 3,
-        "first_seen": "2026-09-23T19:59:22.146886",
-        "last_attempt": "2026-09-28T15:29:16.758816",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-09-28T07:12:01.767+00:00"
-      },
-      "streams": {
-        "attempts": 15,
-        "first_seen": "2026-09-23T19:59:22.146886",
-        "last_attempt": "2026-09-26T16:42:25.540334",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i190047293": {
       "date": "2026-09-24",
       "intervals": {
@@ -2262,12 +2216,12 @@
         "source_icu_sync_date": "2026-10-07T06:11:43.642+00:00"
       },
       "streams": {
-        "attempts": 6,
+        "attempts": 7,
         "first_seen": "2026-10-06T20:49:51.396861",
-        "last_attempt": "2026-10-07T23:50:51.066695",
+        "last_attempt": "2026-10-08T05:07:21.424678",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-10-07T23:55:51.066695"
+        "next_retry_at": "2026-10-08T05:37:21.424678"
       }
     },
     "i194764147": {
@@ -2281,12 +2235,12 @@
         "source_icu_sync_date": "2026-10-07T17:18:56.242+00:00"
       },
       "streams": {
-        "attempts": 2,
+        "attempts": 3,
         "first_seen": "2026-10-07T19:34:39.571617",
-        "last_attempt": "2026-10-07T23:50:51.066695",
+        "last_attempt": "2026-10-08T05:07:21.424678",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-10-07T23:55:51.066695"
+        "next_retry_at": "2026-10-08T05:12:21.424678"
       }
     }
   }
