@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T10:35:22.455671",
+  "generated_at": "2026-10-09T17:11:59.074803",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -1948,7 +1948,8 @@
       "type": "Ride",
       "name": "Afternoon Ride",
       "interval_summary": [
-        "1x 3m39s 201w"
+        "1x 3m39s 201w",
+        "1x 2m50s 194w"
       ],
       "intervals": [
         {
@@ -1988,20 +1989,55 @@
         },
         {
           "type": "RECOVERY",
-          "duration_secs": 4741,
-          "moving_secs": 4562,
+          "duration_secs": 1291,
+          "moving_secs": 1197,
           "start_secs": 2300,
-          "end_secs": 7041,
-          "avg_power": 108,
-          "max_power": 444,
-          "avg_hr": 104,
-          "max_hr": 164,
-          "min_hr": 66,
-          "avg_cadence": 50.77561,
+          "end_secs": 3591,
+          "avg_power": 120,
+          "max_power": 337,
+          "avg_hr": 112,
+          "max_hr": 155,
+          "min_hr": 77,
+          "avg_cadence": 56.591328,
           "zone": 1,
           "w_bal_start": 13429,
+          "w_bal_end": 13437,
+          "training_load": 11.04293
+        },
+        {
+          "type": "WORK",
+          "label": "170s@194w63rpm",
+          "duration_secs": 170,
+          "moving_secs": 170,
+          "start_secs": 3591,
+          "end_secs": 3761,
+          "avg_power": 194,
+          "max_power": 270,
+          "avg_hr": 131,
+          "max_hr": 143,
+          "min_hr": 101,
+          "avg_cadence": 62.682354,
+          "zone": 2,
+          "w_bal_start": 13437,
+          "w_bal_end": 13437,
+          "training_load": 2.865831
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3280,
+          "moving_secs": 3195,
+          "start_secs": 3761,
+          "end_secs": 7041,
+          "avg_power": 99,
+          "max_power": 444,
+          "avg_hr": 100,
+          "max_hr": 164,
+          "min_hr": 66,
+          "avg_cadence": 47.96311,
+          "zone": 1,
+          "w_bal_start": 13437,
           "w_bal_end": 13401,
-          "training_load": 37.841156
+          "training_load": 22.997446
         }
       ],
       "zone_basis": "power"
@@ -2101,12 +2137,12 @@
     "i193071481": {
       "date": "2026-10-03",
       "intervals": {
-        "attempts": 2,
+        "attempts": 3,
         "first_seen": "2026-10-03T17:31:50.460612",
-        "last_attempt": "2026-10-05T14:55:55.306371",
+        "last_attempt": "2026-10-09T17:11:59.074803",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-10-05T06:45:37.438+00:00"
+        "source_icu_sync_date": "2026-10-09T11:44:37.554+00:00"
       },
       "streams": {
         "attempts": 13,
@@ -2145,12 +2181,11 @@
         "source_icu_sync_date": "2026-10-07T06:11:43.642+00:00"
       },
       "streams": {
-        "attempts": 12,
+        "attempts": 13,
         "first_seen": "2026-10-06T20:49:51.396861",
-        "last_attempt": "2026-10-09T10:35:22.455671",
-        "status": "pending",
-        "reason": "no_data",
-        "next_retry_at": "2026-10-09T11:05:22.455671"
+        "last_attempt": "2026-10-09T17:11:59.074803",
+        "status": "tombstone",
+        "reason": "retry_expired"
       }
     },
     "i194764147": {
@@ -2164,31 +2199,31 @@
         "source_icu_sync_date": "2026-10-08T06:53:59.437+00:00"
       },
       "streams": {
-        "attempts": 8,
+        "attempts": 9,
         "first_seen": "2026-10-07T19:34:39.571617",
-        "last_attempt": "2026-10-09T10:35:22.455671",
+        "last_attempt": "2026-10-09T17:11:59.074803",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-10-09T11:05:22.455671"
+        "next_retry_at": "2026-10-09T17:41:59.074803"
       }
     },
     "i195159696": {
       "date": "2026-10-08",
       "intervals": {
-        "attempts": 1,
+        "attempts": 2,
         "first_seen": "2026-10-08T18:51:38.823204",
-        "last_attempt": "2026-10-08T18:51:38.823204",
+        "last_attempt": "2026-10-09T17:11:59.074803",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-10-08T17:24:07.878+00:00"
+        "source_icu_sync_date": "2026-10-09T10:43:37.437+00:00"
       },
       "streams": {
-        "attempts": 4,
+        "attempts": 5,
         "first_seen": "2026-10-08T18:51:38.823204",
-        "last_attempt": "2026-10-09T10:35:22.455671",
+        "last_attempt": "2026-10-09T17:11:59.074803",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-10-09T10:40:22.455671"
+        "next_retry_at": "2026-10-09T17:16:59.074803"
       }
     }
   }
