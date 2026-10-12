@@ -71,7 +71,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-12T01:40:49.611869",
+    "last_updated": "2026-10-12T08:02:41.721068",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.132"
@@ -246,10 +246,10 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 72.5,
+      "weight_kg": 72.7,
       "display": {
         "weight": {
-          "value": 72.5,
+          "value": 72.7,
           "unit": "kg"
         }
       },
@@ -286,14 +286,17 @@
       "readiness": null
     },
     "weight": {
-      "weight_latest_kg": 72.5,
-      "weight_latest_date": "2026-10-01",
-      "wkg_current": 3.68,
+      "weight_latest_kg": 72.7,
+      "weight_latest_date": "2026-10-12",
+      "wkg_current": 3.67,
       "wkg_ftp_source": "tested",
       "ftp_setting_date": "2026-10-12",
+      "wkg_block_start": 3.71,
+      "wkg_block_end": 3.67,
+      "wkg_block_delta": -0.04,
       "display": {
         "weight_latest": {
-          "value": 72.5,
+          "value": 72.7,
           "unit": "kg"
         }
       }
@@ -514,80 +517,80 @@
           "start": "2026-09-01",
           "end": "2026-10-12"
         },
-        "weight_kg": 72.5,
-        "weight_source": "wellness_extended",
+        "weight_kg": 72.7,
+        "weight_source": "wellness_recent",
         "cycling": {
           "anchors": {
             "300s": {
               "actual_watts": 265,
-              "actual_wpkg": 3.66,
+              "actual_wpkg": 3.65,
               "actual_hr": 180,
               "pct_lthr": 102.9,
               "source": "observed_outdoor",
               "coggan_watts": 283,
-              "coggan_wpkg": 3.9,
+              "coggan_wpkg": 3.89,
               "cp_model_watts": 332,
-              "cp_model_wpkg": 4.58,
+              "cp_model_wpkg": 4.57,
               "model_divergence_pct": -20.2
             },
             "600s": {
               "actual_watts": 253,
-              "actual_wpkg": 3.49,
+              "actual_wpkg": 3.48,
               "actual_hr": 169,
               "pct_lthr": 96.6,
               "source": "observed_outdoor",
               "coggan_watts": 259,
-              "coggan_wpkg": 3.57,
+              "coggan_wpkg": 3.56,
               "cp_model_watts": 299,
-              "cp_model_wpkg": 4.12,
+              "cp_model_wpkg": 4.11,
               "model_divergence_pct": -15.4
             },
             "1200s": {
               "actual_watts": 242,
-              "actual_wpkg": 3.34,
+              "actual_wpkg": 3.33,
               "actual_hr": 164,
               "pct_lthr": 93.7,
               "source": "observed_outdoor",
               "coggan_watts": 248,
-              "coggan_wpkg": 3.42,
+              "coggan_wpkg": 3.41,
               "cp_model_watts": 283,
-              "cp_model_wpkg": 3.9,
+              "cp_model_wpkg": 3.89,
               "model_divergence_pct": -14.5
             },
             "1800s": {
               "actual_watts": 235,
-              "actual_wpkg": 3.24,
+              "actual_wpkg": 3.23,
               "actual_hr": 164,
               "pct_lthr": 93.7,
               "source": "observed_outdoor",
               "coggan_watts": 240,
-              "coggan_wpkg": 3.31,
+              "coggan_wpkg": 3.3,
               "cp_model_watts": 278,
-              "cp_model_wpkg": 3.83,
+              "cp_model_wpkg": 3.82,
               "model_divergence_pct": -15.5
             },
             "3600s": {
               "actual_watts": 210,
-              "actual_wpkg": 2.9,
+              "actual_wpkg": 2.89,
               "actual_hr": 153,
               "pct_lthr": 87.4,
               "source": "observed_outdoor",
               "coggan_watts": 230,
-              "coggan_wpkg": 3.17,
+              "coggan_wpkg": 3.16,
               "cp_model_watts": 272,
-              "cp_model_wpkg": 3.75,
+              "cp_model_wpkg": 3.74,
               "model_divergence_pct": -22.8
             },
             "5400s": {
               "actual_watts": 201,
-              "actual_wpkg": 2.77,
+              "actual_wpkg": 2.76,
               "actual_hr": 150,
               "pct_lthr": 85.7,
               "source": "observed_outdoor",
               "coggan_watts": 219,
-              "coggan_wpkg": 3.02,
+              "coggan_wpkg": 3.01,
               "cp_model_watts": 271,
-              "cp_model_wpkg": 3.74,
+              "cp_model_wpkg": 3.73,
               "model_divergence_pct": -25.8
             },
             "7200s": {
@@ -597,9 +600,9 @@
               "pct_lthr": 82.9,
               "source": "observed_outdoor",
               "coggan_watts": 208,
-              "coggan_wpkg": 2.87,
+              "coggan_wpkg": 2.86,
               "cp_model_watts": 270,
-              "cp_model_wpkg": 3.72,
+              "cp_model_wpkg": 3.71,
               "model_divergence_pct": -29.3
             }
           },
@@ -675,7 +678,7 @@
     "p_max": 871,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-12T01:40:49.610964",
+    "calculation_timestamp": "2026-10-12T08:02:41.720129",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 5,
@@ -693,7 +696,7 @@
       "id": "i196075762",
       "date": "2026-10-11T07:32:59",
       "type": "Ride",
-      "name": "Pedalata mattutina",
+      "name": "Vigolo",
       "duration_hours": 4.71,
       "duration_formatted": "4h42m45s",
       "distance_km": 120.48,
@@ -742,9 +745,9 @@
           "unit": "km/h"
         }
       },
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 4,
+      "effort_response": "neutral",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 3065,
@@ -887,7 +890,7 @@
       "id": "i195778623",
       "date": "2026-10-10T07:23:06",
       "type": "Ride",
-      "name": "Morning Ride",
+      "name": "IL LOMBARDIA - Selvino - Gerosa - Blello - Bedulita",
       "duration_hours": 5.85,
       "duration_formatted": "5h51m1s",
       "distance_km": 122.35,
@@ -936,9 +939,9 @@
           "unit": "km/h"
         }
       },
-      "feel": null,
-      "rpe": null,
-      "effort_response": null,
+      "feel": 3,
+      "rpe": 4,
+      "effort_response": "neutral",
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 4867,
@@ -5014,9 +5017,12 @@
     },
     {
       "date": "2026-10-12",
-      "weight_kg": null,
+      "weight_kg": 72.7,
       "display": {
-        "weight": null
+        "weight": {
+          "value": 72.7,
+          "unit": "kg"
+        }
       },
       "resting_hr": null,
       "hrv_rmssd": null,
