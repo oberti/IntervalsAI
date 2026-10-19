@@ -71,7 +71,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-19T07:26:49.079971",
+    "last_updated": "2026-10-19T14:54:14.009985",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.132"
@@ -119,8 +119,8 @@
         "delta_bpm": -0.7
       },
       "sleep": {
-        "status": "amber",
-        "hours": 6.87,
+        "status": "green",
+        "hours": 7.17,
         "quality": 3
       },
       "acwr": {
@@ -141,8 +141,8 @@
       }
     },
     "signal_summary": {
-      "green": 5,
-      "amber": 1,
+      "green": 6,
+      "amber": 0,
       "red": 0,
       "unavailable": 0
     },
@@ -154,7 +154,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "health_context": {
@@ -246,19 +246,19 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 72.8,
+      "weight_kg": 72.9,
       "display": {
         "weight": {
-          "value": 72.8,
+          "value": 72.9,
           "unit": "kg"
         }
       },
       "resting_hr": 46,
       "hrv": 73.0,
       "sleep_quality": 3,
-      "sleep_hours": 6.87,
-      "sleep_formatted": "6h52m",
-      "sleep_score": 72.0,
+      "sleep_hours": 7.17,
+      "sleep_formatted": "7h10m",
+      "sleep_score": 71.0,
       "fatigue": 2,
       "soreness": 2,
       "stress": null,
@@ -275,7 +275,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 80,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -286,8 +286,8 @@
       "readiness": 8.5
     },
     "weight": {
-      "weight_latest_kg": 72.8,
-      "weight_latest_date": "2026-10-17",
+      "weight_latest_kg": 72.9,
+      "weight_latest_date": "2026-10-19",
       "wkg_current": 3.43,
       "wkg_ftp_source": "tested",
       "ftp_setting_date": "2026-10-19",
@@ -297,7 +297,7 @@
       "weight_7d_avg_kg": 73.0,
       "display": {
         "weight_latest": {
-          "value": 72.8,
+          "value": 72.9,
           "unit": "kg"
         },
         "weight_7d_avg": {
@@ -522,13 +522,13 @@
           "start": "2026-09-08",
           "end": "2026-10-19"
         },
-        "weight_kg": 72.8,
+        "weight_kg": 72.9,
         "weight_source": "wellness_recent",
         "cycling": {
           "anchors": {
             "300s": {
               "actual_watts": 262,
-              "actual_wpkg": 3.6,
+              "actual_wpkg": 3.59,
               "actual_hr": 180,
               "pct_lthr": 102.9,
               "source": "observed_outdoor",
@@ -557,21 +557,21 @@
               "pct_lthr": 93.7,
               "source": "observed_outdoor",
               "coggan_watts": 232,
-              "coggan_wpkg": 3.19,
+              "coggan_wpkg": 3.18,
               "cp_model_watts": 266,
               "cp_model_wpkg": 3.65,
               "model_divergence_pct": -9.0
             },
             "1800s": {
               "actual_watts": 235,
-              "actual_wpkg": 3.23,
+              "actual_wpkg": 3.22,
               "actual_hr": 164,
               "pct_lthr": 93.7,
               "source": "observed_outdoor",
               "coggan_watts": 225,
               "coggan_wpkg": 3.09,
               "cp_model_watts": 261,
-              "cp_model_wpkg": 3.59,
+              "cp_model_wpkg": 3.58,
               "model_divergence_pct": -10.0
             },
             "3600s": {
@@ -593,9 +593,9 @@
               "pct_lthr": 85.7,
               "source": "observed_outdoor",
               "coggan_watts": 205,
-              "coggan_wpkg": 2.82,
+              "coggan_wpkg": 2.81,
               "cp_model_watts": 254,
-              "cp_model_wpkg": 3.49,
+              "cp_model_wpkg": 3.48,
               "model_divergence_pct": -20.9
             },
             "7200s": {
@@ -605,9 +605,9 @@
               "pct_lthr": 82.9,
               "source": "observed_outdoor",
               "coggan_watts": 195,
-              "coggan_wpkg": 2.68,
+              "coggan_wpkg": 2.67,
               "cp_model_watts": 253,
-              "cp_model_wpkg": 3.48,
+              "cp_model_wpkg": 3.47,
               "model_divergence_pct": -24.5
             }
           },
@@ -692,7 +692,7 @@
     "p_max": 866,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 48.863415,
-    "calculation_timestamp": "2026-10-19T07:26:49.078623",
+    "calculation_timestamp": "2026-10-19T14:54:14.008657",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -710,7 +710,7 @@
       "id": "i198562331",
       "date": "2026-10-18T07:48:45",
       "type": "Ride",
-      "name": "Pedalata mattutina",
+      "name": "Berbenno da Selino - Brembilla",
       "duration_hours": 2.4,
       "duration_formatted": "2h23m52s",
       "distance_km": 56.97,
@@ -920,11 +920,11 @@
       "max_speed": 47.0,
       "max_speed_unit": "KPH",
       "avg_pace": null,
-      "avg_temp": 18.51644,
+      "avg_temp": 18.51743,
       "avg_temp_unit": "C",
       "weather": null,
       "humidity": null,
-      "wind_speed": 1.3710858,
+      "wind_speed": 1.3716142,
       "wind_speed_unit": "KMH",
       "work_kj": 4514.4,
       "calories": 4449,
@@ -4892,17 +4892,20 @@
     },
     {
       "date": "2026-10-19",
-      "weight_kg": null,
+      "weight_kg": 72.9,
       "display": {
-        "weight": null
+        "weight": {
+          "value": 72.9,
+          "unit": "kg"
+        }
       },
       "resting_hr": 46,
       "hrv_rmssd": 73.0,
       "hrv_sdnn": 56.0,
-      "sleep_hours": 6.87,
-      "sleep_formatted": "6h52m",
+      "sleep_hours": 7.17,
+      "sleep_formatted": "7h10m",
       "sleep_quality": 3,
-      "sleep_score": 72.0,
+      "sleep_score": 71.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 48.863415,
@@ -4922,7 +4925,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 80,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
