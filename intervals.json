@@ -1,112 +1,11 @@
 {
-  "generated_at": "2026-10-21T22:38:58.474860",
+  "generated_at": "2026-10-22T00:55:20.862603",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i194764147",
-      "date": "2026-10-07",
-      "start_datetime": "2026-10-07T17:16:21",
-      "type": "Ride",
-      "name": "Pedalata pomeridiana",
-      "interval_summary": [
-        "1x 58s 291w",
-        "1x 14m30s 169w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1851,
-          "moving_secs": 1806,
-          "start_secs": 0,
-          "end_secs": 1851,
-          "avg_power": 154,
-          "max_power": 548,
-          "avg_hr": 121,
-          "max_hr": 163,
-          "min_hr": 62,
-          "avg_cadence": 57.448067,
-          "zone": 2,
-          "w_bal_start": 13440,
-          "w_bal_end": 12994,
-          "training_load": 22.560005
-        },
-        {
-          "type": "WORK",
-          "label": "58s@291w68rpm",
-          "duration_secs": 58,
-          "moving_secs": 58,
-          "start_secs": 1851,
-          "end_secs": 1909,
-          "avg_power": 291,
-          "max_power": 330,
-          "avg_hr": 151,
-          "max_hr": 169,
-          "min_hr": 136,
-          "avg_cadence": 68.12069,
-          "zone": 5,
-          "w_bal_start": 12970,
-          "w_bal_end": 11450,
-          "training_load": 1.6475192
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 644,
-          "moving_secs": 640,
-          "start_secs": 1909,
-          "end_secs": 2553,
-          "avg_power": 147,
-          "max_power": 365,
-          "avg_hr": 124,
-          "max_hr": 169,
-          "min_hr": 88,
-          "avg_cadence": 58.78315,
-          "zone": 2,
-          "w_bal_start": 11446,
-          "w_bal_end": 12942,
-          "training_load": 7.4519176
-        },
-        {
-          "type": "WORK",
-          "label": "870s@169w64rpm",
-          "duration_secs": 870,
-          "moving_secs": 870,
-          "start_secs": 2553,
-          "end_secs": 3423,
-          "avg_power": 169,
-          "max_power": 338,
-          "avg_hr": 128,
-          "max_hr": 156,
-          "min_hr": 96,
-          "avg_cadence": 63.878162,
-          "zone": 2,
-          "w_bal_start": 12918,
-          "w_bal_end": 13354,
-          "training_load": 12.237746
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 2610,
-          "moving_secs": 2567,
-          "start_secs": 3423,
-          "end_secs": 6033,
-          "avg_power": 91,
-          "max_power": 447,
-          "avg_hr": 106,
-          "max_hr": 158,
-          "min_hr": 68,
-          "avg_cadence": 39.237263,
-          "zone": 1,
-          "w_bal_start": 13355,
-          "w_bal_end": 13336,
-          "training_load": 18.780672
-        }
-      ],
-      "zone_basis": "power"
-    },
     {
       "activity_id": "i195159696",
       "date": "2026-10-08",
@@ -1488,24 +1387,6 @@
     }
   ],
   "fetch_state": {
-    "i194764147": {
-      "date": "2026-10-07",
-      "intervals": {
-        "attempts": 4,
-        "first_seen": "2026-10-07T19:34:39.571617",
-        "last_attempt": "2026-10-20T14:25:43.179875",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-10-20T12:40:01.012+00:00"
-      },
-      "streams": {
-        "attempts": 13,
-        "first_seen": "2026-10-07T19:34:39.571617",
-        "last_attempt": "2026-10-10T13:58:49.686196",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i195159696": {
       "date": "2026-10-08",
       "intervals": {
