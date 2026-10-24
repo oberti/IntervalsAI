@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T11:56:35.598988",
+  "generated_at": "2026-10-24T15:43:15.322843",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -1457,11 +1457,11 @@
       "zone_basis": "power"
     },
     {
-      "activity_id": "i201058475",
+      "activity_id": "i201080820",
       "date": "2026-10-24",
       "start_datetime": "2026-10-24T07:22:29",
       "type": "Ride",
-      "name": "sportH-96956557",
+      "name": "Ciclismo all'aperto",
       "interval_summary": [
         "4x 31s 277w",
         "1x 71s 279w",
@@ -2123,31 +2123,31 @@
         "source_icu_sync_date": "2026-10-23T06:26:10.796+00:00"
       },
       "streams": {
-        "attempts": 11,
+        "attempts": 12,
         "first_seen": "2026-10-22T19:57:11.393702",
-        "last_attempt": "2026-10-24T11:56:35.598988",
+        "last_attempt": "2026-10-24T15:43:15.322843",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-10-24T12:26:35.598988"
+        "next_retry_at": "2026-10-24T16:13:15.322843"
       }
     },
-    "i201058475": {
+    "i201080820": {
       "date": "2026-10-24",
       "intervals": {
         "attempts": 1,
-        "first_seen": "2026-10-24T11:56:35.598988",
-        "last_attempt": "2026-10-24T11:56:35.598988",
+        "first_seen": "2026-10-24T15:43:15.322843",
+        "last_attempt": "2026-10-24T15:43:15.322843",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-10-24T11:43:19.445+00:00"
+        "source_icu_sync_date": "2026-10-24T12:47:44.701+00:00"
       },
       "streams": {
         "attempts": 1,
-        "first_seen": "2026-10-24T11:56:35.598988",
-        "last_attempt": "2026-10-24T11:56:35.598988",
+        "first_seen": "2026-10-24T15:43:15.322843",
+        "last_attempt": "2026-10-24T15:43:15.322843",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-10-24T12:01:35.598988"
+        "next_retry_at": "2026-10-24T15:48:15.322843"
       }
     }
   }
