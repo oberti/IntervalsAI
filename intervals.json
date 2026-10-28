@@ -1,39 +1,11 @@
 {
-  "generated_at": "2026-10-27T20:46:27.264803",
+  "generated_at": "2026-10-28T00:17:53.563962",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
   "scan_hours": 72,
   "retention_days": 14,
   "activities": [
-    {
-      "activity_id": "i196923767",
-      "date": "2026-10-13",
-      "start_datetime": "2026-10-13T16:46:57",
-      "type": "Ride",
-      "name": "Afternoon Ride",
-      "interval_summary": null,
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 7056,
-          "moving_secs": 6667,
-          "start_secs": 0,
-          "end_secs": 7056,
-          "avg_power": 139,
-          "max_power": 388,
-          "avg_hr": 115,
-          "max_hr": 159,
-          "min_hr": 67,
-          "avg_cadence": 60.55301,
-          "zone": 1,
-          "w_bal_start": 13440,
-          "w_bal_end": 13422,
-          "training_load": 68.97949
-        }
-      ],
-      "zone_basis": "power"
-    },
     {
       "activity_id": "i197327858",
       "date": "2026-10-14",
@@ -1686,24 +1658,6 @@
     }
   ],
   "fetch_state": {
-    "i196923767": {
-      "date": "2026-10-13",
-      "intervals": {
-        "attempts": 4,
-        "first_seen": "2026-10-13T20:35:00.826772",
-        "last_attempt": "2026-10-26T16:37:24.039608",
-        "status": "ok",
-        "reason": "ok",
-        "source_icu_sync_date": "2026-10-26T11:29:39.814+00:00"
-      },
-      "streams": {
-        "attempts": 15,
-        "first_seen": "2026-10-13T20:35:00.826772",
-        "last_attempt": "2026-10-16T14:38:00.552814",
-        "status": "tombstone",
-        "reason": "retry_expired"
-      }
-    },
     "i197327858": {
       "date": "2026-10-14",
       "intervals": {
@@ -1824,12 +1778,12 @@
         "source_icu_sync_date": "2026-10-26T11:29:53.955+00:00"
       },
       "streams": {
-        "attempts": 13,
+        "attempts": 14,
         "first_seen": "2026-10-25T12:02:06.406694",
-        "last_attempt": "2026-10-27T16:14:46.212229",
+        "last_attempt": "2026-10-28T00:17:53.563962",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-10-27T22:14:46.212229"
+        "next_retry_at": "2026-10-28T06:17:53.563962"
       }
     }
   }
