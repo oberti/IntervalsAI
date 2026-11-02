@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T09:49:03.396447+00:00",
+  "generated_at": "2026-11-02T20:01:34.085875+00:00",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -8,13 +8,13 @@
   "refresh": {
     "status": "ok",
     "consistency": "endpoints_disagree",
-    "last_success_at": "2026-11-02T09:49:03.396447+00:00",
-    "last_content_change_at": "2026-10-16T14:37:57.696152+00:00",
+    "last_success_at": "2026-11-02T20:01:34.085875+00:00",
+    "last_content_change_at": "2026-11-02T20:01:34.085875+00:00",
     "refresh_interval_secs": 21600
   },
   "counts": {
     "folders": 26,
-    "workouts": 393
+    "workouts": 394
   },
   "folders": [
     {
@@ -155,12 +155,12 @@
       "visibility": "PRIVATE",
       "read_only_workouts": false,
       "can_edit": true,
-      "upstream_num_workouts": 7,
+      "upstream_num_workouts": 8,
       "start_date_local": null,
       "activity_types": [
         "Ride"
       ],
-      "num_workouts": 7,
+      "num_workouts": 8,
       "workout_ids": [
         15,
         16,
@@ -168,7 +168,8 @@
         401,
         402,
         403,
-        404
+        404,
+        405
       ]
     },
     {
@@ -68012,14 +68013,177 @@
         "variability_index": 1.1714285714285715,
         "polarization_index": 3.3
       }
+    },
+    {
+      "id": 405,
+      "name": "Submaximal Fatigue Test (SFT)",
+      "type": "Ride",
+      "sub_type": null,
+      "indoor": false,
+      "description": "If you don't know your FTP or threshold, you can always start with a power output you feel you can sustain for a maximum of an hour at that RPE and then adapt it as described. The most important thing is to be consistent with the way you perform the test and always use the same values \u2014 and ideally the same time of day and day of the week.\n\nFinally, at the end of the test, you need to evaluate the three minutes on an RPE scale and answer the question: how long could you have kept pedalling at that power output if you had continued?\n\nThis is a short test you can perform weekly to monitor your fitness and fatigue consistently (UAE uses it on a weekly basis, too). That said, what exactly are you looking for in the data?\n\nTHE RESULTS\nSimple. If an athlete has adapted to the training load, they would expect their RPE to be lower and their heart rate average either the same or, if they\u2019re well-rested, higher for the same output (even from one week to the next).\n\nWarmup\n-60m 50%\n\nWorkout\n- 3m 110%\n\nSTOP FOR Hrrc\n-1m 00%",
+      "moving_time": 3840,
+      "distance": 0.0,
+      "icu_training_load": 37,
+      "icu_intensity": 58.896095,
+      "target": null,
+      "targets": [
+        "POWER"
+      ],
+      "tags": [
+        "SFT",
+        "TEST"
+      ],
+      "carbs_per_hour": null,
+      "day": null,
+      "days": null,
+      "for_week": false,
+      "hide_from_athlete": false,
+      "folder_id": 230402,
+      "folder_name": "TEST",
+      "updated": "2026-11-02T15:14:59.660+00:00",
+      "source_endpoint": "workouts",
+      "has_workout_doc": true,
+      "workout_doc": {
+        "steps": [
+          {
+            "power": {
+              "units": "%ftp",
+              "value": 50
+            },
+            "warmup": true,
+            "duration": 3600
+          },
+          {
+            "power": {
+              "units": "%ftp",
+              "value": 110
+            },
+            "duration": 180
+          },
+          {
+            "power": {
+              "units": "%ftp",
+              "value": 0
+            },
+            "duration": 60
+          }
+        ],
+        "locales": [],
+        "options": {},
+        "distance": 0,
+        "duration": 3840,
+        "zoneTimes": [
+          {
+            "id": "Z1",
+            "max": 55,
+            "name": "Z1",
+            "secs": 3660,
+            "zone": 1,
+            "color": "#009e80",
+            "maxWatts": 137,
+            "minWatts": 1,
+            "percentRange": "0% - 55%"
+          },
+          {
+            "id": "Z2",
+            "max": 75,
+            "name": "Z2",
+            "secs": 0,
+            "zone": 2,
+            "color": "#009e00",
+            "maxWatts": 187,
+            "minWatts": 138,
+            "percentRange": "56% - 75%"
+          },
+          {
+            "id": "Z3",
+            "max": 90,
+            "name": "Z3",
+            "secs": 0,
+            "zone": 3,
+            "color": "#ffcb0e",
+            "maxWatts": 225,
+            "minWatts": 188,
+            "percentRange": "76% - 90%"
+          },
+          {
+            "id": "Z4",
+            "max": 105,
+            "name": "Z4",
+            "secs": 0,
+            "zone": 4,
+            "color": "#ff7f0e",
+            "maxWatts": 262,
+            "minWatts": 226,
+            "percentRange": "91% - 105%"
+          },
+          {
+            "id": "Z5",
+            "max": 120,
+            "name": "Z5",
+            "secs": 180,
+            "zone": 5,
+            "color": "#dd0447",
+            "maxWatts": 300,
+            "minWatts": 263,
+            "percentRange": "106% - 120%"
+          },
+          {
+            "id": "Z6",
+            "max": 150,
+            "name": "Z6",
+            "secs": 0,
+            "zone": 6,
+            "color": "#6633cc",
+            "maxWatts": 375,
+            "minWatts": 301,
+            "percentRange": "121% - 150%"
+          },
+          {
+            "id": "Z7",
+            "max": 999,
+            "name": "Z7",
+            "secs": 0,
+            "zone": 7,
+            "color": "#504861",
+            "maxWatts": 9999,
+            "minWatts": 376,
+            "percentRange": "151% +"
+          },
+          {
+            "id": "SS",
+            "gap": true,
+            "max": 97,
+            "min": 84,
+            "name": "Sweet Spot",
+            "secs": 0,
+            "zone": 8,
+            "color": "#ffa00e",
+            "maxWatts": 242,
+            "minWatts": 210,
+            "percentRange": "84% - 97%"
+          }
+        ],
+        "description": "If you don't know your FTP or threshold, you can always start with a power output you feel you can sustain for a maximum of an hour at that RPE and then adapt it as described. The most important thing is to be consistent with the way you perform the test and always use the same values \u2014 and ideally the same time of day and day of the week.",
+        "strain_score": {
+          "ss_cp": 49.31989453145485,
+          "ss_p_max": 0.02283545202549269,
+          "ss_w_prime": 0.5398300858826475,
+          "strain_score": 49.88256006936299
+        },
+        "average_watts": 130,
+        "normalized_power": 148,
+        "variability_index": 1.1384615384615384,
+        "polarization_index": 2.55
+      }
     }
   ],
   "fetch_state": {
-    "last_attempt_at": "2026-11-02T09:49:03.396447+00:00",
+    "last_attempt_at": "2026-11-02T20:01:34.085875+00:00",
     "consecutive_failures": 0,
-    "next_attempt_after": "2026-11-02T15:49:03.396447+00:00",
+    "next_attempt_after": "2026-11-03T02:01:34.085875+00:00",
     "last_error": null,
-    "content_digest": "sha256:f49d4cbdf5eaee3448e7ff7fb60b2b62115fab93fb168d4738f0916ade9fc865",
+    "content_digest": "sha256:c6f2b698ec9093e52b4d8c0aaf28f39d40d3f180f713f22a249d3e6955e301a3",
     "endpoint_mismatch_count": 320,
     "endpoint_mismatch_ids": [
       168,
