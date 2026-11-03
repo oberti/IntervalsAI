@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T17:36:48.096421",
+  "generated_at": "2026-11-03T22:32:04.422473",
   "schema_version": 1,
   "version": "3.132",
   "script_hash": "859f7e9caa4b",
@@ -1349,6 +1349,32 @@
         }
       ],
       "zone_basis": "power"
+    },
+    {
+      "activity_id": "i205401397",
+      "date": "2026-11-03",
+      "start_datetime": "2026-11-03T17:40:18",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": [
+        "1x 1h59m 111bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "7166s@111bpm45rpm",
+          "duration_secs": 7166,
+          "moving_secs": 7166,
+          "start_secs": 0,
+          "end_secs": 7166,
+          "avg_hr": 111,
+          "max_hr": 171,
+          "min_hr": 60,
+          "avg_cadence": 45.115025,
+          "zone": 1
+        }
+      ],
+      "zone_basis": "hr"
     }
   ],
   "fetch_state": {
@@ -1435,12 +1461,31 @@
         "source_icu_sync_date": "2026-11-02T07:13:00.737+00:00"
       },
       "streams": {
-        "attempts": 9,
+        "attempts": 10,
         "first_seen": "2026-11-01T14:49:35.486966",
-        "last_attempt": "2026-11-03T17:36:48.096421",
+        "last_attempt": "2026-11-03T22:32:04.422473",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-11-03T18:06:48.096421"
+        "next_retry_at": "2026-11-03T23:02:04.422473"
+      }
+    },
+    "i205401397": {
+      "date": "2026-11-03",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-11-03T22:32:04.422473",
+        "last_attempt": "2026-11-03T22:32:04.422473",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-11-03T19:43:40.169+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-11-03T22:32:04.422473",
+        "last_attempt": "2026-11-03T22:32:04.422473",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-11-03T22:37:04.422473"
       }
     }
   }
