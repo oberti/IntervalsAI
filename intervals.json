@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T16:24:13.313398",
+  "generated_at": "2026-11-05T22:13:37.661896",
   "interval_data_note": "recent_activities[].interval_data: plan_match is timeline matching only; compliance summarizes intervals.json session_structure power/time evidence (only that plan-aware source judges completion, per-bout counts and >=95% progression, subject to its context/availability gates); icu_detected is descriptive Intervals.icu interval_summary, not plan-aware. If sources disagree, report both; session_structure judges. Never use device/app lap averages, whole-session average/NP or a set mean as rep power or compliance counts. See SECTION_11.md#which-interval-data-to-use.",
   "schema_version": 2,
   "version": "3.166",
@@ -1985,7 +1985,7 @@
       "interval_summary": [
         "2x 10s 387w",
         "10x 30s 304w",
-        "1x 5m54s 197w",
+        "1x 5m29s 198w",
         "1x 2m59s 285w",
         "1x 4m47s 191w",
         "1x 21s 295w",
@@ -2082,38 +2082,38 @@
         },
         {
           "type": "WORK",
-          "label": "354s@197w61rpm",
-          "duration_secs": 354,
-          "moving_secs": 354,
+          "label": "329s@198w61rpm",
+          "duration_secs": 329,
+          "moving_secs": 329,
           "start_secs": 2807,
-          "end_secs": 3161,
-          "avg_power": 197,
+          "end_secs": 3136,
+          "avg_power": 198,
           "max_power": 264,
-          "avg_hr": 144,
+          "avg_hr": 145,
           "max_hr": 155,
           "min_hr": 134,
-          "avg_cadence": 61.347458,
+          "avg_cadence": 61.139816,
           "zone": 3,
           "w_bal_start": 12643,
-          "w_bal_end": 13220,
-          "training_load": 6.168096
+          "w_bal_end": 13187,
+          "training_load": 5.7905464
         },
         {
           "type": "RECOVERY",
-          "duration_secs": 68,
-          "moving_secs": 68,
-          "start_secs": 3161,
+          "duration_secs": 93,
+          "moving_secs": 93,
+          "start_secs": 3136,
           "end_secs": 3229,
-          "avg_power": 126,
+          "avg_power": 140,
           "max_power": 250,
-          "avg_hr": 129,
-          "max_hr": 140,
+          "avg_hr": 132,
+          "max_hr": 142,
           "min_hr": 116,
-          "avg_cadence": 62.117645,
-          "zone": 1,
-          "w_bal_start": 13221,
+          "avg_cadence": 62.64516,
+          "zone": 2,
+          "w_bal_start": 13188,
           "w_bal_end": 13322,
-          "training_load": 0.66198754
+          "training_load": 1.0714014
         },
         {
           "type": "WORK",
@@ -2738,10 +2738,10 @@
           ],
           [
             2807,
-            3161,
-            197,
-            144,
-            61.347458
+            3136,
+            198,
+            145,
+            61.139816
           ],
           [
             3229,
@@ -2785,12 +2785,12 @@
           "efforts_from_interval_cache"
         ],
         "cache": {
-          "activity_key": "474d6c6dab949b9298d4ec8f225819e665532e172f6a261ab57eade101d6f677",
+          "activity_key": "1c42c6fde5aff07a6921a3cfadce4ba98f4e0dd58b0c74bae77e1e513d809993",
           "event_key": "ee478114f30ffd3914b57cb37a9a522dadf9bdb6b5dabb474af35943bdda8e06",
           "plan_key": "5e5389b8f2bd314324f0107cfefe5765f0db5ab4fc1e8c71a0c5b934bcef5e9d",
           "plan_key_version": 2,
-          "sampled_at": "2026-11-05T16:24:14.849606+00:00",
-          "next_refresh_at": "2026-11-06T16:24:14.849606+00:00"
+          "sampled_at": "2026-11-05T22:13:39.512810+00:00",
+          "next_refresh_at": "2026-11-06T22:13:39.512810+00:00"
         }
       }
     }
@@ -2807,12 +2807,12 @@
         "source_icu_sync_date": "2026-11-04T08:10:43.726+00:00"
       },
       "streams": {
-        "attempts": 5,
+        "attempts": 6,
         "first_seen": "2026-11-04T13:39:44.329001",
-        "last_attempt": "2026-11-05T16:24:13.313398",
+        "last_attempt": "2026-11-05T22:13:37.661896",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-11-05T16:29:13.313398"
+        "next_retry_at": "2026-11-05T22:18:37.661896"
       }
     },
     "i204276309": {
@@ -2909,20 +2909,20 @@
       "date": "2026-11-05",
       "paired_planned": true,
       "intervals": {
-        "attempts": 1,
+        "attempts": 2,
         "first_seen": "2026-11-05T16:24:13.313398",
-        "last_attempt": "2026-11-05T16:24:13.313398",
+        "last_attempt": "2026-11-05T22:13:37.661896",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-11-05T15:39:48.659+00:00"
+        "source_icu_sync_date": "2026-11-05T19:15:48.095+00:00"
       },
       "streams": {
-        "attempts": 1,
+        "attempts": 2,
         "first_seen": "2026-11-05T16:24:13.313398",
-        "last_attempt": "2026-11-05T16:24:13.313398",
+        "last_attempt": "2026-11-05T22:13:37.661896",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-11-05T16:29:13.313398"
+        "next_retry_at": "2026-11-05T22:18:37.661896"
       }
     }
   }
