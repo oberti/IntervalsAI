@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T02:46:39.056353+00:00",
+  "generated_at": "2026-11-06T10:42:19.780293+00:00",
   "schema_version": 1,
   "version": "3.166",
   "script_hash": "a1f1943c4e8c",
@@ -8,13 +8,13 @@
   "refresh": {
     "status": "ok",
     "consistency": "endpoints_disagree",
-    "last_success_at": "2026-11-06T02:46:39.056353+00:00",
-    "last_content_change_at": "2026-11-02T20:01:34.085875+00:00",
+    "last_success_at": "2026-11-06T10:42:19.780293+00:00",
+    "last_content_change_at": "2026-11-06T10:42:19.780293+00:00",
     "refresh_interval_secs": 21600
   },
   "counts": {
-    "folders": 26,
-    "workouts": 394
+    "folders": 27,
+    "workouts": 396
   },
   "folders": [
     {
@@ -155,12 +155,12 @@
       "visibility": "PRIVATE",
       "read_only_workouts": false,
       "can_edit": true,
-      "upstream_num_workouts": 8,
+      "upstream_num_workouts": 9,
       "start_date_local": null,
       "activity_types": [
         "Ride"
       ],
-      "num_workouts": 8,
+      "num_workouts": 9,
       "workout_ids": [
         15,
         16,
@@ -169,7 +169,8 @@
         402,
         403,
         404,
-        405
+        405,
+        406
       ]
     },
     {
@@ -800,6 +801,24 @@
       ]
     },
     {
+      "id": 449520,
+      "type": "FOLDER",
+      "name": "SCT-RPE (instructions and workout)",
+      "description": null,
+      "visibility": "PUBLIC",
+      "read_only_workouts": false,
+      "can_edit": false,
+      "upstream_num_workouts": 1,
+      "start_date_local": null,
+      "activity_types": [
+        "Ride"
+      ],
+      "num_workouts": 1,
+      "workout_ids": [
+        1812
+      ]
+    },
+    {
       "id": 675919,
       "type": "FOLDER",
       "name": "Sweet Spot",
@@ -807,7 +826,7 @@
       "visibility": "PRIVATE",
       "read_only_workouts": false,
       "can_edit": true,
-      "upstream_num_workouts": 2,
+      "upstream_num_workouts": 3,
       "start_date_local": null,
       "activity_types": [
         "Ride"
@@ -68040,7 +68059,7 @@
       "hide_from_athlete": false,
       "folder_id": 230402,
       "folder_name": "TEST",
-      "updated": "2026-11-02T15:14:59.660+00:00",
+      "updated": "2026-11-06T09:47:54.533+00:00",
       "source_endpoint": "workouts",
       "has_workout_doc": true,
       "workout_doc": {
@@ -68176,16 +68195,384 @@
         "variability_index": 1.1384615384615384,
         "polarization_index": 2.55
       }
+    },
+    {
+      "id": 406,
+      "name": "SCT-RPE",
+      "type": "Ride",
+      "sub_type": null,
+      "indoor": false,
+      "description": "## Important \u2014 RPE-guided test\n\nThe power zones and wattage targets displayed in this workout are for visualization and timing purposes only. Do not use them to regulate exercise intensity.\n\nFollow the prescribed RPE at each stage, using cadence and gearing to adjust power. Keep ERG mode disabled and monitor only elapsed time.\n\n\n## General Instructions:\n\n**Standardize the test conditions** by evaluating at the same times, in a similar nutritional state, **the day after a rest day or your easiest day of the week**, at an equivalent ambient temperature and ventilation (indoors) or always on the same road segment of at least 4 km, without descents (outdoors). The time to reach this segment should not exceed 30 minutes. During the approach, maintain an intensity corresponding to a Weak to Moderate RPE.\n\nResearch article: \n[Cusson-Fradet et al. (2026), Journal of Sports Sciences](https://doi.org/10.1080/02640414.2026.2741755)\n\n\n## Before the Test:\n\nBefore your first test, familiarize yourself with the [Borg CR100 scale and the prescribed RPE anchors](https://drive.google.com/file/d/1txE9tojSlouvdIRxrpaFb4VPkSGCTVTe/view?usp=sharing) (Moderate 22, Strong 50, Very strong 70). A familiarization trial is recommended before beginning regular monitoring.\n\n1. Disable the auto-pause feature on your GPS device.\n2. Calibrate your power sensor.\n3. Record the power from your sensor directly onto your GPS device, excluding the trainer's power (indoors).\n4. Perform the test without connecting to applications like Zwift, etc. (indoors).\n5. Disable ERG mode, set the trainer to incline mode (0%), and adjust your cadence and gear to control the intensity (indoors).\n6. Create a new record on your GPS device specifically for the test, stop, and save the training at the end of the test.\n\n## During the Test:\n\n1. Avoid monitoring power and heart rate. Set up a page that only displays the elapsed time on your GPS device.\n2. When assessing your perception of effort, focus exclusively on the conscious feeling of the difficulty or ease of driving your leg muscles and breathing ([consult the RPE scale](https://drive.google.com/file/d/1txE9tojSlouvdIRxrpaFb4VPkSGCTVTe/view?usp=sharing)).\n3. At each stage, continuously adjust your intensity (cadence and gear) to maintain the prescribed RPE.\n4. Start the test without any prior warm-up, or use the same warm-up routine each time.\n\n## Automated analysis:\n\nTo automatically calculate SCT-RPE metrics in Intervals.icu, add the following two **Custom Activity Fields**:\n\n- SCT-RPE wPO/HR-overall\n- SCT-RPE Ppeak-sprint\n\n**Option 1 \u2014 From the public profile (recommended)**\n\n1. Open the [SCT-RPE resource page](https://intervals.icu/athlete/1867070).\n2. Under **Activity Fields**, copy both fields to your account.\n\n**Option 2 \u2014 Search within Intervals.icu**\n\n1. Open a cycling activity and click **Customize**.\n2. **Select Activity Fields**, then click FIELD (magnifying-glass search button).\nSearch for **SCT-RPE** and add both fields.\n\n**Automatic detection**\n\nThe fields automatically calculate SCT-RPE metrics when the activity name contains \"SCT-RPE\" or the tag #sctrpe.\n\nIf the workout is scheduled on your calendar, Intervals.icu can automatically update the activity name when it pairs the planned workout with the completed test.\n\n**Important**\n\n-Start the activity recording exactly at the beginning of the first 2-minute stage.\n-The recording may extend beyond 8 minutes without affecting the calculations.\n-If results are missing for previously recorded tests, try re-analysing the activities.\n\n**Longitudinal monitoring**\n\nCopy the two pre-built **Fitness Charts** from the [SCT-RPE resource page](https://intervals.icu/athlete/1867070) to your Fitness page to visualize wPO/HR and sprint power over time.\n\n---\n\n## SCT-RPE test:\n\n*Zones are for visual reference only. You should monitor only the time during the test.\n\n- RPE Moderate 2m Z1-Z2 \n- RPE Strong 2m  Z2-Z4 \n- RPE Very Strong 2m Z3-Z6\n- Passive rest 1m (stop pedaling, maintain your position)\n- Active rest 54s (pedal lightly and prepare your gear for the sprint) Z1\n- Sprint 6s (stand up and explode as quickly as possible, don't change gear) Z7",
+      "moving_time": 480,
+      "distance": 0.0,
+      "icu_training_load": 9,
+      "icu_intensity": null,
+      "target": null,
+      "targets": [
+        "POWER"
+      ],
+      "tags": [
+        "sctrpe"
+      ],
+      "carbs_per_hour": null,
+      "day": null,
+      "days": null,
+      "for_week": false,
+      "hide_from_athlete": false,
+      "folder_id": 230402,
+      "folder_name": "TEST",
+      "updated": "2026-11-06T09:47:41.427+00:00",
+      "source_endpoint": "workouts",
+      "has_workout_doc": true,
+      "workout_doc": {
+        "steps": [
+          {
+            "text": "RPE Moderate",
+            "power": {
+              "end": 2,
+              "start": 1,
+              "units": "power_zone"
+            },
+            "duration": 120
+          },
+          {
+            "text": "RPE Strong",
+            "power": {
+              "end": 4,
+              "start": 2,
+              "units": "power_zone"
+            },
+            "duration": 120
+          },
+          {
+            "text": "RPE Very Strong",
+            "power": {
+              "end": 6,
+              "start": 3,
+              "units": "power_zone"
+            },
+            "duration": 120
+          },
+          {
+            "text": "Passive rest",
+            "duration": 60
+          },
+          {
+            "text": "Active rest",
+            "power": {
+              "units": "power_zone",
+              "value": 1
+            },
+            "duration": 54
+          },
+          {
+            "text": "Sprint",
+            "power": {
+              "units": "power_zone",
+              "value": 7
+            },
+            "duration": 6
+          }
+        ],
+        "locales": [],
+        "options": {},
+        "distance": 0,
+        "duration": 480,
+        "zoneTimes": [
+          {
+            "id": "Z1",
+            "max": 55,
+            "name": "Z1",
+            "secs": 54,
+            "zone": 1,
+            "color": "#009e80",
+            "maxWatts": 137,
+            "minWatts": 1,
+            "percentRange": "0% - 55%"
+          },
+          {
+            "id": "Z2",
+            "max": 75,
+            "name": "Z2",
+            "secs": 120,
+            "zone": 2,
+            "color": "#009e00",
+            "maxWatts": 187,
+            "minWatts": 138,
+            "percentRange": "56% - 75%"
+          },
+          {
+            "id": "Z3",
+            "max": 90,
+            "name": "Z3",
+            "secs": 120,
+            "zone": 3,
+            "color": "#ffcb0e",
+            "maxWatts": 225,
+            "minWatts": 188,
+            "percentRange": "76% - 90%"
+          },
+          {
+            "id": "Z4",
+            "max": 105,
+            "name": "Z4",
+            "secs": 0,
+            "zone": 4,
+            "color": "#ff7f0e",
+            "maxWatts": 262,
+            "minWatts": 226,
+            "percentRange": "91% - 105%"
+          },
+          {
+            "id": "Z5",
+            "max": 120,
+            "name": "Z5",
+            "secs": 120,
+            "zone": 5,
+            "color": "#dd0447",
+            "maxWatts": 300,
+            "minWatts": 263,
+            "percentRange": "106% - 120%"
+          },
+          {
+            "id": "Z6",
+            "max": 150,
+            "name": "Z6",
+            "secs": 0,
+            "zone": 6,
+            "color": "#6633cc",
+            "maxWatts": 375,
+            "minWatts": 301,
+            "percentRange": "121% - 150%"
+          },
+          {
+            "id": "Z7",
+            "max": 999,
+            "name": "Z7",
+            "secs": 6,
+            "zone": 7,
+            "color": "#504861",
+            "maxWatts": 9999,
+            "minWatts": 376,
+            "percentRange": "151% +"
+          },
+          {
+            "id": "SS",
+            "gap": true,
+            "max": 97,
+            "min": 84,
+            "name": "Sweet Spot",
+            "secs": 0,
+            "zone": 8,
+            "color": "#ffa00e",
+            "maxWatts": 242,
+            "minWatts": 210,
+            "percentRange": "84% - 97%"
+          }
+        ],
+        "strain_score": {
+          "ss_cp": 8.831273624477825,
+          "ss_p_max": 0.05409338848073629,
+          "ss_w_prime": 0.5346114405305445,
+          "strain_score": 9.419978453489106
+        },
+        "average_watts": 176,
+        "normalized_power": 211,
+        "variability_index": 1.1988636363636365,
+        "polarization_index": 1.64
+      }
+    },
+    {
+      "id": 1812,
+      "name": "SCT-RPE",
+      "type": "Ride",
+      "sub_type": null,
+      "indoor": false,
+      "description": "## Important \u2014 RPE-guided test\n\nThe power zones and wattage targets displayed in this workout are for visualization and timing purposes only. Do not use them to regulate exercise intensity.\n\nFollow the prescribed RPE at each stage, using cadence and gearing to adjust power. Keep ERG mode disabled and monitor only elapsed time.\n\n\n## General Instructions:\n\n**Standardize the test conditions** by evaluating at the same times, in a similar nutritional state, **the day after a rest day or your easiest day of the week**, at an equivalent ambient temperature and ventilation (indoors) or always on the same road segment of at least 4 km, without descents (outdoors). The time to reach this segment should not exceed 30 minutes. During the approach, maintain an intensity corresponding to a Weak to Moderate RPE.\n\nResearch article: \n[Cusson-Fradet et al. (2026), Journal of Sports Sciences](https://doi.org/10.1080/02640414.2026.2741755)\n\n\n## Before the Test:\n\nBefore your first test, familiarize yourself with the [Borg CR100 scale and the prescribed RPE anchors](https://drive.google.com/file/d/1txE9tojSlouvdIRxrpaFb4VPkSGCTVTe/view?usp=sharing) (Moderate 22, Strong 50, Very strong 70). A familiarization trial is recommended before beginning regular monitoring.\n\n1. Disable the auto-pause feature on your GPS device.\n2. Calibrate your power sensor.\n3. Record the power from your sensor directly onto your GPS device, excluding the trainer's power (indoors).\n4. Perform the test without connecting to applications like Zwift, etc. (indoors).\n5. Disable ERG mode, set the trainer to incline mode (0%), and adjust your cadence and gear to control the intensity (indoors).\n6. Create a new record on your GPS device specifically for the test, stop, and save the training at the end of the test.\n\n## During the Test:\n\n1. Avoid monitoring power and heart rate. Set up a page that only displays the elapsed time on your GPS device.\n2. When assessing your perception of effort, focus exclusively on the conscious feeling of the difficulty or ease of driving your leg muscles and breathing ([consult the RPE scale](https://drive.google.com/file/d/1txE9tojSlouvdIRxrpaFb4VPkSGCTVTe/view?usp=sharing)).\n3. At each stage, continuously adjust your intensity (cadence and gear) to maintain the prescribed RPE.\n4. Start the test without any prior warm-up, or use the same warm-up routine each time.\n\n## Automated analysis:\n\nTo automatically calculate SCT-RPE metrics in Intervals.icu, add the following two **Custom Activity Fields**:\n\n- SCT-RPE wPO/HR-overall\n- SCT-RPE Ppeak-sprint\n\n**Option 1 \u2014 From the public profile (recommended)**\n\n1. Open the [SCT-RPE resource page](https://intervals.icu/athlete/1867070).\n2. Under **Activity Fields**, copy both fields to your account.\n\n**Option 2 \u2014 Search within Intervals.icu**\n\n1. Open a cycling activity and click **Customize**.\n2. **Select Activity Fields**, then click FIELD (magnifying-glass search button).\nSearch for **SCT-RPE** and add both fields.\n\n**Automatic detection**\n\nThe fields automatically calculate SCT-RPE metrics when the activity name contains \"SCT-RPE\" or the tag #sctrpe.\n\nIf the workout is scheduled on your calendar, Intervals.icu can automatically update the activity name when it pairs the planned workout with the completed test.\n\n**Important**\n\n-Start the activity recording exactly at the beginning of the first 2-minute stage.\n-The recording may extend beyond 8 minutes without affecting the calculations.\n-If results are missing for previously recorded tests, try re-analysing the activities.\n\n**Longitudinal monitoring**\n\nCopy the two pre-built **Fitness Charts** from the [SCT-RPE resource page](https://intervals.icu/athlete/1867070) to your Fitness page to visualize wPO/HR and sprint power over time.\n\n---\n\n## SCT-RPE test:\n\n*Zones are for visual reference only. You should monitor only the time during the test.\n\n- RPE Moderate 2m Z1-Z2 \n- RPE Strong 2m  Z2-Z4 \n- RPE Very Strong 2m Z3-Z6\n- Passive rest 1m (stop pedaling, maintain your position)\n- Active rest 54s (pedal lightly and prepare your gear for the sprint) Z1\n- Sprint 6s (stand up and explode as quickly as possible, don't change gear) Z7",
+      "moving_time": 480,
+      "distance": 0.0,
+      "icu_training_load": 10,
+      "icu_intensity": null,
+      "target": null,
+      "targets": [
+        "POWER"
+      ],
+      "tags": [
+        "sctrpe"
+      ],
+      "carbs_per_hour": null,
+      "day": null,
+      "days": null,
+      "for_week": false,
+      "hide_from_athlete": false,
+      "folder_id": 449520,
+      "folder_name": "SCT-RPE (instructions and workout)",
+      "updated": "2026-11-04T17:52:44.868+00:00",
+      "source_endpoint": "folders",
+      "has_workout_doc": true,
+      "workout_doc": {
+        "steps": [
+          {
+            "text": "RPE Moderate",
+            "power": {
+              "end": 2,
+              "start": 1,
+              "units": "power_zone"
+            },
+            "duration": 120
+          },
+          {
+            "text": "RPE Strong",
+            "power": {
+              "end": 4,
+              "start": 2,
+              "units": "power_zone"
+            },
+            "duration": 120
+          },
+          {
+            "text": "RPE Very Strong",
+            "power": {
+              "end": 6,
+              "start": 3,
+              "units": "power_zone"
+            },
+            "duration": 120
+          },
+          {
+            "text": "Passive rest",
+            "duration": 60
+          },
+          {
+            "text": "Active rest",
+            "power": {
+              "units": "power_zone",
+              "value": 1
+            },
+            "duration": 54
+          },
+          {
+            "text": "Sprint",
+            "power": {
+              "units": "power_zone",
+              "value": 7
+            },
+            "duration": 6
+          }
+        ],
+        "locales": [],
+        "options": {},
+        "distance": 0,
+        "duration": 480,
+        "zoneTimes": [
+          {
+            "id": "Z1",
+            "max": 55,
+            "name": "Z1",
+            "secs": 54,
+            "zone": 1,
+            "color": "#009e80",
+            "maxWatts": 154,
+            "minWatts": 1,
+            "percentRange": "0% - 55%"
+          },
+          {
+            "id": "Z2",
+            "max": 75,
+            "name": "Z2",
+            "secs": 120,
+            "zone": 2,
+            "color": "#009e00",
+            "maxWatts": 210,
+            "minWatts": 155,
+            "percentRange": "56% - 75%"
+          },
+          {
+            "id": "Z3",
+            "max": 90,
+            "name": "Z3",
+            "secs": 120,
+            "zone": 3,
+            "color": "#ffcb0e",
+            "maxWatts": 252,
+            "minWatts": 211,
+            "percentRange": "76% - 90%"
+          },
+          {
+            "id": "Z4",
+            "max": 105,
+            "name": "Z4",
+            "secs": 0,
+            "zone": 4,
+            "color": "#ff7f0e",
+            "maxWatts": 294,
+            "minWatts": 253,
+            "percentRange": "91% - 105%"
+          },
+          {
+            "id": "Z5",
+            "max": 120,
+            "name": "Z5",
+            "secs": 120,
+            "zone": 5,
+            "color": "#dd0447",
+            "maxWatts": 336,
+            "minWatts": 295,
+            "percentRange": "106% - 120%"
+          },
+          {
+            "id": "Z6",
+            "max": 150,
+            "name": "Z6",
+            "secs": 0,
+            "zone": 6,
+            "color": "#6633cc",
+            "maxWatts": 420,
+            "minWatts": 337,
+            "percentRange": "121% - 150%"
+          },
+          {
+            "id": "Z7",
+            "max": 999,
+            "name": "Z7",
+            "secs": 6,
+            "zone": 7,
+            "color": "#504861",
+            "maxWatts": 9999,
+            "minWatts": 421,
+            "percentRange": "151% +"
+          },
+          {
+            "id": "SS",
+            "gap": true,
+            "max": 97,
+            "min": 84,
+            "name": "Sweet Spot",
+            "secs": 0,
+            "zone": 8,
+            "color": "#ffa00e",
+            "maxWatts": 271,
+            "minWatts": 235,
+            "percentRange": "84% - 97%"
+          }
+        ],
+        "strain_score": null,
+        "average_watts": 212,
+        "normalized_power": 239,
+        "variability_index": 1.1273584905660377,
+        "polarization_index": 1.64
+      }
     }
   ],
   "fetch_state": {
-    "last_attempt_at": "2026-11-06T02:46:39.056353+00:00",
+    "last_attempt_at": "2026-11-06T10:42:19.780293+00:00",
     "consecutive_failures": 0,
-    "next_attempt_after": "2026-11-06T08:46:39.056353+00:00",
+    "next_attempt_after": "2026-11-06T16:42:19.780293+00:00",
     "last_error": null,
-    "content_digest": "sha256:c6f2b698ec9093e52b4d8c0aaf28f39d40d3f180f713f22a249d3e6955e301a3",
-    "endpoint_mismatch_count": 320,
+    "content_digest": "sha256:1757b08a3a465602b170bbb11fbe55e21e7bbfa762ec7eb2d39d7b3efaa13e10",
+    "endpoint_mismatch_count": 322,
     "endpoint_mismatch_ids": [
+      1812,
       168,
       161,
       181,
@@ -68234,8 +68621,7 @@
       178,
       81,
       78,
-      79,
-      80
+      79
     ]
   }
 }
