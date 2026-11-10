@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T11:39:35.512954",
+  "generated_at": "2026-11-10T19:37:48.224889",
   "interval_data_note": "recent_activities[].interval_data: plan_match is timeline matching only; compliance summarizes intervals.json session_structure power/time evidence (only that plan-aware source judges completion, per-bout counts and >=95% progression, subject to its context/availability gates); icu_detected is descriptive Intervals.icu interval_summary, not plan-aware. If sources disagree, report both; session_structure judges. Never use device/app lap averages, whole-session average/NP or a set mean as rep power or compliance counts. See SECTION_11.md#which-interval-data-to-use.",
   "schema_version": 2,
   "version": "3.166",
@@ -2434,12 +2434,158 @@
           "efforts_from_interval_cache"
         ],
         "cache": {
-          "activity_key": "c982734140f2064f914b3762c535fe0398769bd0a4e3053a1ba7318889ebc65a",
+          "activity_key": "ba4a67e612f6a04b0379994069b34d9b24502212b2bc968cdc97d75db24cf49f",
           "event_key": null,
           "plan_key": null,
           "plan_key_version": 2,
-          "sampled_at": "2026-11-09T20:39:05.647767+00:00",
-          "next_refresh_at": "2026-11-10T20:39:05.647767+00:00"
+          "sampled_at": "2026-11-10T19:37:50.599292+00:00",
+          "next_refresh_at": "2026-11-11T19:37:50.599292+00:00"
+        }
+      }
+    },
+    {
+      "activity_id": "i208426376",
+      "date": "2026-11-10",
+      "start_datetime": "2026-11-10T17:32:54",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": [
+        "1x 20m5s 127bpm",
+        "1x 8m10s 140bpm"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1870,
+          "moving_secs": 1870,
+          "start_secs": 0,
+          "end_secs": 1870,
+          "avg_hr": 113,
+          "max_hr": 172,
+          "min_hr": 73,
+          "avg_cadence": 50.236897,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1205s@127bpm64rpm",
+          "duration_secs": 1205,
+          "moving_secs": 1205,
+          "start_secs": 1870,
+          "end_secs": 3075,
+          "avg_hr": 127,
+          "max_hr": 155,
+          "min_hr": 91,
+          "avg_cadence": 63.938538,
+          "zone": 2
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 782,
+          "moving_secs": 782,
+          "start_secs": 3075,
+          "end_secs": 3857,
+          "avg_hr": 107,
+          "max_hr": 163,
+          "min_hr": 81,
+          "avg_cadence": 32.32353,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "490s@140bpm62rpm",
+          "duration_secs": 490,
+          "moving_secs": 490,
+          "start_secs": 3857,
+          "end_secs": 4347,
+          "avg_hr": 140,
+          "max_hr": 163,
+          "min_hr": 96,
+          "avg_cadence": 62.39388,
+          "zone": 2
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2430,
+          "moving_secs": 2430,
+          "start_secs": 4347,
+          "end_secs": 6777,
+          "avg_hr": 106,
+          "max_hr": 169,
+          "min_hr": 75,
+          "avg_cadence": 41.66804,
+          "zone": 1
+        }
+      ],
+      "zone_basis": "hr",
+      "session_structure": {
+        "version": 6,
+        "method": "fixed_elapsed_thirds",
+        "status": "no_plan",
+        "thirds": [
+          [
+            0,
+            2258,
+            null,
+            null,
+            116.0,
+            53.4,
+            0.0,
+            99.96,
+            99.96,
+            null
+          ],
+          [
+            2258,
+            4517,
+            null,
+            null,
+            120.5,
+            48.2,
+            0.0,
+            100.0,
+            100.0,
+            null
+          ],
+          [
+            4517,
+            6776,
+            null,
+            null,
+            107.6,
+            43.6,
+            0.0,
+            99.91,
+            99.91,
+            null
+          ]
+        ],
+        "efforts": [
+          [
+            1870,
+            3075,
+            null,
+            127,
+            63.938538
+          ],
+          [
+            3857,
+            4347,
+            null,
+            140,
+            62.39388
+          ]
+        ],
+        "issues": [
+          "efforts_from_interval_cache"
+        ],
+        "cache": {
+          "activity_key": "4f75a162bc5d26a75c486cd42b1593f3f2369a5d00ef8cf094b3058a9aca6b93",
+          "event_key": null,
+          "plan_key": null,
+          "plan_key_version": 2,
+          "sampled_at": "2026-11-10T19:37:50.599292+00:00",
+          "next_refresh_at": "2026-11-11T19:37:50.599292+00:00"
         }
       }
     }
@@ -2521,20 +2667,39 @@
     "i207373025": {
       "date": "2026-11-08",
       "intervals": {
-        "attempts": 3,
+        "attempts": 4,
         "first_seen": "2026-11-08T13:13:38.378967",
-        "last_attempt": "2026-11-09T20:39:04.014754",
+        "last_attempt": "2026-11-10T19:37:48.224889",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-11-09T11:35:54.828+00:00"
+        "source_icu_sync_date": "2026-11-10T13:15:49.193+00:00"
       },
       "streams": {
-        "attempts": 8,
+        "attempts": 9,
         "first_seen": "2026-11-08T13:13:38.378967",
-        "last_attempt": "2026-11-10T11:39:35.512954",
+        "last_attempt": "2026-11-10T19:37:48.224889",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-11-10T12:09:35.512954"
+        "next_retry_at": "2026-11-10T20:07:48.224889"
+      }
+    },
+    "i208426376": {
+      "date": "2026-11-10",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-11-10T19:37:48.224889",
+        "last_attempt": "2026-11-10T19:37:48.224889",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-11-10T19:26:56.123+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-11-10T19:37:48.224889",
+        "last_attempt": "2026-11-10T19:37:48.224889",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-11-10T19:42:48.224889"
       }
     }
   }
