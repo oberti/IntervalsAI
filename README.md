@@ -5,7 +5,7 @@ for Section 11 coaching.
 
 ![Sync Status](https://github.com/oberti/IntervalsAI/actions/workflows/auto-sync.yml/badge.svg)
 
-**Last successful sync:** 2026-11-09 20:39:12 UTC
+**Last successful sync:** 2026-11-10 03:24:46 UTC
 
 ## Sync Now
 
