@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T07:10:51.768528",
+  "generated_at": "2026-11-16T17:21:39.736178",
   "interval_data_note": "recent_activities[].interval_data: plan_match is timeline matching only; compliance summarizes intervals.json session_structure power/time evidence (only that plan-aware source judges completion, per-bout counts and >=95% progression, subject to its context/availability gates); icu_detected is descriptive Intervals.icu interval_summary, not plan-aware. If sources disagree, report both; session_structure judges. Never use device/app lap averages, whole-session average/NP or a set mean as rep power or compliance counts. See SECTION_11.md#which-interval-data-to-use.",
   "schema_version": 2,
   "version": "3.166",
@@ -959,8 +959,8 @@
           "event_key": "ee478114f30ffd3914b57cb37a9a522dadf9bdb6b5dabb474af35943bdda8e06",
           "plan_key": "5e5389b8f2bd314324f0107cfefe5765f0db5ab4fc1e8c71a0c5b934bcef5e9d",
           "plan_key_version": 2,
-          "sampled_at": "2026-11-15T14:41:33.298999+00:00",
-          "next_refresh_at": "2026-11-16T14:41:33.298999+00:00"
+          "sampled_at": "2026-11-16T17:21:42.533575+00:00",
+          "next_refresh_at": "2026-11-17T17:21:42.533575+00:00"
         }
       }
     },
@@ -1759,13 +1759,11 @@
       "interval_summary": [
         "5x 35s 282w",
         "1x 2m48s 238w",
-        "2x 2m27s 246w",
-        "1x 5m35s 239w",
-        "1x 4m7s 236w",
-        "2x 82s 254w",
-        "1x 1m41s 246w",
+        "1x 28m38s 229w",
+        "1x 83s 266w",
         "1x 15s 392w",
         "1x 11s 416w",
+        "1x 2m26s 257w",
         "1x 21m48s 146w"
       ],
       "intervals": [
@@ -1876,199 +1874,59 @@
         },
         {
           "type": "RECOVERY",
-          "duration_secs": 107,
-          "moving_secs": 107,
+          "duration_secs": 92,
+          "moving_secs": 92,
           "start_secs": 6385,
-          "end_secs": 6492,
-          "avg_power": 84,
-          "max_power": 241,
-          "avg_hr": 152,
+          "end_secs": 6477,
+          "avg_power": 81,
+          "max_power": 238,
+          "avg_hr": 155,
           "max_hr": 167,
-          "min_hr": 132,
-          "avg_cadence": 30.084112,
+          "min_hr": 139,
+          "avg_cadence": 32.260868,
           "zone": 1,
           "w_bal_start": 12362,
-          "w_bal_end": 13153,
-          "training_load": 1.1374435
+          "w_bal_end": 13101,
+          "training_load": 1.018464
         },
         {
           "type": "WORK",
-          "label": "147s@246w69rpm",
-          "duration_secs": 148,
-          "moving_secs": 148,
-          "start_secs": 6492,
-          "end_secs": 6640,
-          "avg_power": 234,
-          "max_power": 299,
-          "avg_hr": 161,
-          "max_hr": 173,
-          "min_hr": 133,
-          "avg_cadence": 65.310814,
-          "zone": 4,
-          "w_bal_start": 13153,
-          "w_bal_end": 12292,
-          "training_load": 3.3894632
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 76,
-          "moving_secs": 76,
-          "start_secs": 6640,
-          "end_secs": 6716,
-          "avg_power": 224,
-          "max_power": 283,
-          "avg_hr": 167,
-          "max_hr": 172,
-          "min_hr": 160,
-          "avg_cadence": 71.93421,
-          "zone": 3,
-          "w_bal_start": 12296,
-          "w_bal_end": 12075,
-          "training_load": 1.8180552
-        },
-        {
-          "type": "WORK",
-          "label": "335s@239w73rpm",
-          "duration_secs": 335,
-          "moving_secs": 335,
-          "start_secs": 6716,
-          "end_secs": 7051,
-          "avg_power": 239,
-          "max_power": 325,
-          "avg_hr": 168,
-          "max_hr": 174,
-          "min_hr": 157,
-          "avg_cadence": 72.61492,
-          "zone": 4,
-          "w_bal_start": 12080,
-          "w_bal_end": 11024,
-          "training_load": 8.504683
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 113,
-          "moving_secs": 113,
-          "start_secs": 7051,
-          "end_secs": 7164,
-          "avg_power": 217,
-          "max_power": 306,
-          "avg_hr": 166,
-          "max_hr": 172,
-          "min_hr": 158,
-          "avg_cadence": 72.867256,
-          "zone": 3,
-          "w_bal_start": 11034,
-          "w_bal_end": 11383,
-          "training_load": 2.5651503
-        },
-        {
-          "type": "WORK",
-          "label": "247s@236w75rpm",
-          "duration_secs": 247,
-          "moving_secs": 247,
-          "start_secs": 7164,
-          "end_secs": 7411,
-          "avg_power": 236,
-          "max_power": 304,
-          "avg_hr": 170,
-          "max_hr": 177,
-          "min_hr": 158,
-          "avg_cadence": 74.78542,
-          "zone": 4,
-          "w_bal_start": 11385,
-          "w_bal_end": 10787,
-          "training_load": 6.114183
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 227,
-          "moving_secs": 227,
-          "start_secs": 7411,
-          "end_secs": 7638,
-          "avg_power": 217,
+          "label": "1718s@229w72rpm",
+          "duration_secs": 1718,
+          "moving_secs": 1718,
+          "start_secs": 6477,
+          "end_secs": 8195,
+          "avg_power": 229,
           "max_power": 538,
-          "avg_hr": 165,
-          "max_hr": 179,
-          "min_hr": 152,
-          "avg_cadence": 71.89868,
-          "zone": 3,
-          "w_bal_start": 10791,
-          "w_bal_end": 10129,
-          "training_load": 5.153001
-        },
-        {
-          "type": "WORK",
-          "label": "82s@254w79rpm",
-          "duration_secs": 80,
-          "moving_secs": 80,
-          "start_secs": 7638,
-          "end_secs": 7718,
-          "avg_power": 242,
-          "max_power": 309,
-          "avg_hr": 176,
+          "avg_hr": 168,
           "max_hr": 182,
-          "min_hr": 170,
-          "avg_cadence": 77.075,
+          "min_hr": 132,
+          "avg_cadence": 72.00117,
           "zone": 4,
-          "w_bal_start": 10136,
-          "w_bal_end": 9821,
-          "training_load": 2.048
+          "w_bal_start": 13104,
+          "w_bal_end": 9801,
+          "training_load": 41.073692
         },
         {
           "type": "RECOVERY",
-          "duration_secs": 99,
-          "moving_secs": 99,
-          "start_secs": 7718,
-          "end_secs": 7817,
-          "avg_power": 220,
-          "max_power": 347,
-          "avg_hr": 173,
-          "max_hr": 176,
-          "min_hr": 168,
-          "avg_cadence": 75.666664,
-          "zone": 3,
-          "w_bal_start": 9828,
-          "w_bal_end": 9818,
-          "training_load": 2.368256
-        },
-        {
-          "type": "WORK",
-          "label": "101s@246w74rpm",
-          "duration_secs": 101,
-          "moving_secs": 101,
-          "start_secs": 7817,
-          "end_secs": 7918,
-          "avg_power": 246,
-          "max_power": 378,
-          "avg_hr": 172,
-          "max_hr": 181,
-          "min_hr": 166,
-          "avg_cadence": 74.09901,
-          "zone": 4,
-          "w_bal_start": 9823,
-          "w_bal_end": 9216,
-          "training_load": 2.5640981
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 2578,
-          "moving_secs": 2578,
-          "start_secs": 7918,
+          "duration_secs": 2301,
+          "moving_secs": 2301,
+          "start_secs": 8195,
           "end_secs": 10496,
-          "avg_power": 59,
+          "avg_power": 39,
           "max_power": 413,
-          "avg_hr": 123,
-          "max_hr": 182,
+          "avg_hr": 117,
+          "max_hr": 180,
           "min_hr": 87,
-          "avg_cadence": 21.870054,
+          "avg_cadence": 15.889178,
           "zone": 1,
-          "w_bal_start": 9209,
+          "w_bal_start": 9787,
           "w_bal_end": 11712,
-          "training_load": 21.583424
+          "training_load": 13.447523
         },
         {
           "type": "WORK",
-          "label": "82s@254w79rpm",
+          "label": "83s@266w82rpm",
           "duration_secs": 83,
           "moving_secs": 83,
           "start_secs": 10496,
@@ -2243,7 +2101,7 @@
         },
         {
           "type": "WORK",
-          "label": "147s@246w69rpm",
+          "label": "146s@257w73rpm",
           "duration_secs": 146,
           "moving_secs": 146,
           "start_secs": 13416,
@@ -2413,52 +2271,52 @@
             78.190475
           ],
           [
-            6492,
-            6640,
-            234,
-            161,
-            65.310814
-          ],
-          [
-            6716,
-            7051,
-            239,
+            6477,
+            8195,
+            229,
             168,
-            72.61492
+            72.00117
           ],
           [
-            7164,
-            7411,
-            236,
-            170,
-            74.78542
+            10496,
+            10579,
+            266,
+            168,
+            81.74699
           ],
           [
-            7638,
-            7718,
-            242,
-            176,
-            77.075
+            10731,
+            10761,
+            303,
+            167,
+            78.46667
           ],
           [
-            7817,
-            7918,
-            246,
-            172,
-            74.09901
+            11102,
+            11140,
+            278,
+            174,
+            80.18421
+          ],
+          [
+            12364,
+            12379,
+            392,
+            166,
+            81.73333
           ]
         ],
-        "omitted_efforts": 8,
+        "omitted_efforts": 4,
         "issues": [
           "efforts_from_interval_cache"
         ],
         "cache": {
-          "activity_key": "f34933e7b9e706466eadae0fe085bd60dbb211eb64dcf1de907ec964393af29f",
+          "activity_key": "36eb2d1393b9364826235c5f0bc544e9c75fc46396d6a9bfffbf48a712743ff9",
           "event_key": null,
           "plan_key": null,
           "plan_key_version": 2,
-          "sampled_at": "2026-11-15T20:17:46.472142+00:00",
-          "next_refresh_at": "2026-11-16T20:17:46.472142+00:00"
+          "sampled_at": "2026-11-16T17:21:42.533575+00:00",
+          "next_refresh_at": "2026-11-17T17:21:42.533575+00:00"
         }
       }
     },
@@ -2951,12 +2809,12 @@
           "efforts_from_interval_cache"
         ],
         "cache": {
-          "activity_key": "e52c549099014ed02c601ea7627a367f1ce590dd84307fb2282c67c0aa0de3eb",
+          "activity_key": "75a5172ead62f579846cb99fde5d7db15ab4ac7d1b1072d8c107415d8a949d70",
           "event_key": null,
           "plan_key": null,
           "plan_key_version": 2,
-          "sampled_at": "2026-11-15T14:41:33.298999+00:00",
-          "next_refresh_at": "2026-11-16T14:41:33.298999+00:00"
+          "sampled_at": "2026-11-16T17:21:42.533575+00:00",
+          "next_refresh_at": "2026-11-17T17:21:42.533575+00:00"
         }
       }
     }
@@ -3038,20 +2896,20 @@
     "i209914027": {
       "date": "2026-11-14",
       "intervals": {
-        "attempts": 1,
+        "attempts": 2,
         "first_seen": "2026-11-14T15:43:25.994926",
-        "last_attempt": "2026-11-14T15:43:25.994926",
+        "last_attempt": "2026-11-16T17:21:39.736178",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-11-14T13:05:24.990+00:00"
+        "source_icu_sync_date": "2026-11-16T07:29:57.160+00:00"
       },
       "streams": {
-        "attempts": 8,
+        "attempts": 9,
         "first_seen": "2026-11-14T15:43:25.994926",
-        "last_attempt": "2026-11-16T07:10:51.768528",
+        "last_attempt": "2026-11-16T17:21:39.736178",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-11-16T07:40:51.768528"
+        "next_retry_at": "2026-11-16T17:51:39.736178"
       }
     },
     "i210302866": {
@@ -3065,12 +2923,12 @@
         "source_icu_sync_date": "2026-11-15T11:35:06.650+00:00"
       },
       "streams": {
-        "attempts": 4,
+        "attempts": 5,
         "first_seen": "2026-11-15T14:41:29.894351",
-        "last_attempt": "2026-11-16T07:10:51.768528",
+        "last_attempt": "2026-11-16T17:21:39.736178",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-11-16T07:15:51.768528"
+        "next_retry_at": "2026-11-16T17:26:39.736178"
       }
     }
   }
