@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T01:32:25.537349",
+  "generated_at": "2026-11-25T10:22:41.628452",
   "interval_data_note": "recent_activities[].interval_data: plan_match is timeline matching only; compliance summarizes intervals.json session_structure power/time evidence (only that plan-aware source judges completion, per-bout counts and >=95% progression, subject to its context/availability gates); icu_detected is descriptive Intervals.icu interval_summary, not plan-aware. If sources disagree, report both; session_structure judges. Never use device/app lap averages, whole-session average/NP or a set mean as rep power or compliance counts. See SECTION_11.md#which-interval-data-to-use.",
   "schema_version": 2,
   "version": "3.166",
@@ -1956,21 +1956,45 @@
       "type": "Ride",
       "name": "Pedalata pomeridiana",
       "interval_summary": [
-        "1x 2h1m 121bpm"
+        "1x 13m51s 145bpm"
       ],
       "intervals": [
         {
-          "type": "WORK",
-          "label": "7280s@121bpm48rpm",
-          "duration_secs": 7280,
-          "moving_secs": 7280,
+          "type": "RECOVERY",
+          "duration_secs": 1905,
+          "moving_secs": 1905,
           "start_secs": 0,
-          "end_secs": 7280,
-          "avg_hr": 121,
+          "end_secs": 1905,
+          "avg_hr": 125,
           "max_hr": 177,
-          "min_hr": 75,
-          "avg_cadence": 48.33054,
+          "min_hr": 82,
+          "avg_cadence": 54.06404,
           "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "831s@145bpm65rpm",
+          "duration_secs": 831,
+          "moving_secs": 831,
+          "start_secs": 1905,
+          "end_secs": 2736,
+          "avg_hr": 145,
+          "max_hr": 164,
+          "min_hr": 109,
+          "avg_cadence": 64.58484,
+          "zone": 2
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 4544,
+          "moving_secs": 4544,
+          "start_secs": 2736,
+          "end_secs": 7280,
+          "avg_hr": 115,
+          "max_hr": 167,
+          "min_hr": 75,
+          "avg_cadence": 42.953114,
+          "zone": 1
         }
       ],
       "zone_basis": "hr",
@@ -2018,23 +2042,23 @@
         ],
         "efforts": [
           [
-            0,
-            7280,
+            1905,
+            2736,
             null,
-            121,
-            48.33054
+            145,
+            64.58484
           ]
         ],
         "issues": [
           "efforts_from_interval_cache"
         ],
         "cache": {
-          "activity_key": "aa2b8f1cbe9a9025da1b38b6833fcd0ede2f2aeba15f2443224b662e8ba57e81",
+          "activity_key": "8de9c4c63422b9b4e68564153e2ab7e74b5c0153a0ef6e9950a9fb98d2c5f287",
           "event_key": null,
           "plan_key": null,
           "plan_key_version": 2,
-          "sampled_at": "2026-11-25T01:32:27.517653+00:00",
-          "next_refresh_at": "2026-11-26T01:32:27.517653+00:00"
+          "sampled_at": "2026-11-25T10:22:42.961047+00:00",
+          "next_refresh_at": "2026-11-26T10:22:42.961047+00:00"
         }
       }
     }
@@ -2133,20 +2157,20 @@
     "i214248549": {
       "date": "2026-11-24",
       "intervals": {
-        "attempts": 1,
+        "attempts": 2,
         "first_seen": "2026-11-25T01:32:25.537349",
-        "last_attempt": "2026-11-25T01:32:25.537349",
+        "last_attempt": "2026-11-25T10:22:41.628452",
         "status": "ok",
         "reason": "ok",
-        "source_icu_sync_date": "2026-11-24T19:55:23.227+00:00"
+        "source_icu_sync_date": "2026-11-25T07:35:09.514+00:00"
       },
       "streams": {
-        "attempts": 1,
+        "attempts": 2,
         "first_seen": "2026-11-25T01:32:25.537349",
-        "last_attempt": "2026-11-25T01:32:25.537349",
+        "last_attempt": "2026-11-25T10:22:41.628452",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-11-25T01:37:25.537349"
+        "next_retry_at": "2026-11-25T10:27:41.628452"
       }
     }
   }
