@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T12:13:00.805892",
+  "generated_at": "2026-11-26T21:51:51.448140",
   "interval_data_note": "recent_activities[].interval_data: plan_match is timeline matching only; compliance summarizes intervals.json session_structure power/time evidence (only that plan-aware source judges completion, per-bout counts and >=95% progression, subject to its context/availability gates); icu_detected is descriptive Intervals.icu interval_summary, not plan-aware. If sources disagree, report both; session_structure judges. Never use device/app lap averages, whole-session average/NP or a set mean as rep power or compliance counts. See SECTION_11.md#which-interval-data-to-use.",
   "schema_version": 2,
   "version": "3.166",
@@ -2061,6 +2061,95 @@
           "next_refresh_at": "2026-11-27T12:13:01.489459+00:00"
         }
       }
+    },
+    {
+      "activity_id": "i215055210",
+      "date": "2026-11-26",
+      "start_datetime": "2026-11-26T17:26:26",
+      "type": "MountainBikeRide",
+      "name": "Sessione di mountain biking pomeridiana",
+      "interval_summary": [
+        "1x 1h53m 118bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "6812s@118bpm54rpm",
+          "duration_secs": 6812,
+          "moving_secs": 6812,
+          "start_secs": 0,
+          "end_secs": 6812,
+          "avg_hr": 118,
+          "max_hr": 176,
+          "min_hr": 73,
+          "avg_cadence": 53.910587,
+          "zone": 1
+        }
+      ],
+      "zone_basis": "hr",
+      "session_structure": {
+        "version": 6,
+        "method": "fixed_elapsed_thirds",
+        "status": "no_plan",
+        "thirds": [
+          [
+            0,
+            2270,
+            null,
+            null,
+            124.6,
+            60.0,
+            0.0,
+            100.0,
+            100.0,
+            null
+          ],
+          [
+            2270,
+            4540,
+            null,
+            null,
+            119.5,
+            52.5,
+            0.0,
+            100.0,
+            100.0,
+            null
+          ],
+          [
+            4540,
+            6811,
+            null,
+            null,
+            112.6,
+            49.2,
+            0.0,
+            99.96,
+            99.96,
+            null
+          ]
+        ],
+        "efforts": [
+          [
+            0,
+            6812,
+            null,
+            118,
+            53.910587
+          ]
+        ],
+        "issues": [
+          "efforts_from_interval_cache"
+        ],
+        "cache": {
+          "activity_key": "f75cf694a49a8ac9381eba52be9b3400756942016042cc121e31c171d951439b",
+          "event_key": null,
+          "plan_key": null,
+          "plan_key_version": 2,
+          "sampled_at": "2026-11-26T21:51:53.237405+00:00",
+          "next_refresh_at": "2026-11-27T21:51:53.237405+00:00"
+        }
+      }
     }
   ],
   "fetch_state": {
@@ -2165,12 +2254,31 @@
         "source_icu_sync_date": "2026-11-25T07:35:09.514+00:00"
       },
       "streams": {
-        "attempts": 5,
+        "attempts": 6,
         "first_seen": "2026-11-25T01:32:25.537349",
-        "last_attempt": "2026-11-26T12:13:00.805892",
+        "last_attempt": "2026-11-26T21:51:51.448140",
         "status": "pending",
         "reason": "no_data",
-        "next_retry_at": "2026-11-26T12:18:00.805892"
+        "next_retry_at": "2026-11-26T21:56:51.448140"
+      }
+    },
+    "i215055210": {
+      "date": "2026-11-26",
+      "intervals": {
+        "attempts": 1,
+        "first_seen": "2026-11-26T21:51:51.448140",
+        "last_attempt": "2026-11-26T21:51:51.448140",
+        "status": "ok",
+        "reason": "ok",
+        "source_icu_sync_date": "2026-11-26T18:43:39.744+00:00"
+      },
+      "streams": {
+        "attempts": 1,
+        "first_seen": "2026-11-26T21:51:51.448140",
+        "last_attempt": "2026-11-26T21:51:51.448140",
+        "status": "pending",
+        "reason": "no_data",
+        "next_retry_at": "2026-11-26T21:56:51.448140"
       }
     }
   }
